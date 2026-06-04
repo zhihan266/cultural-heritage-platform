@@ -1,0 +1,86 @@
+# Test your FastAPI endpoints
+
+### Health
+GET http://127.0.0.1:8000/health
+Accept: application/json
+
+### User login
+POST http://127.0.0.1:8000/users/login
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "role": "user"
+}
+
+### Worker login
+POST http://127.0.0.1:8000/users/login
+Content-Type: application/json
+
+{
+  "username": "worker01",
+  "role": "worker"
+}
+
+### Register AI
+POST http://127.0.0.1:8000/ais
+Content-Type: application/json
+
+{
+  "name": "heritage-ai",
+  "api_url": "https://example.com/qa",
+  "initial_score": 2.0
+}
+
+### Submit task
+POST http://127.0.0.1:8000/users/tasks
+Content-Type: application/json
+
+{
+  "user_id": "user-1",
+  "question": "三星堆青铜面具有什么文化意义？",
+  "answer_format": "三点要点",
+  "ai_ids": ["ai-id-from-register-response"],
+  "worker_count": 1
+}
+
+### Worker hall
+GET http://127.0.0.1:8000/workers/hall
+Accept: application/json
+
+### Worker accept task
+POST http://127.0.0.1:8000/workers/tasks/task-id/accept
+Content-Type: application/json
+
+{
+  "worker_id": "worker-2"
+}
+
+### Worker answer
+POST http://127.0.0.1:8000/workers/tasks/task-id/answers
+Content-Type: application/json
+
+{
+  "responder_id": "worker-2",
+  "content": "青铜面具体现祭祀、权力象征和古蜀审美。"
+}
+
+### AI answer
+POST http://127.0.0.1:8000/ais/tasks/task-id/answers
+Content-Type: application/json
+
+{
+  "responder_id": "ai-id-from-register-response",
+  "content": "三星堆青铜面具反映古蜀祭祀体系、社会权力结构与区域文化交流。"
+}
+
+### User messages
+GET http://127.0.0.1:8000/users/user-1/messages
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
