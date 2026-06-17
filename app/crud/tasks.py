@@ -1,201 +1,159 @@
-from difflib import SequenceMatcher
-from uuid import uuid4
+"""任务 Repository：封装任务相关的基础数据库读写。
 
-from fastapi import HTTPException, status
+本模块只处理 ORM 查询、创建和模型组装，不包含任务状态流转、答案聚合、
+评分计算等业务规则。业务逻辑统一由 app.services.tasks 调用。
+"""
 
-from app.db.memory import store
-from app.models.domain import Account, AiAgent, Answer, AnswerSource, Role, Task, TaskStatus
-from app.schemas.domain import TaskCreateRequest
+from sqlalchemy import select
+from sqlalchemy.orm import Session
 
-
-def summarize_task(task: Task) -> dict:
-    return {
-        "id": task.id,
-        "question": task.question,
-        "answer_format": task.answer_format,
-        "status": task.status,
-        "required_worker_count": task.required_worker_count,
-        "accepted_worker_count": len(task.accepted_worker_ids),
-        "answer_count": len(task.answers),
-        "final_result": task.final_result,
-    }
+from app.db.mapper import task_to_domain
+from app.db.tables import AccountTable, AiAgentTable, AnswerTable, TaskTable
+from app.models.domain import Role, Task, TaskStatus
 
 
-def create_task(payload: TaskCreateRequest) -> Task:
-    user = store.accounts.get(payload.user_id)
-    if not user or user.role != Role.USER:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, "User does not exist")
+def get_task_row(db: Session, task_id: str) -> TaskTable | None:
+    """按主键查询任务 ORM 记录。"""
+    return db.get(TaskTable, task_id)
 
-    missing_ai_ids = [ai_id for ai_id in payload.ai_ids if ai_id not in store.ai_agents]
-    if missing_ai_ids:
-        raise HTTPException(
-            status.HTTP_404_NOT_FOUND,
-            f"AI does not exist: {', '.join(missing_ai_ids)}",
-        )
 
-    task = Task(
-        id=f"task-{uuid4().hex[:8]}",
-        user_id=payload.user_id,
-        question=payload.question,
-        answer_format=payload.answer_format,
-        ai_ids=payload.ai_ids,
-        required_worker_count=payload.worker_count,
-        metadata=payload.metadata,
+def get_account_row(db: Session, account_id: str) -> AccountTable | None:
+    """按主键查询用户或工人账号记录。"""
+    return db.get(AccountTable, account_id)
+
+
+def get_ai_row(db: Session, ai_id: str) -> AiAgentTable | None:
+    """按主键查询 AI 记录。"""
+    return db.get(AiAgentTable, ai_id)
+
+
+def find_missing_ai_ids(db: Session, ai_ids: list[str]) -> list[str]:
+    """找出请求中不存在于数据库的 AI ID。"""
+    return [ai_id for ai_id in ai_ids if get_ai_row(db, ai_id) is None]
+
+
+def create_task_row(
+    db: Session,
+    *,
+    task_id: str,
+    user_id: str,
+    question: str,
+    answer_format: str,
+    ai_ids: list[str],
+    required_worker_count: int,
+    metadata: dict,
+) -> TaskTable:
+    """创建任务 ORM 对象并加入当前事务，提交动作由 Service 控制。"""
+    row = TaskTable(
+        id=task_id,
+        user_id=user_id,
+        question=question,
+        answer_format=answer_format,
+        ai_ids=ai_ids,
+        required_worker_count=required_worker_count,
+        accepted_worker_ids=[],
+        status=TaskStatus.WAITING.value,
+        metadata_json=metadata,
     )
-    store.tasks[task.id] = task
-    return task
+    db.add(row)
+    return row
 
 
-def accept_task(task_id: str, worker_id: str) -> Task:
-    task = get_task(task_id)
-    worker = store.accounts.get(worker_id)
-    if not worker or worker.role != Role.WORKER:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, "Worker does not exist")
-    if task.status == TaskStatus.COMPLETED:
-        raise HTTPException(status.HTTP_409_CONFLICT, "Task is already completed")
-    if worker_id in task.accepted_worker_ids:
-        return task
-    if len(task.accepted_worker_ids) >= task.required_worker_count:
-        raise HTTPException(status.HTTP_409_CONFLICT, "Required worker count is full")
-
-    task.accepted_worker_ids.append(worker_id)
-    task.status = TaskStatus.ANSWERING
-    return task
-
-
-def add_worker_answer(task_id: str, worker_id: str, content: str) -> tuple[Task, Answer]:
-    task = get_task(task_id)
-    worker = store.accounts.get(worker_id)
-    if not worker or worker.role != Role.WORKER:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, "Worker does not exist")
-    if worker_id not in task.accepted_worker_ids:
-        raise HTTPException(status.HTTP_403_FORBIDDEN, "Worker must accept the task first")
-    return add_answer(task, worker_id, AnswerSource.WORKER, content, worker.score)
-
-
-def add_ai_answer(task_id: str, ai_id: str, content: str) -> tuple[Task, Answer]:
-    task = get_task(task_id)
-    ai = store.ai_agents.get(ai_id)
-    if not ai:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, "AI does not exist")
-    if ai_id not in task.ai_ids:
-        raise HTTPException(status.HTTP_403_FORBIDDEN, "This AI was not assigned to the task")
-    return add_answer(task, ai_id, AnswerSource.AI, content, ai.score)
-
-
-def add_answer(
-    task: Task,
+def find_answer(
+    db: Session,
+    *,
+    task_id: str,
     responder_id: str,
-    source: AnswerSource,
+    source: str,
+) -> AnswerTable | None:
+    """查询回答者是否已为指定任务提交过同类型答案。"""
+    return db.scalar(
+        select(AnswerTable).where(
+            AnswerTable.task_id == task_id,
+            AnswerTable.responder_id == responder_id,
+            AnswerTable.source == source,
+        )
+    )
+
+
+def create_answer_row(
+    db: Session,
+    *,
+    answer_id: str,
+    task_id: str,
+    responder_id: str,
+    source: str,
     content: str,
     score_snapshot: float,
-) -> tuple[Task, Answer]:
-    if task.status == TaskStatus.COMPLETED:
-        raise HTTPException(status.HTTP_409_CONFLICT, "Task is already completed")
-    if any(
-        answer.responder_id == responder_id and answer.source == source
-        for answer in task.answers
-    ):
-        raise HTTPException(status.HTTP_409_CONFLICT, "Responder has already submitted an answer")
-
-    answer = Answer(
-        id=f"answer-{uuid4().hex[:8]}",
-        task_id=task.id,
+) -> AnswerTable:
+    """创建回答 ORM 对象并加入当前事务。"""
+    row = AnswerTable(
+        id=answer_id,
+        task_id=task_id,
         responder_id=responder_id,
         source=source,
         content=content,
         score_snapshot=score_snapshot,
+        weight=0.0,
     )
-    task.answers.append(answer)
-    maybe_complete_task(task)
-    return task, answer
+    db.add(row)
+    return row
 
 
-def maybe_complete_task(task: Task) -> None:
-    expected_answer_count = task.required_worker_count + len(task.ai_ids)
-    if expected_answer_count == 0:
-        return
-    if len(task.answers) < expected_answer_count:
-        task.status = TaskStatus.ANSWERING
-        return
-
-    task.status = TaskStatus.AGGREGATING
-    total_score = sum(max(answer.score_snapshot, 0.01) for answer in task.answers)
-    result_parts: list[str] = []
-    for answer in task.answers:
-        answer.weight = round(max(answer.score_snapshot, 0.01) / total_score, 4)
-        result_parts.append(
-            f"[{answer.source.value}:{answer.responder_id}, weight={answer.weight}] {answer.content}"
-        )
-
-    task.final_result = (
-        f"Answer format requirement: {task.answer_format}\n"
-        f"Weighted synthesis:\n"
-        + "\n".join(result_parts)
-    )
-    task.status = TaskStatus.COMPLETED
-
-
-def review_final_result(task_id: str, final_result: str, reward_scale: float) -> Task:
-    task = get_task(task_id)
-    task.final_result = final_result
-
-    for answer in task.answers:
-        similarity = SequenceMatcher(None, final_result, answer.content).ratio()
-        delta = round((similarity - 0.5) * reward_scale, 4)
-        if answer.source == AnswerSource.WORKER:
-            worker = store.accounts.get(answer.responder_id)
-            if worker:
-                worker.score = clamp_score(worker.score + delta)
-        else:
-            ai = store.ai_agents.get(answer.responder_id)
-            if ai:
-                ai.score = clamp_score(ai.score + delta)
-                ai.metadata = {
-                    "last_reward_delta": delta,
-                    "last_similarity": round(similarity, 4),
-                    "training_signal": "reward" if delta >= 0 else "penalty",
-                }
-
-    task.status = TaskStatus.COMPLETED
-    return task
-
-
-def clamp_score(score: float) -> float:
-    return round(min(max(score, 0.1), 10.0), 4)
-
-
-def get_task(task_id: str) -> Task:
-    task = store.tasks.get(task_id)
-    if not task:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, "Task does not exist")
-    return task
-
-
-def available_hall_tasks() -> list[Task]:
-    return [
-        task
-        for task in store.tasks.values()
-        if task.status in {TaskStatus.WAITING, TaskStatus.ANSWERING}
-        and len(task.accepted_worker_ids) < task.required_worker_count
-    ]
-
-
-def completed_tasks_for_user(user_id: str) -> list[Task]:
-    return [
-        task
-        for task in store.tasks.values()
-        if task.user_id == user_id and task.status == TaskStatus.COMPLETED
-    ]
-
-
-def worker_scoreboard() -> list[Account]:
-    return sorted(
-        [account for account in store.accounts.values() if account.role == Role.WORKER],
-        key=lambda account: account.score,
-        reverse=True,
+def list_answers(db: Session, task_id: str) -> list[AnswerTable]:
+    """查询指定任务的全部回答记录。"""
+    return list(
+        db.scalars(
+            select(AnswerTable).where(AnswerTable.task_id == task_id)
+        ).all()
     )
 
 
-def ai_scoreboard() -> list[AiAgent]:
-    return sorted(store.ai_agents.values(), key=lambda ai: ai.score, reverse=True)
+def list_hall_task_rows(db: Session) -> list[TaskTable]:
+    """查询状态上可能出现在任务大厅中的任务记录。"""
+    return list(
+        db.scalars(
+            select(TaskTable).where(
+                TaskTable.status.in_(
+                    [TaskStatus.WAITING.value, TaskStatus.ANSWERING.value]
+                )
+            )
+        ).all()
+    )
+
+
+def list_completed_task_rows(db: Session, user_id: str) -> list[TaskTable]:
+    """查询指定用户的已完成任务记录。"""
+    return list(
+        db.scalars(
+            select(TaskTable).where(
+                TaskTable.user_id == user_id,
+                TaskTable.status == TaskStatus.COMPLETED.value,
+            )
+        ).all()
+    )
+
+
+def list_worker_rows_by_score(db: Session) -> list[AccountTable]:
+    """按评分从高到低查询工人记录。"""
+    return list(
+        db.scalars(
+            select(AccountTable)
+            .where(AccountTable.role == Role.WORKER.value)
+            .order_by(AccountTable.score.desc())
+        ).all()
+    )
+
+
+def list_ai_rows_by_score(db: Session) -> list[AiAgentTable]:
+    """按评分从高到低查询 AI 记录。"""
+    return list(
+        db.scalars(
+            select(AiAgentTable).order_by(AiAgentTable.score.desc())
+        ).all()
+    )
+
+
+def task_with_answers(db: Session, task: TaskTable) -> Task:
+    """把任务 ORM 记录与其回答组合为完整领域模型。"""
+    return task_to_domain(task, list_answers(db, task.id))
