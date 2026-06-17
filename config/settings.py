@@ -1,57 +1,65 @@
 """应用配置。
 
-配置优先从项目根目录的 .env 文件读取，并提供适合本地开发的默认值。
+使用 Pydantic Settings 统一管理环境变量。
+开发环境读取 .env.development，生产环境读取 .env.production。
+
+切换环境方式：
+- Windows PowerShell: $env:APP_ENV="production"
+- Linux/macOS: export APP_ENV=production
 """
 
 import os
-from dataclasses import dataclass
+from functools import lru_cache
 from urllib.parse import quote_plus
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
-
-def _csv_env(name: str, default: str) -> list[str]:
-    """把逗号分隔的环境变量转换成字符串列表。"""
-    value = os.getenv(name, default)
-    return [item.strip() for item in value.split(",") if item.strip()]
+from pydantic import Field, computed_field
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-@dataclass(frozen=True)
-class Settings:
+class Settings(BaseSettings):
     """集中保存运行配置，避免业务代码直接读取环境变量。"""
 
-    app_name: str = os.getenv("APP_NAME", "Cultural Heritage QA Backend")
-    app_version: str = os.getenv("APP_VERSION", "0.1.0")
-    debug: bool = os.getenv("DEBUG", "false").lower() == "true"
-    database_host: str = os.getenv("DATABASE_HOST", "127.0.0.1")
-    database_port: int = int(os.getenv("DATABASE_PORT", "3306"))
-    database_user: str = os.getenv("DATABASE_USER", "root")
-    database_password: str = os.getenv("DATABASE_PASSWORD", "root")
-    database_name: str = os.getenv("DATABASE_NAME", "aijiu")
-    cors_origins: list[str] | None = None
+    app_env: str = Field(default="development", alias="APP_ENV")
+    app_name: str = Field(default="Cultural Heritage QA Backend", alias="APP_NAME")
+    app_version: str = Field(default="0.1.0", alias="APP_VERSION")
+    debug: bool = Field(default=False, alias="DEBUG")
 
-    def __post_init__(self) -> None:
-        """dataclass 初始化后解析允许跨域访问的前端地址。"""
-        if self.cors_origins is None:
-            object.__setattr__(
-                self,
-                "cors_origins",
-                _csv_env(
-                    "BACKEND_CORS_ORIGINS",
-                    "http://localhost:3000,http://127.0.0.1:3000,"
-                    "http://localhost:5173,http://127.0.0.1:5173,"
-                    "http://localhost:8080,http://127.0.0.1:8080",
-                ),
-            )
+    backend_cors_origins: str = Field(
+        default=(
+            "http://localhost:3000,http://127.0.0.1:3000,"
+            "http://localhost:5173,http://127.0.0.1:5173,"
+            "http://localhost:8080,http://127.0.0.1:8080"
+        ),
+        alias="BACKEND_CORS_ORIGINS",
+    )
 
+    database_host: str = Field(default="127.0.0.1", alias="DATABASE_HOST")
+    database_port: int = Field(default=3306, alias="DATABASE_PORT")
+    database_user: str = Field(default="root", alias="DATABASE_USER")
+    database_password: str = Field(default="root", alias="DATABASE_PASSWORD")
+    database_name: str = Field(default="aijiu", alias="DATABASE_NAME")
+
+    model_config = SettingsConfigDict(
+        env_file=".env.development",
+        env_file_encoding="utf-8",
+        case_sensitive=False,
+        extra="ignore",
+    )
+
+    @computed_field
+    @property
+    def cors_origins(self) -> list[str]:
+        """把逗号分隔的跨域地址转换成列表。"""
+        return [
+            origin.strip()
+            for origin in self.backend_cors_origins.split(",")
+            if origin.strip()
+        ]
+
+    @computed_field
     @property
     def database_url(self) -> str:
-        """生成 SQLAlchemy 使用的 MySQL 连接地址。
-
-        quote_plus 用于转义密码中的 @、/ 等 URL 特殊字符。
-        """
+        """生成 SQLAlchemy 使用的 MySQL 连接地址。"""
         password = quote_plus(self.database_password)
         return (
             f"mysql+pymysql://{self.database_user}:{password}"
@@ -60,4 +68,20 @@ class Settings:
         )
 
 
-settings = Settings()
+def get_env_file() -> str:
+    """根据 APP_ENV 选择对应的配置文件。"""
+    app_env = os.getenv("APP_ENV", "development").lower()
+
+    if app_env == "production":
+        return ".env.production"
+
+    return ".env.development"
+
+
+@lru_cache
+def get_settings() -> Settings:
+    """缓存配置对象，避免重复读取环境变量。"""
+    return Settings(_env_file=get_env_file())
+
+
+settings = get_settings()
