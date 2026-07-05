@@ -19,6 +19,8 @@ from app.services.tasks import (
     summarize_task,
     worker_scoreboard,
 )
+from fastapi import Depends
+from app.api.dependencies.auth import get_current_user
 
 router = APIRouter(prefix="/workers", tags=["workers"])
 

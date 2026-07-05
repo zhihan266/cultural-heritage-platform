@@ -20,6 +20,7 @@ def account_to_domain(row: AccountTable) -> Account:
         username=row.username,
         role=Role(row.role),
         score=row.score,
+
     )
 
 

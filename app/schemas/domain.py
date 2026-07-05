@@ -7,18 +7,32 @@ from pydantic import BaseModel, Field, HttpUrl
 from app.models.domain import Account, AiAgent, AiType, Answer, Role, Task, TaskStatus
 
 
+class RegisterRequest(BaseModel):
+    username: str = Field(min_length=3)
+    password: str = Field(min_length=6)
+    role: str = "user"
+
+
+class RegisterResponse(BaseModel):
+    user_id: str
+    username: str
+    role: str
+
+
 class LoginRequest(BaseModel):
     """登录请求。"""
 
     username: str = Field(min_length=1, max_length=50)
+    password: str = Field(min_length=1, max_length=50)
     role: Role
 
 
 class LoginResponse(BaseModel):
     """登录成功响应。"""
 
+    access_token: str
+    token_type: str = "bearer"
     account: Account
-
 
 class AiRegisterRequest(BaseModel):
     """注册本地 AI 时提交的名称、接口地址和初始评分。"""
@@ -56,6 +70,10 @@ class TaskCreateRequest(BaseModel):
     worker_count: int = Field(default=1, ge=0)
     metadata: dict = Field(default_factory=dict)
 
+
+class CurrentUser(BaseModel):
+    user_id: str
+    role: str
 
 class TaskCreateResponse(BaseModel):
     """任务创建成功响应。"""
