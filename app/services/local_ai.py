@@ -106,6 +106,7 @@ def _build_task_prompts(task: Task) -> tuple[str, str]:
         f"回答格式要求：{task.answer_format}\n\n"
         "请严格按照回答格式要求作答。"
         "不要输出思考过程，不要解释你的推理过程，只输出最终答案。\n"
+
     )
     return "你是一名文化遗产领域的专业问答助手。", user_content
 
