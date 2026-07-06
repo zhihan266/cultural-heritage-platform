@@ -13,6 +13,7 @@ from app.db.session import init_db
 from app.services.ai_health import check_enabled_ai_agents
 from config.logging import configure_logging
 from config.settings import settings
+from app.core.redis import redis_client
 
 configure_logging()
 
@@ -61,3 +62,11 @@ async def root():
 async def health():
     """提供后端自身的存活检测接口。"""
     return {"status": "ok"}
+
+@app.on_event("startup")
+def startup_event():
+    try:
+        redis_client.ping()
+        print("✅ Redis connected successfully")
+    except Exception as e:
+        print("❌ Redis connection failed:", e)

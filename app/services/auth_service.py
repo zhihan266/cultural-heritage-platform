@@ -4,24 +4,24 @@ from fastapi import HTTPException
 from jose import jwt, JWTError
 from app.crud.accounts import get_accounts_by_username,create_account
 from app.core.security import get_password_hash, verify_password
+from app.core.redis import redis_client
 from app.db.mapper import account_to_domain
 from app.models.domain import Role
 
-SECRET_KEY = "your-secret-key"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 120
+from config.settings import settings
+
 
 
 def create_access_token(data: dict):
     to_encode = data.copy()
-    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    expire = datetime.utcnow() + timedelta(minutes=settings.jwt_access_token_expire_minutes)
     to_encode.update({"exp": expire})
-    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return jwt.encode(to_encode, settings.jwt_secret_key, algorithm=settings.jwt_algorithm)
 
 
 def decode_token(token: str):
     try:
-        return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        return jwt.decode(token, settings.jwt_secret_key, algorithms=[settings.jwt_algorithm])
     except JWTError:
         return None
 
@@ -58,5 +58,11 @@ def login_service(username: str, password: str):
         "sub": account.id,
         "role": account.role
     })
+
+    redis_client.set(
+        f"token:{account.id}",
+        token,
+        ex=3600
+    )
 
     return account, token

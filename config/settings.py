@@ -39,12 +39,21 @@ class Settings(BaseSettings):
     database_user: str = Field(default="root", alias="DATABASE_USER")
     database_password: str = Field(default="root", alias="DATABASE_PASSWORD")
     database_name: str = Field(default="aijiu", alias="DATABASE_NAME")
+
+
     # jwt配置
     jwt_secret_key: str = Field(default="dev-secret-key", alias="JWT_SECRET_KEY")
     jwt_algorithm: str = Field(default="HS256", alias="JWT_ALGORITHM")
     jwt_access_token_expire_minutes: int = Field(
         default=60,
         alias="JWT_ACCESS_TOKEN_EXPIRE_MINUTES")
+
+    # redis配置
+    REDIS_HOST: str = Field(default="localhost", alias="REDIS_HOST")
+    REDIS_PORT: int = Field(default=6379, alias="REDIS_PORT")
+    REDIS_DB: int = Field(default=0, alias="REDIS_DB")
+
+
 
     model_config = SettingsConfigDict(
         env_file=".env.development",

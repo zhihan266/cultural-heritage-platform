@@ -46,6 +46,8 @@ async def login(payload: LoginRequest):
     """登录现有账号。"""
     account, token =login_service(username=payload.username,
         password=payload.password)
+
+
     return LoginResponse( access_token=token,
         token_type="bearer",
         account=account
