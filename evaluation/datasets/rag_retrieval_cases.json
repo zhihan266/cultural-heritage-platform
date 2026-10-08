@@ -1,0 +1,329 @@
+[
+  {
+    "case_id": "rag-001",
+    "category": "explicit_entity",
+    "question": "故宫始建于哪一年，何时基本建成？",
+    "relevant_document_ids": [
+      "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c"
+    ]
+  },
+  {
+    "case_id": "rag-002",
+    "category": "explicit_entity",
+    "question": "天坛主要包括哪些代表性建筑？",
+    "relevant_document_ids": [
+      "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec"
+    ]
+  },
+  {
+    "case_id": "rag-003",
+    "category": "explicit_entity",
+    "question": "三星堆遗址出土了哪些具有代表性的器物？",
+    "relevant_document_ids": [
+      "23b53dd97c362c611ceb3686d88418634133e96a79a342ec3881d1a872fd3784"
+    ]
+  },
+  {
+    "case_id": "rag-004",
+    "category": "explicit_entity",
+    "question": "平遥古城为什么与晋商和票号文化关系密切？",
+    "relevant_document_ids": [
+      "8ac8467acab7154be1246c0eb631e8f15dd68d8f1ca6388d1d13935fc1cd7028"
+    ]
+  },
+  {
+    "case_id": "rag-005",
+    "category": "explicit_entity",
+    "question": "景德镇传统制瓷通常包含哪些主要工序？",
+    "relevant_document_ids": [
+      "2843aac4804df66aee3a623667cacc898cc4a3abb6c8b9dc1a70d1a567db10d4"
+    ]
+  },
+  {
+    "case_id": "rag-006",
+    "category": "explicit_entity",
+    "question": "《牡丹亭》为什么常被视为昆曲舞台艺术的重要代表？",
+    "relevant_document_ids": [
+      "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41"
+    ]
+  },
+  {
+    "case_id": "rag-007",
+    "category": "alias_paraphrase",
+    "question": "紫禁城从开始营建到基本建成分别对应什么时间？",
+    "relevant_document_ids": [
+      "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c"
+    ]
+  },
+  {
+    "case_id": "rag-008",
+    "category": "alias_paraphrase",
+    "question": "被称为千佛洞的遗址保存了哪些类型的艺术资料？",
+    "relevant_document_ids": [
+      "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b"
+    ]
+  },
+  {
+    "case_id": "rag-009",
+    "category": "alias_paraphrase",
+    "question": "长安—天山廊道在古代跨区域交通和文明交流中发挥了什么作用？",
+    "relevant_document_ids": [
+      "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e"
+    ]
+  },
+  {
+    "case_id": "rag-010",
+    "category": "alias_paraphrase",
+    "question": "哪种传统弹拨艺术通常使用七根弦，并以减字谱记录琴曲？",
+    "relevant_document_ids": [
+      "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8"
+    ]
+  },
+  {
+    "case_id": "rag-011",
+    "category": "alias_paraphrase",
+    "question": "哪种传统戏曲以生旦净丑和唱念做打为典型表演体系？",
+    "relevant_document_ids": [
+      "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709"
+    ]
+  },
+  {
+    "case_id": "rag-012",
+    "category": "alias_paraphrase",
+    "question": "哪种民间美术常见窗花、吉祥纹样，并广泛用于春节和婚礼？",
+    "relevant_document_ids": [
+      "22e686279ab722e94af2abda0177b022213986e865f0e6e7bafd5cb612c39663"
+    ]
+  },
+  {
+    "case_id": "rag-013",
+    "category": "implicit_entity",
+    "question": "哪一处北京皇家建筑群主要用于明清皇帝祭天和祈谷？",
+    "relevant_document_ids": [
+      "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec"
+    ]
+  },
+  {
+    "case_id": "rag-014",
+    "category": "implicit_entity",
+    "question": "哪一处山地农业景观由森林、村寨、梯田和水系共同构成？",
+    "relevant_document_ids": [
+      "856da3d3ccd62e891d31f1b01eb08885101e388b91e218cde76e1ace2fe933a9"
+    ]
+  },
+  {
+    "case_id": "rag-015",
+    "category": "implicit_entity",
+    "question": "哪类近代侨乡建筑兼具防御功能，并在外观装饰上融合中西建筑元素？",
+    "relevant_document_ids": [
+      "f9c920ee96580b83341c47cb6f3ca7c1bc0ca9e652f77055d20f89d90b0d403d"
+    ]
+  },
+  {
+    "case_id": "rag-016",
+    "category": "implicit_entity",
+    "question": "哪一大型人工水运体系曾承担粮食运输、商品流通和人员往来，并促进南北交流？",
+    "relevant_document_ids": [
+      "76cbe6f1c4cba479033fa526d9c2b8d73e9289f4aab20d1d566c9a4f8d266bbf"
+    ]
+  },
+  {
+    "case_id": "rag-017",
+    "category": "implicit_entity",
+    "question": "哪一古代军事工程通过城墙、关隘、敌台和烽火台构成完整防御体系？",
+    "relevant_document_ids": [
+      "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901"
+    ]
+  },
+  {
+    "case_id": "rag-018",
+    "category": "implicit_entity",
+    "question": "哪处史前遗址同时包含古城、水利系统、墓地和居住区，并出土玉琮、玉璧等代表性玉器？",
+    "relevant_document_ids": [
+      "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1"
+    ]
+  },
+  {
+    "case_id": "rag-019",
+    "category": "implicit_entity",
+    "question": "哪座依山而建的西藏历史建筑群保存了大量壁画、雕塑、经卷和唐卡？",
+    "relevant_document_ids": [
+      "aa91881fac6375ca6779b5ee2ec47f57b52b23a8fcf0c620bfa483c431ff57f7"
+    ]
+  },
+  {
+    "case_id": "rag-020",
+    "category": "implicit_entity",
+    "question": "哪座古城的街巷顺应地形展开、水系穿城而过，并与纳西族和东巴文化密切相关？",
+    "relevant_document_ids": [
+      "5da11d380cb151076373354fe4c0d3a6ced795993d4d2b74d5bdc23f0e248467"
+    ]
+  },
+  {
+    "case_id": "rag-021",
+    "category": "implicit_entity",
+    "question": "哪种民间戏剧利用平面人物、灯光和幕布形成影像，同时配合唱腔、说白和器乐？",
+    "relevant_document_ids": [
+      "0ce2978804e9a4172471062832e2485207950054dbf858ede42bf78ce4dfeb52"
+    ]
+  },
+  {
+    "case_id": "rag-022",
+    "category": "implicit_entity",
+    "question": "哪座山岳与古代帝王封禅、岱庙、南天门和大量石刻密切相关？",
+    "relevant_document_ids": [
+      "8a825d75194921f7ca71b4445c84b0cf78674d231d46648318b65b4487adee89"
+    ]
+  },
+  {
+    "case_id": "rag-023",
+    "category": "fine_grained",
+    "question": "鱼嘴、飞沙堰和宝瓶口分别属于哪一遗产中的核心水利工程体系？",
+    "relevant_document_ids": [
+      "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff"
+    ]
+  },
+  {
+    "case_id": "rag-024",
+    "category": "fine_grained",
+    "question": "奉先寺大型造像属于哪处重要石窟遗址，该遗址哪些历史时期的营造尤其重要？",
+    "relevant_document_ids": [
+      "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e"
+    ]
+  },
+  {
+    "case_id": "rag-025",
+    "category": "fine_grained",
+    "question": "以奇松、怪石、云海和花岗岩峰林闻名的山岳，对中国哪类传统艺术和自然审美产生了重要影响？",
+    "relevant_document_ids": [
+      "068a611a08a5751a8438044ffda87378d1d495dfa118e8ca31cae58f8e12d5fd"
+    ]
+  },
+  {
+    "case_id": "rag-026",
+    "category": "fine_grained",
+    "question": "哪类园林通过借景、对景和框景，在有限空间中营造丰富景观？",
+    "relevant_document_ids": [
+      "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c"
+    ]
+  },
+  {
+    "case_id": "rag-027",
+    "category": "fine_grained",
+    "question": "1974年被当地农民发现、能反映秦代军队编制和装备的考古遗存是什么？",
+    "relevant_document_ids": [
+      "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f"
+    ]
+  },
+  {
+    "case_id": "rag-028",
+    "category": "fine_grained",
+    "question": "哪处石刻遗产的题材同时涉及佛教、道教、儒家和社会生活，并具有较强叙事性？",
+    "relevant_document_ids": [
+      "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a"
+    ]
+  },
+  {
+    "case_id": "rag-029",
+    "category": "confusing_pair",
+    "question": "主要开凿于北魏时期、位于山西大同并以大型佛像和雕塑著称的是哪处石窟？",
+    "relevant_document_ids": [
+      "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a"
+    ]
+  },
+  {
+    "case_id": "rag-030",
+    "category": "confusing_pair",
+    "question": "位于洛阳伊河两岸、营造跨越多个时期且以北魏和唐代尤为重要的是哪处石窟？",
+    "relevant_document_ids": [
+      "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e"
+    ]
+  },
+  {
+    "case_id": "rag-031",
+    "category": "confusing_pair",
+    "question": "位于重庆大足、由多处石窟和摩崖造像组成，并体现多种思想传统交流的是哪处遗产？",
+    "relevant_document_ids": [
+      "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a"
+    ]
+  },
+  {
+    "case_id": "rag-032",
+    "category": "confusing_pair",
+    "question": "位于敦煌附近、以大量壁画和彩塑保存丝绸之路文化交流信息的是哪处石窟遗址？",
+    "relevant_document_ids": [
+      "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b"
+    ]
+  },
+  {
+    "case_id": "rag-033",
+    "category": "confusing_pair",
+    "question": "以万寿山和昆明湖为核心、体现清代皇家园林空间设计的是哪处园林？",
+    "relevant_document_ids": [
+      "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732"
+    ]
+  },
+  {
+    "case_id": "rag-034",
+    "category": "confusing_pair",
+    "question": "以拙政园、留园和网师园为代表，体现江南传统私家园林审美的是哪类园林？",
+    "relevant_document_ids": [
+      "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c"
+    ]
+  },
+  {
+    "case_id": "rag-035",
+    "category": "multi_document",
+    "question": "哪些北京皇家建筑遗产分别体现明清宫廷制度、祭天祈谷礼仪和皇家园林设计？",
+    "relevant_document_ids": [
+      "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+      "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec",
+      "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732"
+    ]
+  },
+  {
+    "case_id": "rag-036",
+    "category": "multi_document",
+    "question": "哪些遗产都能用于研究中国古代佛教石窟或造像艺术？",
+    "relevant_document_ids": [
+      "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a",
+      "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+      "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+      "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a"
+    ]
+  },
+  {
+    "case_id": "rag-037",
+    "category": "multi_document",
+    "question": "哪些遗产体现了古代跨区域交通、商品流通或文明交流网络？",
+    "relevant_document_ids": [
+      "76cbe6f1c4cba479033fa526d9c2b8d73e9289f4aab20d1d566c9a4f8d266bbf",
+      "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e"
+    ]
+  },
+  {
+    "case_id": "rag-038",
+    "category": "multi_document",
+    "question": "哪些园林遗产都强调借景、对景、框景等传统空间营造方式？",
+    "relevant_document_ids": [
+      "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+      "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c"
+    ]
+  },
+  {
+    "case_id": "rag-039",
+    "category": "hard_case",
+    "question": "一种以汉字书写为基础的传统艺术，强调用笔、结体、章法、墨色和节奏，它是什么？",
+    "relevant_document_ids": [
+      "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4"
+    ]
+  },
+  {
+    "case_id": "rag-040",
+    "category": "hard_case",
+    "question": "哪类大型民居通过厚实夯土外墙与内部木构楼层结合，同时承担居住、防御、储藏和宗族公共活动？",
+    "relevant_document_ids": [
+      "b005f5da713ee54c18af25c232b6b42ac6ee963e80d4fcdaa4262c6d40599b09"
+    ]
+  }
+]

@@ -1,0 +1,974 @@
+{
+  "summary": {
+    "experiment_name": "dense_v1",
+    "total_cases": 40,
+    "recall_at_k": {
+      "1": 0.9395833333333334,
+      "3": 0.99375,
+      "5": 1.0
+    },
+    "mrr": 1.0,
+    "average_latency_ms": 71.98311499996635
+  },
+  "category_summary": {
+    "explicit_entity": {
+      "total_cases": 6,
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 1.0,
+      "average_latency_ms": 105.49799999959457
+    },
+    "alias_paraphrase": {
+      "total_cases": 6,
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 1.0,
+      "average_latency_ms": 59.284700003142156
+    },
+    "implicit_entity": {
+      "total_cases": 10,
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 1.0,
+      "average_latency_ms": 63.64140999794472
+    },
+    "fine_grained": {
+      "total_cases": 6,
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 1.0,
+      "average_latency_ms": 68.0476833343467
+    },
+    "confusing_pair": {
+      "total_cases": 6,
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 1.0,
+      "average_latency_ms": 69.00019999981548
+    },
+    "multi_document": {
+      "total_cases": 4,
+      "recall_at_k": {
+        "1": 0.3958333333333333,
+        "3": 0.9375,
+        "5": 1.0
+      },
+      "mrr": 1.0,
+      "average_latency_ms": 73.40744999964954
+    },
+    "hard_case": {
+      "total_cases": 2,
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 1.0,
+      "average_latency_ms": 69.14859999960754
+    }
+  },
+  "cases": [
+    {
+      "case_id": "rag-001",
+      "question": "故宫始建于哪一年，何时基本建成？",
+      "category": "explicit_entity",
+      "retrieved_document_ids": [
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec",
+        "aa91881fac6375ca6779b5ee2ec47f57b52b23a8fcf0c620bfa483c431ff57f7",
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709"
+      ],
+      "relevant_document_ids": [
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 182.03149999317247
+    },
+    {
+      "case_id": "rag-002",
+      "question": "天坛主要包括哪些代表性建筑？",
+      "category": "explicit_entity",
+      "retrieved_document_ids": [
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec",
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "aa91881fac6375ca6779b5ee2ec47f57b52b23a8fcf0c620bfa483c431ff57f7",
+        "8a825d75194921f7ca71b4445c84b0cf78674d231d46648318b65b4487adee89"
+      ],
+      "relevant_document_ids": [
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 178.1489999993937
+    },
+    {
+      "case_id": "rag-003",
+      "question": "三星堆遗址出土了哪些具有代表性的器物？",
+      "category": "explicit_entity",
+      "retrieved_document_ids": [
+        "23b53dd97c362c611ceb3686d88418634133e96a79a342ec3881d1a872fd3784",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f",
+        "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1",
+        "2843aac4804df66aee3a623667cacc898cc4a3abb6c8b9dc1a70d1a567db10d4"
+      ],
+      "relevant_document_ids": [
+        "23b53dd97c362c611ceb3686d88418634133e96a79a342ec3881d1a872fd3784"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 121.88779999269173
+    },
+    {
+      "case_id": "rag-004",
+      "question": "平遥古城为什么与晋商和票号文化关系密切？",
+      "category": "explicit_entity",
+      "retrieved_document_ids": [
+        "8ac8467acab7154be1246c0eb631e8f15dd68d8f1ca6388d1d13935fc1cd7028",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709",
+        "5da11d380cb151076373354fe4c0d3a6ced795993d4d2b74d5bdc23f0e248467",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "2843aac4804df66aee3a623667cacc898cc4a3abb6c8b9dc1a70d1a567db10d4"
+      ],
+      "relevant_document_ids": [
+        "8ac8467acab7154be1246c0eb631e8f15dd68d8f1ca6388d1d13935fc1cd7028"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 63.57450000359677
+    },
+    {
+      "case_id": "rag-005",
+      "question": "景德镇传统制瓷通常包含哪些主要工序？",
+      "category": "explicit_entity",
+      "retrieved_document_ids": [
+        "2843aac4804df66aee3a623667cacc898cc4a3abb6c8b9dc1a70d1a567db10d4",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "22e686279ab722e94af2abda0177b022213986e865f0e6e7bafd5cb612c39663",
+        "0ce2978804e9a4172471062832e2485207950054dbf858ede42bf78ce4dfeb52"
+      ],
+      "relevant_document_ids": [
+        "2843aac4804df66aee3a623667cacc898cc4a3abb6c8b9dc1a70d1a567db10d4"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 65.81410000217147
+    },
+    {
+      "case_id": "rag-006",
+      "question": "《牡丹亭》为什么常被视为昆曲舞台艺术的重要代表？",
+      "category": "explicit_entity",
+      "retrieved_document_ids": [
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709",
+        "0ce2978804e9a4172471062832e2485207950054dbf858ede42bf78ce4dfeb52",
+        "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c",
+        "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8"
+      ],
+      "relevant_document_ids": [
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 21.531100006541237
+    },
+    {
+      "case_id": "rag-007",
+      "question": "紫禁城从开始营建到基本建成分别对应什么时间？",
+      "category": "alias_paraphrase",
+      "retrieved_document_ids": [
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec",
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709",
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901"
+      ],
+      "relevant_document_ids": [
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 92.14459999930114
+    },
+    {
+      "case_id": "rag-008",
+      "question": "被称为千佛洞的遗址保存了哪些类型的艺术资料？",
+      "category": "alias_paraphrase",
+      "retrieved_document_ids": [
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff"
+      ],
+      "relevant_document_ids": [
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 21.37659999425523
+    },
+    {
+      "case_id": "rag-009",
+      "question": "长安—天山廊道在古代跨区域交通和文明交流中发挥了什么作用？",
+      "category": "alias_paraphrase",
+      "retrieved_document_ids": [
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e",
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "76cbe6f1c4cba479033fa526d9c2b8d73e9289f4aab20d1d566c9a4f8d266bbf",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f"
+      ],
+      "relevant_document_ids": [
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 59.736199997132644
+    },
+    {
+      "case_id": "rag-010",
+      "question": "哪种传统弹拨艺术通常使用七根弦，并以减字谱记录琴曲？",
+      "category": "alias_paraphrase",
+      "retrieved_document_ids": [
+        "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4",
+        "22e686279ab722e94af2abda0177b022213986e865f0e6e7bafd5cb612c39663",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709"
+      ],
+      "relevant_document_ids": [
+        "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 64.82740001229104
+    },
+    {
+      "case_id": "rag-011",
+      "question": "哪种传统戏曲以生旦净丑和唱念做打为典型表演体系？",
+      "category": "alias_paraphrase",
+      "retrieved_document_ids": [
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "0ce2978804e9a4172471062832e2485207950054dbf858ede42bf78ce4dfeb52",
+        "22e686279ab722e94af2abda0177b022213986e865f0e6e7bafd5cb612c39663",
+        "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4"
+      ],
+      "relevant_document_ids": [
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 59.819900008733384
+    },
+    {
+      "case_id": "rag-012",
+      "question": "哪种民间美术常见窗花、吉祥纹样，并广泛用于春节和婚礼？",
+      "category": "alias_paraphrase",
+      "retrieved_document_ids": [
+        "22e686279ab722e94af2abda0177b022213986e865f0e6e7bafd5cb612c39663",
+        "0ce2978804e9a4172471062832e2485207950054dbf858ede42bf78ce4dfeb52",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "b005f5da713ee54c18af25c232b6b42ac6ee963e80d4fcdaa4262c6d40599b09",
+        "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4"
+      ],
+      "relevant_document_ids": [
+        "22e686279ab722e94af2abda0177b022213986e865f0e6e7bafd5cb612c39663"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 57.80350000713952
+    },
+    {
+      "case_id": "rag-013",
+      "question": "哪一处北京皇家建筑群主要用于明清皇帝祭天和祈谷？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec",
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709",
+        "aa91881fac6375ca6779b5ee2ec47f57b52b23a8fcf0c620bfa483c431ff57f7"
+      ],
+      "relevant_document_ids": [
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 61.44249999488238
+    },
+    {
+      "case_id": "rag-014",
+      "question": "哪一处山地农业景观由森林、村寨、梯田和水系共同构成？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "856da3d3ccd62e891d31f1b01eb08885101e388b91e218cde76e1ace2fe933a9",
+        "068a611a08a5751a8438044ffda87378d1d495dfa118e8ca31cae58f8e12d5fd",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "b005f5da713ee54c18af25c232b6b42ac6ee963e80d4fcdaa4262c6d40599b09",
+        "f9c920ee96580b83341c47cb6f3ca7c1bc0ca9e652f77055d20f89d90b0d403d"
+      ],
+      "relevant_document_ids": [
+        "856da3d3ccd62e891d31f1b01eb08885101e388b91e218cde76e1ace2fe933a9"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 61.876100007793866
+    },
+    {
+      "case_id": "rag-015",
+      "question": "哪类近代侨乡建筑兼具防御功能，并在外观装饰上融合中西建筑元素？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "f9c920ee96580b83341c47cb6f3ca7c1bc0ca9e652f77055d20f89d90b0d403d",
+        "b005f5da713ee54c18af25c232b6b42ac6ee963e80d4fcdaa4262c6d40599b09",
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "8ac8467acab7154be1246c0eb631e8f15dd68d8f1ca6388d1d13935fc1cd7028"
+      ],
+      "relevant_document_ids": [
+        "f9c920ee96580b83341c47cb6f3ca7c1bc0ca9e652f77055d20f89d90b0d403d"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 64.84989999444224
+    },
+    {
+      "case_id": "rag-016",
+      "question": "哪一大型人工水运体系曾承担粮食运输、商品流通和人员往来，并促进南北交流？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "76cbe6f1c4cba479033fa526d9c2b8d73e9289f4aab20d1d566c9a4f8d266bbf",
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e",
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f"
+      ],
+      "relevant_document_ids": [
+        "76cbe6f1c4cba479033fa526d9c2b8d73e9289f4aab20d1d566c9a4f8d266bbf"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 61.29589999909513
+    },
+    {
+      "case_id": "rag-017",
+      "question": "哪一古代军事工程通过城墙、关隘、敌台和烽火台构成完整防御体系？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e",
+        "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1"
+      ],
+      "relevant_document_ids": [
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 60.39140000939369
+    },
+    {
+      "case_id": "rag-018",
+      "question": "哪处史前遗址同时包含古城、水利系统、墓地和居住区，并出土玉琮、玉璧等代表性玉器？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1",
+        "23b53dd97c362c611ceb3686d88418634133e96a79a342ec3881d1a872fd3784",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e"
+      ],
+      "relevant_document_ids": [
+        "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 59.96899999445304
+    },
+    {
+      "case_id": "rag-019",
+      "question": "哪座依山而建的西藏历史建筑群保存了大量壁画、雕塑、经卷和唐卡？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "aa91881fac6375ca6779b5ee2ec47f57b52b23a8fcf0c620bfa483c431ff57f7",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901",
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f"
+      ],
+      "relevant_document_ids": [
+        "aa91881fac6375ca6779b5ee2ec47f57b52b23a8fcf0c620bfa483c431ff57f7"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 61.158999989856966
+    },
+    {
+      "case_id": "rag-020",
+      "question": "哪座古城的街巷顺应地形展开、水系穿城而过，并与纳西族和东巴文化密切相关？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "5da11d380cb151076373354fe4c0d3a6ced795993d4d2b74d5bdc23f0e248467",
+        "8ac8467acab7154be1246c0eb631e8f15dd68d8f1ca6388d1d13935fc1cd7028",
+        "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "856da3d3ccd62e891d31f1b01eb08885101e388b91e218cde76e1ace2fe933a9"
+      ],
+      "relevant_document_ids": [
+        "5da11d380cb151076373354fe4c0d3a6ced795993d4d2b74d5bdc23f0e248467"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 62.64249999367166
+    },
+    {
+      "case_id": "rag-021",
+      "question": "哪种民间戏剧利用平面人物、灯光和幕布形成影像，同时配合唱腔、说白和器乐？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "0ce2978804e9a4172471062832e2485207950054dbf858ede42bf78ce4dfeb52",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "22e686279ab722e94af2abda0177b022213986e865f0e6e7bafd5cb612c39663",
+        "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8"
+      ],
+      "relevant_document_ids": [
+        "0ce2978804e9a4172471062832e2485207950054dbf858ede42bf78ce4dfeb52"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 120.1837999979034
+    },
+    {
+      "case_id": "rag-022",
+      "question": "哪座山岳与古代帝王封禅、岱庙、南天门和大量石刻密切相关？",
+      "category": "implicit_entity",
+      "retrieved_document_ids": [
+        "8a825d75194921f7ca71b4445c84b0cf78674d231d46648318b65b4487adee89",
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e"
+      ],
+      "relevant_document_ids": [
+        "8a825d75194921f7ca71b4445c84b0cf78674d231d46648318b65b4487adee89"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 22.603999997954816
+    },
+    {
+      "case_id": "rag-023",
+      "question": "鱼嘴、飞沙堰和宝瓶口分别属于哪一遗产中的核心水利工程体系？",
+      "category": "fine_grained",
+      "retrieved_document_ids": [
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1",
+        "23b53dd97c362c611ceb3686d88418634133e96a79a342ec3881d1a872fd3784",
+        "76cbe6f1c4cba479033fa526d9c2b8d73e9289f4aab20d1d566c9a4f8d266bbf",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e"
+      ],
+      "relevant_document_ids": [
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 66.49080000352114
+    },
+    {
+      "case_id": "rag-024",
+      "question": "奉先寺大型造像属于哪处重要石窟遗址，该遗址哪些历史时期的营造尤其重要？",
+      "category": "fine_grained",
+      "retrieved_document_ids": [
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f",
+        "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a"
+      ],
+      "relevant_document_ids": [
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 63.043000001925975
+    },
+    {
+      "case_id": "rag-025",
+      "question": "以奇松、怪石、云海和花岗岩峰林闻名的山岳，对中国哪类传统艺术和自然审美产生了重要影响？",
+      "category": "fine_grained",
+      "retrieved_document_ids": [
+        "068a611a08a5751a8438044ffda87378d1d495dfa118e8ca31cae58f8e12d5fd",
+        "8a825d75194921f7ca71b4445c84b0cf78674d231d46648318b65b4487adee89",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8"
+      ],
+      "relevant_document_ids": [
+        "068a611a08a5751a8438044ffda87378d1d495dfa118e8ca31cae58f8e12d5fd"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 71.81710000440944
+    },
+    {
+      "case_id": "rag-026",
+      "question": "哪类园林通过借景、对景和框景，在有限空间中营造丰富景观？",
+      "category": "fine_grained",
+      "retrieved_document_ids": [
+        "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c",
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff"
+      ],
+      "relevant_document_ids": [
+        "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 66.67339999694377
+    },
+    {
+      "case_id": "rag-027",
+      "question": "1974年被当地农民发现、能反映秦代军队编制和装备的考古遗存是什么？",
+      "category": "fine_grained",
+      "retrieved_document_ids": [
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f",
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e",
+        "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1",
+        "23b53dd97c362c611ceb3686d88418634133e96a79a342ec3881d1a872fd3784",
+        "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8"
+      ],
+      "relevant_document_ids": [
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 69.86950000282377
+    },
+    {
+      "case_id": "rag-028",
+      "question": "哪处石刻遗产的题材同时涉及佛教、道教、儒家和社会生活，并具有较强叙事性？",
+      "category": "fine_grained",
+      "retrieved_document_ids": [
+        "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4"
+      ],
+      "relevant_document_ids": [
+        "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 70.39229999645613
+    },
+    {
+      "case_id": "rag-029",
+      "question": "主要开凿于北魏时期、位于山西大同并以大型佛像和雕塑著称的是哪处石窟？",
+      "category": "confusing_pair",
+      "retrieved_document_ids": [
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f"
+      ],
+      "relevant_document_ids": [
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 65.23469999956433
+    },
+    {
+      "case_id": "rag-030",
+      "question": "位于洛阳伊河两岸、营造跨越多个时期且以北魏和唐代尤为重要的是哪处石窟？",
+      "category": "confusing_pair",
+      "retrieved_document_ids": [
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f"
+      ],
+      "relevant_document_ids": [
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 89.60569999180734
+    },
+    {
+      "case_id": "rag-031",
+      "question": "位于重庆大足、由多处石窟和摩崖造像组成，并体现多种思想传统交流的是哪处遗产？",
+      "category": "confusing_pair",
+      "retrieved_document_ids": [
+        "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff"
+      ],
+      "relevant_document_ids": [
+        "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 68.48190000164323
+    },
+    {
+      "case_id": "rag-032",
+      "question": "位于敦煌附近、以大量壁画和彩塑保存丝绸之路文化交流信息的是哪处石窟遗址？",
+      "category": "confusing_pair",
+      "retrieved_document_ids": [
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a",
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "aa91881fac6375ca6779b5ee2ec47f57b52b23a8fcf0c620bfa483c431ff57f7"
+      ],
+      "relevant_document_ids": [
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 65.10330000310205
+    },
+    {
+      "case_id": "rag-033",
+      "question": "以万寿山和昆明湖为核心、体现清代皇家园林空间设计的是哪处园林？",
+      "category": "confusing_pair",
+      "retrieved_document_ids": [
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c",
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff"
+      ],
+      "relevant_document_ids": [
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 62.674700006027706
+    },
+    {
+      "case_id": "rag-034",
+      "question": "以拙政园、留园和网师园为代表，体现江南传统私家园林审美的是哪类园林？",
+      "category": "confusing_pair",
+      "retrieved_document_ids": [
+        "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8",
+        "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4"
+      ],
+      "relevant_document_ids": [
+        "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 62.900899996748194
+    },
+    {
+      "case_id": "rag-035",
+      "question": "哪些北京皇家建筑遗产分别体现明清宫廷制度、祭天祈谷礼仪和皇家园林设计？",
+      "category": "multi_document",
+      "retrieved_document_ids": [
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709",
+        "aa91881fac6375ca6779b5ee2ec47f57b52b23a8fcf0c620bfa483c431ff57f7"
+      ],
+      "relevant_document_ids": [
+        "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c",
+        "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec",
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732"
+      ],
+      "recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 90.47349999309517
+    },
+    {
+      "case_id": "rag-036",
+      "question": "哪些遗产都能用于研究中国古代佛教石窟或造像艺术？",
+      "category": "multi_document",
+      "retrieved_document_ids": [
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a",
+        "dbba5a5bd615e4d596e93dd853297b2ce634ad50f167d89ea79393125e168d5f"
+      ],
+      "relevant_document_ids": [
+        "43d4b7b2e3c462bf560ce5141b297d2833b5af6f80d106fab23f1c0b66e86f6a",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "4e72b8d4f029daa127bb0776cd5c6d9b5e3ca94bc8cd3753762f9e89c5ec7c4a"
+      ],
+      "recall_at_k": {
+        "1": 0.25,
+        "3": 0.75,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 70.9941999957664
+    },
+    {
+      "case_id": "rag-037",
+      "question": "哪些遗产体现了古代跨区域交通、商品流通或文明交流网络？",
+      "category": "multi_document",
+      "retrieved_document_ids": [
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e",
+        "76cbe6f1c4cba479033fa526d9c2b8d73e9289f4aab20d1d566c9a4f8d266bbf",
+        "0cd1518920a29c91e11732ee579864b21427f0c90992dc0b969eb799461aa4d1",
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901",
+        "8645050c0e34155d447a555a41ee3f9219c97861d8f86184f0b2d23edf5a0b3e"
+      ],
+      "relevant_document_ids": [
+        "76cbe6f1c4cba479033fa526d9c2b8d73e9289f4aab20d1d566c9a4f8d266bbf",
+        "0d89143a9944a31193beefabc5fcdecedd83c7261b6ac13e248cd2910c9b587e"
+      ],
+      "recall_at_k": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 62.97640000411775
+    },
+    {
+      "case_id": "rag-038",
+      "question": "哪些园林遗产都强调借景、对景、框景等传统空间营造方式？",
+      "category": "multi_document",
+      "retrieved_document_ids": [
+        "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c",
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41",
+        "3fc36b7f329983ecac7aaae968740474e4bd8760411f4d70b56f77a548cbacff",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709"
+      ],
+      "relevant_document_ids": [
+        "1f235f67a363477c733cdb061e255e22ad72beca231b437bf1a54e25b7760732",
+        "9af96429db843bd6dc8197088f760d0fc062bf93094ad929cc562982d2aa103c"
+      ],
+      "recall_at_k": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 69.18570000561886
+    },
+    {
+      "case_id": "rag-039",
+      "question": "一种以汉字书写为基础的传统艺术，强调用笔、结体、章法、墨色和节奏，它是什么？",
+      "category": "hard_case",
+      "retrieved_document_ids": [
+        "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4",
+        "60a1a74930589d02b36476dd88ff20511bf9f1269d2053355da29d27267711c8",
+        "22e686279ab722e94af2abda0177b022213986e865f0e6e7bafd5cb612c39663",
+        "52cdafd30c8762fa4ad8177ee9825f00636a63906ae276bea1a4fb82061d3709",
+        "d7b3fdc61059c994a4276b67ed3d2cba5a5338cab26d0218ec48c347f7b73a41"
+      ],
+      "relevant_document_ids": [
+        "b2c998414a5f82973683fd6236f14ee61e44c57b5c2611f249c58196f5afc9e4"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 70.33919999958016
+    },
+    {
+      "case_id": "rag-040",
+      "question": "哪类大型民居通过厚实夯土外墙与内部木构楼层结合，同时承担居住、防御、储藏和宗族公共活动？",
+      "category": "hard_case",
+      "retrieved_document_ids": [
+        "b005f5da713ee54c18af25c232b6b42ac6ee963e80d4fcdaa4262c6d40599b09",
+        "f9c920ee96580b83341c47cb6f3ca7c1bc0ca9e652f77055d20f89d90b0d403d",
+        "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901",
+        "74feef70a2e7caa44c73eb5303907f8a57f55adef559eb18e7362817d625e00b",
+        "8ac8467acab7154be1246c0eb631e8f15dd68d8f1ca6388d1d13935fc1cd7028"
+      ],
+      "relevant_document_ids": [
+        "b005f5da713ee54c18af25c232b6b42ac6ee963e80d4fcdaa4262c6d40599b09"
+      ],
+      "recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "reciprocal_rank": 1.0,
+      "latency_ms": 67.95799999963492
+    }
+  ]
+}

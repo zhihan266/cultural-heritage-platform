@@ -5,7 +5,7 @@ from collections.abc import Generator
 from sqlalchemy import create_engine, inspect, text
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
-from config.settings import settings
+from app.core.config import settings
 
 
 class Base(DeclarativeBase):
@@ -36,8 +36,11 @@ def get_db() -> Generator[Session, None, None]:
 
 def init_db() -> None:
     """创建缺失的数据表，并为旧版 AI 表补充新增字段。"""
-    # 必须先导入 tables，ORM 表才会注册到 Base.metadata。
-    from app.db import tables  # noqa: F401
+    # 显式注册所有业务表；局部导入避免 models -> Base 的初始化循环。
+    from app.modules.account import models as account_models  # noqa: F401
+    from app.modules.agent import models as agent_models  # noqa: F401
+    from app.modules.task.domain import models as task_models  # noqa: F401
+    from app.modules.heritage import models as heritage_models  # noqa: F401
 
     Base.metadata.create_all(bind=engine)
     _ensure_ai_agent_columns()
@@ -72,7 +75,7 @@ def _ensure_ai_agent_columns() -> None:
         ),
     }
 
-    # engine.begin 会在全部语句成功后自动提交，异常时自动回滚。
+    # begin 管理连接事务，但 MySQL 的 ALTER TABLE 会隐式提交，不能保证整批 DDL 回滚。
     with engine.begin() as connection:
         for column_name, statement in statements.items():
             if column_name not in existing_columns:

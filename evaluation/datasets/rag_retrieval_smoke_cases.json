@@ -1,0 +1,44 @@
+[
+  {
+    "case_id": "rag-001",
+    "question": "故宫位于哪里？",
+    "relevant_document_ids": [
+      "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c"
+    ]
+  },
+  {
+    "case_id": "rag-002",
+    "question": "故宫始建于哪个时期？",
+    "relevant_document_ids": [
+      "cc33e171eb54d1ad08f3450c145dec4594842b67b798aaa33dad603c127f029c"
+    ]
+  },
+  {
+    "case_id": "rag-003",
+    "question": "天坛最初是用来做什么的？",
+    "relevant_document_ids": [
+      "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec"
+    ]
+  },
+  {
+    "case_id": "rag-004",
+    "question": "天坛位于北京什么地方？",
+    "relevant_document_ids": [
+      "c4253c422e343037eaaafd713292ab72624d812cc095272e1d2a6a16006a13ec"
+    ]
+  },
+  {
+    "case_id": "rag-005",
+    "question": "长城修建的主要作用是什么？",
+    "relevant_document_ids": [
+      "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901"
+    ]
+  },
+  {
+    "case_id": "rag-006",
+    "question": "中国古代为什么要修建长城？",
+    "relevant_document_ids": [
+      "7554e62f39553895d00ef914a4fe115eaaec07379a78146f0749cc78a6dc5901"
+    ]
+  }
+]

@@ -1,9 +1,46 @@
+# Local secrets; only the template belongs in Git.
+.env
+.env.*
+!.env.example
+
+# Python environments and generated files
 .venv/
+venv/
 __pycache__/
 *.py[cod]
-.env.development
-.env.production
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Editors and operating systems
 .idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime state (keep small fixtures and evaluation datasets)
+logs/
+*.log
+tmp/
+temp/
+data/temporary_rag/
+data/runtime/
+data/uploads/
+*.sql.gz
+*.dump
+*.db
+*.sqlite
+*.sqlite3
+models/
+model_weights/
+*.safetensors
+*.gguf
+volumes/
+milvus_data/
+minio_data/
