@@ -1,0 +1,646 @@
+[
+  {
+    "id": "hard_001",
+    "query": "一种圆形或方形大型聚居建筑，其厚实土质围护结构为什么既关系到建筑稳定，又能应对外部安全威胁？",
+    "category": "paraphrase_semantic",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "fujian_tulou.txt"
+    ],
+    "relevant_document_ids": [
+      "bcb828d5f45f4cd32777f6a2b99d6386ee5312efb5be229abee6898e2bde18e7"
+    ],
+    "relevant_chunk_ids": [
+      "aa17ae8b4596037fdaddae4360435fd5ef385ba93534db478b799857eeef8140",
+      "6ca8d756c42ccbf3bdf1fd10f01c9dad0a0ce30b02a16386d0ba0540b7516fd0",
+      "1904a9272097f29c283a986978fe7287ecb86c179326b965185ba5afdb60f0b6"
+    ],
+    "reference_answer": "福建土楼的夯土外墙兼具结构支撑和防御作用",
+    "derived_from": [
+      "eval_010"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_002",
+    "query": "古代欧亚交流网络为什么不能理解为从起点直达终点的一条固定道路，而更适合看作相互连接的交通体系？",
+    "category": "paraphrase_semantic",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "silk_roads_corridor.txt"
+    ],
+    "relevant_document_ids": [
+      "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3"
+    ],
+    "relevant_chunk_ids": [
+      "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0"
+    ],
+    "reference_answer": "丝绸之路由多条陆路及多个交通节点共同组成",
+    "derived_from": [
+      "eval_071"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_003",
+    "query": "传统园林在实际占地没有增加的情况下，怎样借助园外或远处景物使游览者产生空间被扩展的感觉？",
+    "category": "paraphrase_semantic",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "suzhou_gardens.txt"
+    ],
+    "relevant_document_ids": [
+      "04f6f25bddca5cfc0251eef51c1b3436e55f35274cdf01130e64c80c77a6c137"
+    ],
+    "relevant_chunk_ids": [
+      "ba37ffa8fde95d7e426f778d852e282166406c958981a702f1d55d9559fe9e29",
+      "c1bed691231df832c7cc150cf84631e23cd9ca2eb54c8241d25587af746d46ee",
+      "c20d3695fb86700934dbbdff049b59e260085135638beb6d57d4d1d7dc6d1109"
+    ],
+    "reference_answer": "通过借景扩大有限空间的视觉范围",
+    "derived_from": [
+      "eval_073"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_004",
+    "query": "同一类大型陶制人物为什么能够成批制造，同时不同个体的面貌和细节又不会完全相同？",
+    "category": "paraphrase_semantic",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "terracotta_army.txt"
+    ],
+    "relevant_document_ids": [
+      "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48"
+    ],
+    "relevant_chunk_ids": [
+      "12e9680ee7fe30a35636229724fd078c13002ad73540622a8a1ecb59d820b23a",
+      "5777ebdd9903d8c06128ef54c6ace06e8fd6d267a66d35c4fb2e0cf80a2e5aec",
+      "dc7f86cd06bfacc56b53108ea4dba3494aa2c4173bd65c02efe0246b286e55eb"
+    ],
+    "reference_answer": "采用模块化生产并结合人工修整",
+    "derived_from": [
+      "eval_075"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_005",
+    "query": "同样以采摘后的植物嫩叶为原料，为什么最终可以形成风味和性质不同的多种饮品？",
+    "category": "paraphrase_semantic",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "traditional_tea_processing.txt"
+    ],
+    "relevant_document_ids": [
+      "2cb27f955210079ec3f118db89d2287e3a362becec0953fced505e0bf81d64bd"
+    ],
+    "relevant_chunk_ids": [
+      "62863445073eaa6ee787e9c8fa395122f74842e1383ec0f488ced713ca70e444",
+      "17c69f02eefce6a8a20e9d87562d85b86b307df32728481f1a65464aec2f913b"
+    ],
+    "reference_answer": "鲜叶处理方式不同，杀青、揉捻、发酵、焙制等工序随茶类变化",
+    "derived_from": [
+      "eval_076"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_006",
+    "query": "有一处道教建筑遗产并没有强行把山地改造成规整平地，其建筑组织方式主要体现了怎样的人与环境关系？",
+    "category": "paraphrase_semantic",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "wudang_mountains.txt"
+    ],
+    "relevant_document_ids": [
+      "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e"
+    ],
+    "relevant_chunk_ids": [
+      "9203dbc097570a5386b0e748e94f7fce8e056b901738ce6f9bea842854ab3e68"
+    ],
+    "reference_answer": "武当山古建筑群强调顺应自然地形进行布局",
+    "derived_from": [
+      "eval_078"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_007",
+    "query": "不是福建以夯土形成封闭聚居空间的传统民居，而是吸收海外建筑因素、并常以较高建筑承担防卫和观察功能的近代乡村建筑遗产是什么？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "kaiping_diaolou.txt"
+    ],
+    "relevant_document_ids": [
+      "c8d1edd34321e29c79e6bbd07b8c164b85f24bf44d51a399085ca502b1a26a11"
+    ],
+    "relevant_chunk_ids": [
+      "9379bdbb53b2746e939424498f2e7c333f6b60e64acb3049f81dc70b27a66388",
+      "f0ba005b42fb82aef141920703664e059de353eea7c51b15ca20340cdeed3ff7",
+      "b86008821873cb04a53115f700b765d689d2a08fbaa8b5c34fca371d973893fb"
+    ],
+    "reference_answer": "开平碉楼与村落",
+    "derived_from": [
+      "eval_060"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_008",
+    "query": "同为大型佛教石窟遗产，如果重点依据北朝到唐代之间造像风格的连续变化来判断，最符合的是哪一处？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "longmen_grottoes.txt"
+    ],
+    "relevant_document_ids": [
+      "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e"
+    ],
+    "relevant_chunk_ids": [
+      "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+      "cd06dea1afba07613eb3bb90a23654ed1d333cbda6f6b0ab3169ac11cc3e5468"
+    ],
+    "reference_answer": "龙门石窟",
+    "derived_from": [
+      "eval_063"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_009",
+    "query": "同样保存大量佛教造像艺术，但有一处遗产还因为保存了大量古代写本文献，使研究价值不限于雕塑和绘画，它是哪一处？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "mogao_caves.txt"
+    ],
+    "relevant_document_ids": [
+      "a8e2ce2c8b8ad01c1a32f1325316e2a0b8b5983d4358a911a7cfb0f35540a068"
+    ],
+    "relevant_chunk_ids": [
+      "a4ce78a3111dba7878a10b40b867abae92c487cbc637e356ce2beb6fe0fb5cc4",
+      "4069ef9370cc5240a8c7a7609f62d7a07c312da1e2713c66664b003f481c6bbc",
+      "66bdde49716c2417def5892d1554ba3252cdbfbbf4e4247fe3d8ea1eaebe21e1"
+    ],
+    "reference_answer": "莫高窟",
+    "derived_from": [
+      "eval_064"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_010",
+    "query": "如果要从中国石刻遗产中寻找一个佛教、道教与儒家题材同时出现的实例，应首先想到哪一处？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "dazu_rock_carvings.txt"
+    ],
+    "relevant_document_ids": [
+      "3ed2bae4f67fbefb72c670d6a9366dbbcd56c365b5052a8498a37d47965ce7a5"
+    ],
+    "relevant_chunk_ids": [
+      "33d1b9033d8d19836eacc91f8441bd4720382c7e28790a4f064bda4596da7ea9",
+      "1325f99883c4825f8a5ccda2282374a472e07be2d18e42845629cc3400982765",
+      "e840268fdb8b7ad332e90f6f72a1a6a179c516cba87e5c9421214ca31b6b4a1a"
+    ],
+    "reference_answer": "大足石刻",
+    "derived_from": [
+      "eval_052"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_011",
+    "query": "有一处皇家园林遗产周围还分布着一组体现多民族宗教建筑交流的寺庙群，这一描述指向哪里？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "chengde_mountain_resort.txt"
+    ],
+    "relevant_document_ids": [
+      "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140"
+    ],
+    "relevant_chunk_ids": [
+      "5f83d721851e4fb0ee41145b23cb426974ad153aa4e3069bd9d622b3830b7c4b",
+      "9018bb6404339fa62b6b976e1362cd2d31a0b671f1526853e15b5c8c58015877"
+    ],
+    "reference_answer": "承德避暑山庄及周围寺庙",
+    "derived_from": [
+      "eval_048"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_012",
+    "query": "不是以陆路商贸网络著称，而是一座在宋元时期因海上贸易繁荣、并留下多种宗教遗存以反映人口来源复杂性的城市遗产是什么？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "quanzhou_maritime_trade.txt"
+    ],
+    "relevant_document_ids": [
+      "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1"
+    ],
+    "relevant_chunk_ids": [
+      "4d40dc26578fcf936ba72fc77fb2f3d60b415d29be2a0638eba41770e89b8873",
+      "b1f5db44a0eab4b8499383bafb447350c4a14a345888c36ce6482f31657ed6dc",
+      "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103"
+    ],
+    "reference_answer": "泉州：宋元中国的世界海洋商贸中心",
+    "derived_from": [
+      "eval_068"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_013",
+    "query": "哪项古代工程的核心思路不是筑起一道高坝把河水彻底拦住，而是利用原有水势完成分流、排沙和灌溉？",
+    "category": "indirect_reference",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "dujiangyan.txt"
+    ],
+    "relevant_document_ids": [
+      "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7"
+    ],
+    "relevant_chunk_ids": [
+      "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+      "708f0450764f053084bc9d6cf379f48577ae820c7155835b86f23451b4d84746"
+    ],
+    "reference_answer": "都江堰",
+    "derived_from": [
+      "eval_054"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_014",
+    "query": "哪处佛教遗产不是在独立建筑中塑造巨像，而是直接依托山体开凿，并与两河交汇附近的自然环境形成整体景观？",
+    "category": "indirect_reference",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "leshan_giant_buddha.txt"
+    ],
+    "relevant_document_ids": [
+      "c5653cdc3c6af0d3a7783b85c7dac01083b7f1540c2ab5b0a59ad50812bbc77a"
+    ],
+    "relevant_chunk_ids": [
+      "19f0c6b5ddc6b6bb6283d81eae5ce98c808a59ab6d38ef5d1190e642a168db6f",
+      "283be6c27f38a7b81044e1cd8e4b857fa106e49635536eab5cf69aa616bdaed7"
+    ],
+    "reference_answer": "乐山大佛",
+    "derived_from": [
+      "eval_061"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_015",
+    "query": "如果研究明清时期中国城市格局，同时又希望观察传统商业和早期金融活动的历史痕迹，哪座保存较完整的古城尤其具有价值？",
+    "category": "indirect_reference",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "pingyao_ancient_city.txt"
+    ],
+    "relevant_document_ids": [
+      "c5c78d148c9a1eb81c898ac3d74bb0fad2dea76c29778629cb070bb2030839fa"
+    ],
+    "relevant_chunk_ids": [
+      "50cd09f57bf44b93aa74542d631171b092a68fbad6fe59c9ab37f9eef689079e"
+    ],
+    "reference_answer": "平遥古城",
+    "derived_from": [
+      "eval_067"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_016",
+    "query": "哪处山岳景观常因气象快速变化，让游客即使站在同一地点，前后看到的山峰与云雾效果也明显不同？",
+    "category": "indirect_reference",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "mount_huangshan.txt"
+    ],
+    "relevant_document_ids": [
+      "7e323c5191c6d16ce4fc999ebacdf666c63f247dfc62954c65e99e4597939a5a"
+    ],
+    "relevant_chunk_ids": [
+      "6f4dad41e038ed7b2ac568a34f9d9f7d33cf7ccbfcb6668f74b5fbeab9f30d55",
+      "9ea29f09cc9fa4a4e0f6c4025272e1b3b24387525d19139be086db59cc2cab2a"
+    ],
+    "reference_answer": "黄山",
+    "derived_from": [
+      "eval_065"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_017",
+    "query": "哪处以湖泊、堤岸和人文景观共同构成的文化景观，其山水审美后来对东亚园林产生了广泛影响？",
+    "category": "indirect_reference",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "west_lake.txt"
+    ],
+    "relevant_document_ids": [
+      "bb3e0721aa6574a8a57d6953b1184df26071c1b45473c8eb41a532df4d0bda95"
+    ],
+    "relevant_chunk_ids": [
+      "d63587de4cee055010b226eac8c99c5e4d628f6405d4fc5c0c6e99f57f4fc7ae"
+    ],
+    "reference_answer": "杭州西湖文化景观",
+    "derived_from": [
+      "eval_077"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_018",
+    "query": "哪项跨越多个地区的古代水运工程，其历史价值长期与国家粮食运输和区域经济联系紧密相关？",
+    "category": "indirect_reference",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "grand_canal.txt"
+    ],
+    "relevant_document_ids": [
+      "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9"
+    ],
+    "relevant_chunk_ids": [
+      "7c872f62c395e81e971a85965cf0d59066e4827aff4721576411b84250e36f6c",
+      "dc0df6dec203ad201ba0085797654243a7f460185df01eb2f49b8310c0443088"
+    ],
+    "reference_answer": "中国大运河",
+    "derived_from": [
+      "eval_057"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_019",
+    "query": "同一皇家宫殿群内部，负责重大礼仪和政务的空间与皇室日常居住空间，在功能分区上分别偏向什么？",
+    "category": "fine_grained_hard",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "forbidden_city.txt"
+    ],
+    "relevant_document_ids": [
+      "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d"
+    ],
+    "relevant_chunk_ids": [
+      "bcd6e9fd539200229f0e3b2db4c68c70b3a70046cc1828c82d440737c9108c36",
+      "28f50ace05fe02797600a591dc5c07632ca1ff6b1831f41857ec8300acbba0db"
+    ],
+    "reference_answer": "外朝偏重典礼与政务，内廷偏重起居",
+    "derived_from": [
+      "eval_055"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_020",
+    "query": "在一套由墙体、观察报警设施和军事节点共同组成的防御网络中，真正用于扼守道路和通行位置的主要是哪类设施？",
+    "category": "fine_grained_hard",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "great_wall.txt"
+    ],
+    "relevant_document_ids": [
+      "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+    ],
+    "relevant_chunk_ids": [
+      "0365a90e66772fca277a0f057398287338d454d53a613814dc9056dc99e29374",
+      "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+      "99cf3e405ed4c1ad04d2784fd8833d3deacb494b48219bc20d916e75a26af464"
+    ],
+    "reference_answer": "关隘",
+    "derived_from": [
+      "eval_058"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_021",
+    "query": "一种传统弦乐器可以通过空弦、按弦以及轻触特定位置产生三类性质不同的声音，这三类声音分别是什么？",
+    "category": "fine_grained_hard",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "guqin.txt"
+    ],
+    "relevant_document_ids": [
+      "a9c2009220960bbac0c68c5e15e1b7ac81fed9a8fd541e51e21e8b6643aec8ae"
+    ],
+    "relevant_chunk_ids": [
+      "5d2d5b0cda2c8758981a8beed4b14aecac375a864aefa4b1a04c72f74099f7ac",
+      "30faffd2ee41d77a7842ae160f246cb9bf8beea5e1dbc7b368fe7b3697415fcb"
+    ],
+    "reference_answer": "散音、按音、泛音",
+    "derived_from": [
+      "eval_059"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_022",
+    "query": "某儒家纪念性建筑群中，哪一部分并非主要承担祭祀活动，而更多与后裔的居住和事务管理有关？",
+    "category": "fine_grained_hard",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "qufu_confucius.txt"
+    ],
+    "relevant_document_ids": [
+      "23bb65220697de61b9bc6931135bc2d8b13af3d75784e0b70a1166b15c201d8a"
+    ],
+    "relevant_chunk_ids": [
+      "f9a892c6a20f0c613da5345e2a0eb0b83ede66eeb3c86f6476388443372e977a",
+      "ff9b3245afdfc5ecc69f851e814b282511f54354f323266db8352c848669846d",
+      "4e5baab98033eb69d45306fa049769a01a7e30960ec872e77409d648c2b36366"
+    ],
+    "reference_answer": "孔府",
+    "derived_from": [
+      "eval_069"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_023",
+    "query": "一座皇家园林中，一处长距离建筑主要负责连接多个景观节点，另一座高处建筑则形成重要视觉焦点，它们分别承担什么空间作用？",
+    "category": "fine_grained_hard",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "summer_palace.txt"
+    ],
+    "relevant_document_ids": [
+      "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993"
+    ],
+    "relevant_chunk_ids": [
+      "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be"
+    ],
+    "reference_answer": "长廊串联景观节点，佛香阁形成视觉中心",
+    "derived_from": [
+      "eval_072"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_024",
+    "query": "欣赏一件传统文字艺术作品时，如果分别讨论单个字内部部件关系和整幅作品中字行之间的安排，对应的是哪两个层次？",
+    "category": "fine_grained_hard",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "chinese_calligraphy.txt"
+    ],
+    "relevant_document_ids": [
+      "491da3d7de1d7808c633371da73f79be75aee072c4c2114ee8f823c6e5e676e8"
+    ],
+    "relevant_chunk_ids": [
+      "780a026d0226d03b154b7138d8230f48b68e776df4174fd15f7fce1bcb96be9b"
+    ],
+    "reference_answer": "结体关注单字内部结构，章法关注整幅行列与呼应",
+    "derived_from": [
+      "eval_049"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_025",
+    "query": "某线性军事防御体系中，一类设施负责快速传递敌情，另一类设施负责把守重要交通通道。这两种功能共同指向哪项遗产？",
+    "category": "multi_clue",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "great_wall.txt"
+    ],
+    "relevant_document_ids": [
+      "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+    ],
+    "relevant_chunk_ids": [
+      "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+      "99cf3e405ed4c1ad04d2784fd8833d3deacb494b48219bc20d916e75a26af464",
+      "0365a90e66772fca277a0f057398287338d454d53a613814dc9056dc99e29374"
+    ],
+    "reference_answer": "长城",
+    "derived_from": [
+      "eval_012",
+      "eval_058"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_026",
+    "query": "某皇家宫殿群既存在以三座主要大殿为核心的礼仪政务区域，又把皇室生活区域与其明确分开。这一空间组织描述的是哪项遗产？",
+    "category": "multi_clue",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "forbidden_city.txt"
+    ],
+    "relevant_document_ids": [
+      "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d"
+    ],
+    "relevant_chunk_ids": [
+      "b1aa18e89890424291f9b05a6e1888facbe9f6678da09ba223ae0047d935eee7",
+      "bcd6e9fd539200229f0e3b2db4c68c70b3a70046cc1828c82d440737c9108c36",
+      "28f50ace05fe02797600a591dc5c07632ca1ff6b1831f41857ec8300acbba0db"
+    ],
+    "reference_answer": "故宫",
+    "derived_from": [
+      "eval_009",
+      "eval_055"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_027",
+    "query": "某古代水利工程既利用一个关键结构把河流分成不同水路，整体设计又不是依靠高坝彻底截断河流。这项工程是什么？",
+    "category": "multi_clue",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "dujiangyan.txt"
+    ],
+    "relevant_document_ids": [
+      "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7"
+    ],
+    "relevant_chunk_ids": [
+      "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+      "fbce7ebd1a27a021e654a229566353947ae7a6c9465aca041ed34559a361e4a1",
+      "708f0450764f053084bc9d6cf379f48577ae820c7155835b86f23451b4d84746"
+    ],
+    "reference_answer": "都江堰",
+    "derived_from": [
+      "eval_008",
+      "eval_054"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_028",
+    "query": "一座古代港口城市既通过桥梁加强港城与内陆腹地的联系，又留下多种宗教遗存反映外来人口与文化交流。这是哪座城市？",
+    "category": "multi_clue",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "quanzhou_maritime_trade.txt"
+    ],
+    "relevant_document_ids": [
+      "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1"
+    ],
+    "relevant_chunk_ids": [
+      "be467d66c5b46970bce384458fa3214760d80f7b4a44885df51ef43a2f590042",
+      "b1f5db44a0eab4b8499383bafb447350c4a14a345888c36ce6482f31657ed6dc",
+      "4d40dc26578fcf936ba72fc77fb2f3d60b415d29be2a0638eba41770e89b8873",
+      "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103"
+    ],
+    "reference_answer": "泉州",
+    "derived_from": [
+      "eval_028",
+      "eval_068"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_029",
+    "query": "某史前文明一方面修建了大型水利设施，显示出组织公共工程的能力，另一方面又以具有礼仪性质的玉器体现社会秩序。对应的是哪处遗址？",
+    "category": "multi_clue",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "liangzhu.txt"
+    ],
+    "relevant_document_ids": [
+      "e017ae80c6de2f506c93459ba26605423d5db2c7c324c43b04c8e9f38a2029ee"
+    ],
+    "relevant_chunk_ids": [
+      "ae3eef91eab554a8db825341ff404be5f0ef96dda85edbbb3dd3ca9941aa87f0",
+      "bbeea5b55dfcdf721ba251438cef59718b31de245f1f7cb6684c96d5b55bbc63"
+    ],
+    "reference_answer": "良渚古城遗址",
+    "derived_from": [
+      "eval_017",
+      "eval_062"
+    ],
+    "benchmark_version": "hard_v1"
+  },
+  {
+    "id": "hard_030",
+    "query": "某古代跨区域交流体系既不是一条单独道路，又依靠古城、驿站等节点组织长距离往来。这一描述对应什么遗产？",
+    "category": "multi_clue",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "silk_roads_corridor.txt"
+    ],
+    "relevant_document_ids": [
+      "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3"
+    ],
+    "relevant_chunk_ids": [
+      "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+      "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408"
+    ],
+    "reference_answer": "丝绸之路：长安—天山廊道",
+    "derived_from": [
+      "eval_032",
+      "eval_071"
+    ],
+    "benchmark_version": "hard_v1"
+  }
+]

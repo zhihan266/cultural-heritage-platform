@@ -16,4 +16,9 @@ def ai_to_domain(row: AiAgentTable) -> AiAgent:
         last_checked_at=row.last_checked_at,
         last_error=row.last_error,
         metadata=row.metadata_json or {},
+        provider=row.provider,
+        model_name=row.model_name,
+        auth_type=row.auth_type or "none",
+        credential_ref=row.credential_ref,
+        generation_config=row.generation_config_json,
     )

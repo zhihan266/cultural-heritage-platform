@@ -1,0 +1,1776 @@
+[
+  {
+    "id": "eval_001",
+    "query": "中医针灸的传统理论中，哪两个概念是核心？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "acupuncture_moxibustion.txt"
+    ],
+    "relevant_document_ids": [
+      "1e7677f90627bde80aef55c2dea0c56f8ef2c41038f559b6401eac545d449c4b"
+    ],
+    "relevant_chunk_ids": [
+      "08f6fa1be60a040fd720f395f2ec1d31e56080f5d7b5702b5a109c80eacaf604",
+      "13d77e4422ee3cc846ab5ddee3b4f794f2fedd0fe8ffdf64153279cefbdfec8b"
+    ],
+    "reference_answer": "经络和穴位",
+    "evidence_phrase": "经络和穴位是传统理论核心概念",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_002",
+    "query": "承德避暑山庄中，哪一部分主要承担政治与起居功能？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "chengde_mountain_resort.txt"
+    ],
+    "relevant_document_ids": [
+      "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140"
+    ],
+    "relevant_chunk_ids": [
+      "5f83d721851e4fb0ee41145b23cb426974ad153aa4e3069bd9d622b3830b7c4b",
+      "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d"
+    ],
+    "reference_answer": "宫殿区",
+    "evidence_phrase": "宫殿区承担政治与起居功能",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_003",
+    "query": "中国书法的主要书体谱系包括哪些？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "chinese_calligraphy.txt"
+    ],
+    "relevant_document_ids": [
+      "491da3d7de1d7808c633371da73f79be75aee072c4c2114ee8f823c6e5e676e8"
+    ],
+    "relevant_chunk_ids": [
+      "780a026d0226d03b154b7138d8230f48b68e776df4174fd15f7fce1bcb96be9b"
+    ],
+    "reference_answer": "篆书、隶书、楷书、行书、草书",
+    "evidence_phrase": "篆书、隶书、楷书、行书、草书等书体各具特点",
+    "matched_chunk_indexes": [
+      0
+    ]
+  },
+  {
+    "id": "eval_004",
+    "query": "中国剪纸通常可以使用哪两类工具制作？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "chinese_paper_cutting.txt"
+    ],
+    "relevant_document_ids": [
+      "fe064305ff3be8f40f9ceb2815f7e76fd3dd2e09c293ec14ec1a44c41f8849e7"
+    ],
+    "relevant_chunk_ids": [
+      "557bcaf23d71f98a3882b051623c04a36a51f5694a41d0abde625f5608484bca",
+      "21a067d31679bd43eaf29f4d293a05fdbd847e75685f642d7ccf881b94731591"
+    ],
+    "reference_answer": "剪刀或刻刀",
+    "evidence_phrase": "剪刀与刻刀都可作为工具",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_005",
+    "query": "皮影戏表演者主要通过什么来控制影偶动作？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "chinese_shadow_puppetry.txt"
+    ],
+    "relevant_document_ids": [
+      "0aba5bd4938b4d875e83b7eb6a26eef82440084de9f45e0b9e9c32240df70aac"
+    ],
+    "relevant_chunk_ids": [
+      "8d84bb01378d6b558c35d912c17adc6e43df208765e6d10664a87d747a1d9013",
+      "ce68e60ee963bb76f24e4570dad4320ccb51b473218fdcea738022598013f8ad"
+    ],
+    "reference_answer": "操纵签杆",
+    "evidence_phrase": "操纵签杆控制人物动作",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_006",
+    "query": "大足石刻中哪个区域具有代表性？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "dazu_rock_carvings.txt"
+    ],
+    "relevant_document_ids": [
+      "3ed2bae4f67fbefb72c670d6a9366dbbcd56c365b5052a8498a37d47965ce7a5"
+    ],
+    "relevant_chunk_ids": [
+      "33d1b9033d8d19836eacc91f8441bd4720382c7e28790a4f064bda4596da7ea9",
+      "1325f99883c4825f8a5ccda2282374a472e07be2d18e42845629cc3400982765"
+    ],
+    "reference_answer": "宝顶山",
+    "evidence_phrase": "宝顶山是代表性区域",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_007",
+    "query": "端午节的核心时间标识是什么？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "dragon_boat_festival.txt"
+    ],
+    "relevant_document_ids": [
+      "7b55206e8f912b4cf772d21f578d505530ed3daf5f8fb8f10a15dbb1c3d1e479"
+    ],
+    "relevant_chunk_ids": [
+      "bc418493a7a1d7b95061942326c34850238d93da06be035cddfed2fc0ff2623c",
+      "0039d98769647589cd13354244b0b27c8cc27ca5bd59a8d03922f78f65e4e32d"
+    ],
+    "reference_answer": "农历五月初五",
+    "evidence_phrase": "农历五月初五是核心时间标识",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_008",
+    "query": "都江堰的鱼嘴主要承担什么作用？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "dujiangyan.txt"
+    ],
+    "relevant_document_ids": [
+      "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7"
+    ],
+    "relevant_chunk_ids": [
+      "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+      "fbce7ebd1a27a021e654a229566353947ae7a6c9465aca041ed34559a361e4a1"
+    ],
+    "reference_answer": "分水",
+    "evidence_phrase": "鱼嘴承担分水作用",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_009",
+    "query": "故宫外朝的三座核心殿宇是哪三座？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "forbidden_city.txt"
+    ],
+    "relevant_document_ids": [
+      "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d"
+    ],
+    "relevant_chunk_ids": [
+      "b1aa18e89890424291f9b05a6e1888facbe9f6678da09ba223ae0047d935eee7"
+    ],
+    "reference_answer": "太和殿、中和殿、保和殿",
+    "evidence_phrase": "太和殿、中和殿、保和殿构成外朝核心",
+    "matched_chunk_indexes": [
+      1
+    ]
+  },
+  {
+    "id": "eval_010",
+    "query": "福建土楼厚重的夯土外墙兼顾哪两方面作用？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "fujian_tulou.txt"
+    ],
+    "relevant_document_ids": [
+      "bcb828d5f45f4cd32777f6a2b99d6386ee5312efb5be229abee6898e2bde18e7"
+    ],
+    "relevant_chunk_ids": [
+      "aa17ae8b4596037fdaddae4360435fd5ef385ba93534db478b799857eeef8140",
+      "6ca8d756c42ccbf3bdf1fd10f01c9dad0a0ce30b02a16386d0ba0540b7516fd0",
+      "1904a9272097f29c283a986978fe7287ecb86c179326b965185ba5afdb60f0b6"
+    ],
+    "reference_answer": "结构与防御",
+    "evidence_phrase": "厚重夯土外墙兼顾结构与防御",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_011",
+    "query": "中国大运河中的闸坝主要帮助解决什么工程问题？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "grand_canal.txt"
+    ],
+    "relevant_document_ids": [
+      "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9"
+    ],
+    "relevant_chunk_ids": [
+      "7c872f62c395e81e971a85965cf0d59066e4827aff4721576411b84250e36f6c",
+      "dc0df6dec203ad201ba0085797654243a7f460185df01eb2f49b8310c0443088",
+      "cc817bc9c09a15dfabeca160d6933a1ae21434244734ef417a35293b4923f154"
+    ],
+    "reference_answer": "水位差",
+    "evidence_phrase": "闸坝帮助解决水位差",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_012",
+    "query": "长城体系中的烽燧主要用于什么？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "great_wall.txt"
+    ],
+    "relevant_document_ids": [
+      "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+    ],
+    "relevant_chunk_ids": [
+      "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+      "99cf3e405ed4c1ad04d2784fd8833d3deacb494b48219bc20d916e75a26af464"
+    ],
+    "reference_answer": "传递军情",
+    "evidence_phrase": "烽燧用于传递军情",
+    "matched_chunk_indexes": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_013",
+    "query": "古琴传统中，用来记录指法与演奏信息的谱式叫什么？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "guqin.txt"
+    ],
+    "relevant_document_ids": [
+      "a9c2009220960bbac0c68c5e15e1b7ac81fed9a8fd541e51e21e8b6643aec8ae"
+    ],
+    "relevant_chunk_ids": [
+      "5d2d5b0cda2c8758981a8beed4b14aecac375a864aefa4b1a04c72f74099f7ac",
+      "30faffd2ee41d77a7842ae160f246cb9bf8beea5e1dbc7b368fe7b3697415fcb",
+      "d71802c9a0b7dd3e5d099f4acc4115948d9a17d58e91e98919952e3ca88f3f83"
+    ],
+    "reference_answer": "减字谱",
+    "evidence_phrase": "减字谱用于记录古琴指法与演奏信息",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_014",
+    "query": "开平碉楼的高层结构主要兼具哪两类实用功能？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "kaiping_diaolou.txt"
+    ],
+    "relevant_document_ids": [
+      "c8d1edd34321e29c79e6bbd07b8c164b85f24bf44d51a399085ca502b1a26a11"
+    ],
+    "relevant_chunk_ids": [
+      "9379bdbb53b2746e939424498f2e7c333f6b60e64acb3049f81dc70b27a66388",
+      "f0ba005b42fb82aef141920703664e059de353eea7c51b15ca20340cdeed3ff7"
+    ],
+    "reference_answer": "瞭望与防御",
+    "evidence_phrase": "高层结构兼具瞭望与防御",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_015",
+    "query": "水磨腔是哪一种传统戏曲的重要音乐特征？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "kunqu_opera.txt"
+    ],
+    "relevant_document_ids": [
+      "1c1028438ee1f27aaa49805644d0a5fa6166b86b3e820c4b806a3d6c222abf35"
+    ],
+    "relevant_chunk_ids": [
+      "ae000d7f23a70673f510e4cf24bac691ea01ca0799b9dc25749e334a220003e7",
+      "9862115844f439453c9422067426c6c75fcd2fdbdd1b5a4f6a19b04a08664fa9"
+    ],
+    "reference_answer": "昆曲",
+    "evidence_phrase": "水磨腔是重要音乐特征",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_016",
+    "query": "乐山大佛内部设置排水结构的主要目的是什么？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "leshan_giant_buddha.txt"
+    ],
+    "relevant_document_ids": [
+      "c5653cdc3c6af0d3a7783b85c7dac01083b7f1540c2ab5b0a59ad50812bbc77a"
+    ],
+    "relevant_chunk_ids": [
+      "19f0c6b5ddc6b6bb6283d81eae5ce98c808a59ab6d38ef5d1190e642a168db6f",
+      "283be6c27f38a7b81044e1cd8e4b857fa106e49635536eab5cf69aa616bdaed7",
+      "cc2496030e6ddcf8124ec6521bd8f5d9f7395db6a69fa964e445332fc1fc3786"
+    ],
+    "reference_answer": "减轻雨水侵蚀",
+    "evidence_phrase": "排水系统有助于降低雨水侵蚀",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_017",
+    "query": "良渚遗址的大型水利系统主要说明了怎样的社会能力？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "liangzhu.txt"
+    ],
+    "relevant_document_ids": [
+      "e017ae80c6de2f506c93459ba26605423d5db2c7c324c43b04c8e9f38a2029ee"
+    ],
+    "relevant_chunk_ids": [
+      "ae3eef91eab554a8db825341ff404be5f0ef96dda85edbbb3dd3ca9941aa87f0",
+      "bbeea5b55dfcdf721ba251438cef59718b31de245f1f7cb6684c96d5b55bbc63"
+    ],
+    "reference_answer": "较强的公共工程能力",
+    "evidence_phrase": "大型水利系统显示公共工程能力",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_018",
+    "query": "奉先寺是哪一处石窟的重要代表区域？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "longmen_grottoes.txt"
+    ],
+    "relevant_document_ids": [
+      "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e"
+    ],
+    "relevant_chunk_ids": [
+      "f15ffc81b3300289d3c0e2b0e002341ff23f3c8483c7fdd3fc1d4bbc457d5e43",
+      "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+      "cd06dea1afba07613eb3bb90a23654ed1d333cbda6f6b0ab3169ac11cc3e5468"
+    ],
+    "reference_answer": "龙门石窟",
+    "evidence_phrase": "奉先寺为代表性区域",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_019",
+    "query": "明清皇家陵寝中，石像生在神道空间中主要强化什么感受？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "ming_qing_tombs.txt"
+    ],
+    "relevant_document_ids": [
+      "bfaed17c75c5b300111b20115323bbee1222f588c3c731e5007ac017dfc6e175"
+    ],
+    "relevant_chunk_ids": [
+      "b7912218bbfa9687edb383479e34473fdbda6a6b110ea696e08ed850cdd4cdd2",
+      "0702e547110550ecafe7120ea62d0bf4f5e4e9e792f23b6a46bd8b4b6a00e9b9",
+      "5b9ba02df84074b86242d1514c9e71b9f549063556a0f705bfb5d7676d8dacc3"
+    ],
+    "reference_answer": "庄严感",
+    "evidence_phrase": "石像生强化庄严感",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_020",
+    "query": "莫高窟中的哪类人物图像保存了社会生活信息？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "mogao_caves.txt"
+    ],
+    "relevant_document_ids": [
+      "a8e2ce2c8b8ad01c1a32f1325316e2a0b8b5983d4358a911a7cfb0f35540a068"
+    ],
+    "relevant_chunk_ids": [
+      "a4ce78a3111dba7878a10b40b867abae92c487cbc637e356ce2beb6fe0fb5cc4",
+      "4069ef9370cc5240a8c7a7609f62d7a07c312da1e2713c66664b003f481c6bbc"
+    ],
+    "reference_answer": "供养人像",
+    "evidence_phrase": "供养人像保存社会生活信息",
+    "matched_chunk_indexes": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_021",
+    "query": "黄山景观常由哪些典型自然要素共同形成鲜明印象？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "mount_huangshan.txt"
+    ],
+    "relevant_document_ids": [
+      "7e323c5191c6d16ce4fc999ebacdf666c63f247dfc62954c65e99e4597939a5a"
+    ],
+    "relevant_chunk_ids": [
+      "6f4dad41e038ed7b2ac568a34f9d9f7d33cf7ccbfcb6668f74b5fbeab9f30d55"
+    ],
+    "reference_answer": "奇松、怪石、云海和山岳地貌",
+    "evidence_phrase": "以奇松、怪石、云海和山岳地貌著称",
+    "matched_chunk_indexes": [
+      0
+    ]
+  },
+  {
+    "id": "eval_022",
+    "query": "哪座名山中的白鹿洞书院体现了重要的教育传统？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "mount_lushan.txt"
+    ],
+    "relevant_document_ids": [
+      "30c3bd0378978d49e211ec15910d6b3b9e00119b64941199b76413ba584ad65c"
+    ],
+    "relevant_chunk_ids": [
+      "352a52d547b011b6e48f9177799d93dc66a86456859d78ecbd0b86411ec6201d",
+      "e5044c71f6c28e32cf329bdcd5efa29638bdb72e43fa6db46490079832662a51"
+    ],
+    "reference_answer": "庐山",
+    "evidence_phrase": "白鹿洞书院代表教育传统",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_023",
+    "query": "哪座山因封禅传统而具有突出的政治象征意义？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "mount_tai.txt"
+    ],
+    "relevant_document_ids": [
+      "6ee140ed9f48df1d830c8dd6ecd83b3627e0c01ad1f748d80a8f317b84c43466"
+    ],
+    "relevant_chunk_ids": [
+      "f981211bd102b74cd7f03c16b950d1db7641b8d75bf2c8accabc33ce40355790",
+      "a1973ec375274f05d8d9722e80212582f7782f4653b37c7ccc024be76a522f2c"
+    ],
+    "reference_answer": "泰山",
+    "evidence_phrase": "封禅传统强化了泰山的政治象征",
+    "matched_chunk_indexes": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "eval_024",
+    "query": "南音演奏常见的乐器有哪些？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "nanyin.txt"
+    ],
+    "relevant_document_ids": [
+      "31fd6b5db272fb25c6b2ee36f072d9fef84bd4c2dac0bcc1a576011202938782"
+    ],
+    "relevant_chunk_ids": [
+      "3f4195893f9f91d3a9b28deb090b66422fc62b700d2563d8afdd9599b5d9dba9",
+      "ed8514caa5bb8ec48af9dc1a336cdd76c5e36ef7788e015b237c2e0b32dd7712"
+    ],
+    "reference_answer": "洞箫、琵琶、二弦、三弦等",
+    "evidence_phrase": "洞箫、琵琶、二弦和三弦常见",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_025",
+    "query": "丽江古城的街巷空间中，哪种水利要素直接穿行其间？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "old_town_lijiang.txt"
+    ],
+    "relevant_document_ids": [
+      "30daaa3f19f0934a0dc32b8cde1af8f003cccdf009852450e546d322c63f8c13"
+    ],
+    "relevant_chunk_ids": [
+      "48ab490991c998929451f29ccb4ab15c273a9356fd3dff65e99af8ffdbb5e1cc",
+      "640dd22598dba1d1d02f40792601619d9d8dadab23e8efae4ab79c37fda16fe1"
+    ],
+    "reference_answer": "水渠",
+    "evidence_phrase": "水渠穿行街巷",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_026",
+    "query": "京剧最常见的四类行当是什么？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "peking_opera.txt"
+    ],
+    "relevant_document_ids": [
+      "f5b68929fe8f06463130b98609cbc1923fbe9041a80bcb35bde2eb8fc86de96f"
+    ],
+    "relevant_chunk_ids": [
+      "cc992e61fca33fd5f35477cd7b05afb60613189e00b65ba478815104526c2382",
+      "727b6907c25b264344b16ce293031a7ac760d9ee69e8f63416c08a85bfaaa0b1"
+    ],
+    "reference_answer": "生、旦、净、丑",
+    "evidence_phrase": "生旦净丑构成常见行当体系",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_027",
+    "query": "平遥古城中哪个商号常被用于讨论票号制度？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "pingyao_ancient_city.txt"
+    ],
+    "relevant_document_ids": [
+      "c5c78d148c9a1eb81c898ac3d74bb0fad2dea76c29778629cb070bb2030839fa"
+    ],
+    "relevant_chunk_ids": [
+      "586d358719c7c519a37905a65c939e970989d067143d933321eb14ab868a8814",
+      "f6afbca8db8cdd5db9d2b06fd6b378278279802b4e9c01667d7559ace08c6984"
+    ],
+    "reference_answer": "日升昌",
+    "evidence_phrase": "日升昌常被用于讨论票号制度",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_028",
+    "query": "泉州海洋商贸遗产中，桥梁在空间联系上发挥什么作用？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "quanzhou_maritime_trade.txt"
+    ],
+    "relevant_document_ids": [
+      "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1"
+    ],
+    "relevant_chunk_ids": [
+      "be467d66c5b46970bce384458fa3214760d80f7b4a44885df51ef43a2f590042",
+      "b1f5db44a0eab4b8499383bafb447350c4a14a345888c36ce6482f31657ed6dc"
+    ],
+    "reference_answer": "连接港城与腹地",
+    "evidence_phrase": "桥梁连接港城与腹地",
+    "matched_chunk_indexes": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_029",
+    "query": "曲阜孔庙的核心建筑是什么？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "qufu_confucius.txt"
+    ],
+    "relevant_document_ids": [
+      "23bb65220697de61b9bc6931135bc2d8b13af3d75784e0b70a1166b15c201d8a"
+    ],
+    "relevant_chunk_ids": [
+      "f9a892c6a20f0c613da5345e2a0eb0b83ede66eeb3c86f6476388443372e977a",
+      "ff9b3245afdfc5ecc69f851e814b282511f54354f323266db8352c848669846d"
+    ],
+    "reference_answer": "大成殿",
+    "evidence_phrase": "大成殿是孔庙核心建筑",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_030",
+    "query": "三星堆遗址中哪类青铜器具有很高的辨识度？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "sanxingdui.txt"
+    ],
+    "relevant_document_ids": [
+      "b259f00000af617480b5ee66df892fbc5af79a86a08881a368e8e0fb421132c2"
+    ],
+    "relevant_chunk_ids": [
+      "cb7884812650fbe74d3b8b83bcc8bd5ad6ab3351f7203767a24d818b60375fb9",
+      "dfeda6112ef41d0f63a668458256bbc127f8cb7f12ec1d15285b95d94e7d3258"
+    ],
+    "reference_answer": "青铜面具",
+    "evidence_phrase": "青铜面具具有高辨识度",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_031",
+    "query": "篆刻艺术中，哪两类印文会形成不同的印面效果？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "seal_engraving.txt"
+    ],
+    "relevant_document_ids": [
+      "789359bbdf223221152c1116c0a4c1cd97009b7ec3138b286844f4c5c73e3fa0"
+    ],
+    "relevant_chunk_ids": [
+      "464b1c71e28c924e8ea0bdddf5f60969e3d05280d184afd9643e4786af73e6ef",
+      "a5b1f7a0d591ed3263e2519b106556a05556659922253ef842bae7823b6e391f"
+    ],
+    "reference_answer": "朱文和白文",
+    "evidence_phrase": "朱文和白文形成不同印面效果",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_032",
+    "query": "丝绸之路长安—天山廊道中，哪些设施承担重要交通节点作用？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "silk_roads_corridor.txt"
+    ],
+    "relevant_document_ids": [
+      "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3"
+    ],
+    "relevant_chunk_ids": [
+      "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+      "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408"
+    ],
+    "reference_answer": "古城和驿站",
+    "evidence_phrase": "古城和驿站是交通节点",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_033",
+    "query": "颐和园以哪一座山和哪一个湖为核心？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "summer_palace.txt"
+    ],
+    "relevant_document_ids": [
+      "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993"
+    ],
+    "relevant_chunk_ids": [
+      "ee7e5e7a91aa2a4d09a31b49fbf0395b0dc36deb1e10dbccd48250f27290689b"
+    ],
+    "reference_answer": "万寿山和昆明湖",
+    "evidence_phrase": "园林以万寿山和昆明湖为核心",
+    "matched_chunk_indexes": [
+      0
+    ]
+  },
+  {
+    "id": "eval_034",
+    "query": "苏州古典园林中，哪两座园林是代表性实例？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "suzhou_gardens.txt"
+    ],
+    "relevant_document_ids": [
+      "04f6f25bddca5cfc0251eef51c1b3436e55f35274cdf01130e64c80c77a6c137"
+    ],
+    "relevant_chunk_ids": [
+      "ba37ffa8fde95d7e426f778d852e282166406c958981a702f1d55d9559fe9e29",
+      "c1bed691231df832c7cc150cf84631e23cd9ca2eb54c8241d25587af746d46ee"
+    ],
+    "reference_answer": "拙政园与留园",
+    "evidence_phrase": "拙政园与留园是代表性实例",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_035",
+    "query": "天坛中与祭天礼仪联系最紧密的是哪一处建筑空间？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "temple_of_heaven.txt"
+    ],
+    "relevant_document_ids": [
+      "2e9d2f32ba30dbe74980ae65e1468c23ca76602a756a33531fe99e71a16219c7"
+    ],
+    "relevant_chunk_ids": [
+      "0e311939c326d89a83202e94ee8c970aa8e7af9e799e437fe3eac69c60e35948",
+      "84e3c29ba2f66d2b4bcec24870008b31c83869d47d94b5db9a417c3c1ecd998e"
+    ],
+    "reference_answer": "圜丘",
+    "evidence_phrase": "圜丘与祭天礼仪联系紧密",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_036",
+    "query": "秦始皇陵兵马俑中，军阵的排列具有怎样的特征？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "terracotta_army.txt"
+    ],
+    "relevant_document_ids": [
+      "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48"
+    ],
+    "relevant_chunk_ids": [
+      "5f6e9c94e8d2927db40ce432ee42c0b4337238d0bc94c03030c224c137c710dd",
+      "12e9680ee7fe30a35636229724fd078c13002ad73540622a8a1ecb59d820b23a"
+    ],
+    "reference_answer": "具有明显组织性",
+    "evidence_phrase": "军阵排列有明显组织性",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_037",
+    "query": "藏戏中，面具颜色主要与什么有关？",
+    "category": "detail",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "tibetan_opera.txt"
+    ],
+    "relevant_document_ids": [
+      "98fb1481191b943825decfa489de4128b59e6e7ffaa16164ac8306be90fe2a3e"
+    ],
+    "relevant_chunk_ids": [
+      "84c4cd7fe5e525412bef58a58a5d2c41c8ae8bc17a724e753b78045263b181b2",
+      "b57f6ebfc60c59ba3f7a15db92349c293e379e496851491814020a62209aea17"
+    ],
+    "reference_answer": "人物塑造",
+    "evidence_phrase": "面具颜色与人物塑造有关",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_038",
+    "query": "传统制茶中，哪些关键工序会因茶类不同而变化？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "traditional_tea_processing.txt"
+    ],
+    "relevant_document_ids": [
+      "2cb27f955210079ec3f118db89d2287e3a362becec0953fced505e0bf81d64bd"
+    ],
+    "relevant_chunk_ids": [
+      "62863445073eaa6ee787e9c8fa395122f74842e1383ec0f488ced713ca70e444",
+      "32ee4b466d2d0d48c123de85330ab39f89bd5d37d322cf19fe28b837f7749c73"
+    ],
+    "reference_answer": "杀青、揉捻、发酵和焙制",
+    "evidence_phrase": "杀青、揉捻、发酵和焙制因茶类而异",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_039",
+    "query": "维吾尔木卡姆综合了哪些主要艺术形式？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "uyghur_muqam.txt"
+    ],
+    "relevant_document_ids": [
+      "ac6b12e9d6eb5b70d736409ac704d2d99cb89d7f0e4e471e24b3ed6974621acc"
+    ],
+    "relevant_chunk_ids": [
+      "13e4935162010026979b2a14f2d610856027d7920aae3d33cc8f36fcd6f4b227",
+      "f3c85abb202adc290809d63222401e0250cdc798dbc50cc1fa3a36ec2cf05fd7"
+    ],
+    "reference_answer": "歌唱、器乐、舞蹈和诗歌",
+    "evidence_phrase": "歌唱、器乐、舞蹈和诗歌综合出现",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_040",
+    "query": "杭州西湖文化景观中，哪两条堤是重要的线性景观？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "west_lake.txt"
+    ],
+    "relevant_document_ids": [
+      "bb3e0721aa6574a8a57d6953b1184df26071c1b45473c8eb41a532df4d0bda95"
+    ],
+    "relevant_chunk_ids": [
+      "698ebc4e87ea7b75b143d387c0eefc819ec2a0b3a29a719b7a786af737097bf6",
+      "a7c42e4e9a424a609194837e7817f7daa3bccb7864815727560c7b8c71a7273e"
+    ],
+    "reference_answer": "苏堤和白堤",
+    "evidence_phrase": "苏堤和白堤是重要线性景观",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_041",
+    "query": "武当山古建筑群中，哪座建筑最具代表性？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "wudang_mountains.txt"
+    ],
+    "relevant_document_ids": [
+      "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e"
+    ],
+    "relevant_chunk_ids": [
+      "fc9c3cd4614d60a3924a66c8bb61cd5e5e67a1d31811fe491cc7b736f28bcf8f",
+      "1e554793db6c71eaae79b673497e7c467e9d39668c94342f1cf6c45eddbbfe25"
+    ],
+    "reference_answer": "金殿",
+    "evidence_phrase": "金殿具有代表性",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_042",
+    "query": "武夷山的重要自然景观轴线是什么？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "wuyi_mountains.txt"
+    ],
+    "relevant_document_ids": [
+      "32d3e9c8fdddb93a4e03f175538c7d174f1d09f6a4d8362b8a2d77db730872b3"
+    ],
+    "relevant_chunk_ids": [
+      "e4e258b882cad07ee6f7fc8b3b6852617916fcbc4205ad70f89139a10700c93f",
+      "7ac7d0f233afb5ef0320dcd03795ee5c29eb1596a04c2b8ecd859a7f3c3601ee"
+    ],
+    "reference_answer": "九曲溪",
+    "evidence_phrase": "九曲溪是重要自然景观轴线",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_043",
+    "query": "西安鼓乐常把哪些吹管乐器与哪些打击乐器组合使用？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "xian_drum_music.txt"
+    ],
+    "relevant_document_ids": [
+      "6ad45efcfe55c449d1ed5ce0fc7db1aa3040669584ebbdb274bf2a4fc949d9f8"
+    ],
+    "relevant_chunk_ids": [
+      "0ee14dbe25998f4d794e2178f192c763eb6e4ea7d5f8a25267fe314a46a05155",
+      "73ee57a510adde156fb6edd2afdd53196cdbc1e347039e36b1da03d3a73ecda3"
+    ],
+    "reference_answer": "笙、笛、管与鼓、锣、钹",
+    "evidence_phrase": "笙、笛、管与鼓锣钹共同使用",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_044",
+    "query": "西递宏村的徽派建筑有哪些高辨识度外观特征？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "xidi_hongcun.txt"
+    ],
+    "relevant_document_ids": [
+      "d56c407a45e3bb307c039bf675e352e85c8cfbeb3d98906c8f5ffad35f7d14da"
+    ],
+    "relevant_chunk_ids": [
+      "fc30584ddba89c0f6903184e522b9bb06272a62e9f00f6e46ac5f406e145b740",
+      "93a5cc99293d37867b4b2a06bfd4b1b43557c463d9dc18c6f3088d87cebbde48"
+    ],
+    "reference_answer": "白墙、灰瓦与马头墙",
+    "evidence_phrase": "白墙灰瓦与马头墙辨识度高",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_045",
+    "query": "安阳殷墟最核心的文字类考古发现是什么？",
+    "category": "keyword",
+    "difficulty": "easy",
+    "relevant_sources": [
+      "yin_xu.txt"
+    ],
+    "relevant_document_ids": [
+      "7bfd762850881b1b0f41cca4d8e352c0ce226b603160fc24db03e15f520d5400"
+    ],
+    "relevant_chunk_ids": [
+      "5de6348e47222b50f4a60ca7939d54883f9264df45fce061e1bd9a1b55991913",
+      "4b41c85d133605ce880415cbadbc4dec0b3a0bd64c8da00bc2772eb9c3223bbc"
+    ],
+    "reference_answer": "甲骨文",
+    "evidence_phrase": "甲骨文是核心考古发现之一",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_046",
+    "query": "云冈石窟中，大型主尊造像在洞窟空间中具有怎样的视觉作用？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "yungang_grottoes.txt"
+    ],
+    "relevant_document_ids": [
+      "61ea3f18d106f497242d918b10f1d419f025f4c63960d719c299bb5a76381edf"
+    ],
+    "relevant_chunk_ids": [
+      "ac27c5b5414350077646d7c1d843a3d4004d90b7aee266153ef25159c130efca",
+      "c749490a44e9b5d968e0f3a3b49580e2620ac9ecb303cbc5579e416290a11dbe"
+    ],
+    "reference_answer": "形成强烈视觉中心",
+    "evidence_phrase": "大型主尊造像具有强烈视觉中心",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_047",
+    "query": "如果不用针刺而采用燃烧艾材产生温热刺激，这属于针灸中的哪种方式？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "acupuncture_moxibustion.txt"
+    ],
+    "relevant_document_ids": [
+      "1e7677f90627bde80aef55c2dea0c56f8ef2c41038f559b6401eac545d449c4b"
+    ],
+    "relevant_chunk_ids": [
+      "08f6fa1be60a040fd720f395f2ec1d31e56080f5d7b5702b5a109c80eacaf604",
+      "13d77e4422ee3cc846ab5ddee3b4f794f2fedd0fe8ffdf64153279cefbdfec8b"
+    ],
+    "reference_answer": "艾灸",
+    "evidence_phrase": "艾灸利用温热刺激",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_048",
+    "query": "承德周围寺庙中，哪一建筑群体现了多民族宗教与建筑交流？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "chengde_mountain_resort.txt"
+    ],
+    "relevant_document_ids": [
+      "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140"
+    ],
+    "relevant_chunk_ids": [
+      "5f83d721851e4fb0ee41145b23cb426974ad153aa4e3069bd9d622b3830b7c4b",
+      "9018bb6404339fa62b6b976e1362cd2d31a0b671f1526853e15b5c8c58015877"
+    ],
+    "reference_answer": "外八庙",
+    "evidence_phrase": "外八庙体现多民族宗教与建筑交流",
+    "matched_chunk_indexes": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "eval_049",
+    "query": "书法中“结体”和“章法”分别关注什么？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "chinese_calligraphy.txt"
+    ],
+    "relevant_document_ids": [
+      "491da3d7de1d7808c633371da73f79be75aee072c4c2114ee8f823c6e5e676e8"
+    ],
+    "relevant_chunk_ids": [
+      "780a026d0226d03b154b7138d8230f48b68e776df4174fd15f7fce1bcb96be9b"
+    ],
+    "reference_answer": "结体关注单字内部结构，章法处理整幅作品的行列与呼应",
+    "evidence_phrase": "结体关注单字内部结构，而章法处理整幅作品的行列与呼应",
+    "matched_chunk_indexes": [
+      0
+    ]
+  },
+  {
+    "id": "eval_050",
+    "query": "剪纸在图案结构上常见哪些形式特征？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "chinese_paper_cutting.txt"
+    ],
+    "relevant_document_ids": [
+      "fe064305ff3be8f40f9ceb2815f7e76fd3dd2e09c293ec14ec1a44c41f8849e7"
+    ],
+    "relevant_chunk_ids": [
+      "557bcaf23d71f98a3882b051623c04a36a51f5694a41d0abde625f5608484bca"
+    ],
+    "reference_answer": "对称、连续纹样和镂空结构",
+    "evidence_phrase": "剪纸讲究对称、连续纹样和镂空结构",
+    "matched_chunk_indexes": [
+      0
+    ]
+  },
+  {
+    "id": "eval_051",
+    "query": "皮影戏是通过什么条件把影偶形象投到幕布上的？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "chinese_shadow_puppetry.txt"
+    ],
+    "relevant_document_ids": [
+      "0aba5bd4938b4d875e83b7eb6a26eef82440084de9f45e0b9e9c32240df70aac"
+    ],
+    "relevant_chunk_ids": [
+      "8d84bb01378d6b558c35d912c17adc6e43df208765e6d10664a87d747a1d9013",
+      "ce68e60ee963bb76f24e4570dad4320ccb51b473218fdcea738022598013f8ad",
+      "66023fc9b84a6a394022ba0cc0f5957a624033a888a9594e7c45e47abf745a08"
+    ],
+    "reference_answer": "灯光照射与幕布形成投影",
+    "evidence_phrase": "幕布与灯光形成投影效果",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_052",
+    "query": "哪一处石刻遗产的题材同时涉及佛教、道教和儒家？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "dazu_rock_carvings.txt"
+    ],
+    "relevant_document_ids": [
+      "3ed2bae4f67fbefb72c670d6a9366dbbcd56c365b5052a8498a37d47965ce7a5"
+    ],
+    "relevant_chunk_ids": [
+      "33d1b9033d8d19836eacc91f8441bd4720382c7e28790a4f064bda4596da7ea9",
+      "1325f99883c4825f8a5ccda2282374a472e07be2d18e42845629cc3400982765",
+      "e840268fdb8b7ad332e90f6f72a1a6a179c516cba87e5c9421214ca31b6b4a1a"
+    ],
+    "reference_answer": "大足石刻",
+    "evidence_phrase": "题材兼及佛教、道教和儒家",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_053",
+    "query": "哪项传统节俗既有群体竞赛性质，又具有仪式属性？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "dragon_boat_festival.txt"
+    ],
+    "relevant_document_ids": [
+      "7b55206e8f912b4cf772d21f578d505530ed3daf5f8fb8f10a15dbb1c3d1e479"
+    ],
+    "relevant_chunk_ids": [
+      "bc418493a7a1d7b95061942326c34850238d93da06be035cddfed2fc0ff2623c",
+      "0039d98769647589cd13354244b0b27c8cc27ca5bd59a8d03922f78f65e4e32d",
+      "977de410a47ab04bbda4e947d22bbdc8e398ce5a0ceab70c69fc298c26074848"
+    ],
+    "reference_answer": "赛龙舟",
+    "evidence_phrase": "赛龙舟具有群体竞赛与仪式属性",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_054",
+    "query": "哪项古代水利工程强调顺应水势，而不是单纯筑坝拦截？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "dujiangyan.txt"
+    ],
+    "relevant_document_ids": [
+      "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7"
+    ],
+    "relevant_chunk_ids": [
+      "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+      "708f0450764f053084bc9d6cf379f48577ae820c7155835b86f23451b4d84746"
+    ],
+    "reference_answer": "都江堰",
+    "evidence_phrase": "工程核心是顺应水势而不是单纯筑坝拦截",
+    "matched_chunk_indexes": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "eval_055",
+    "query": "故宫的外朝和内廷在主要功能上有什么区别？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "forbidden_city.txt"
+    ],
+    "relevant_document_ids": [
+      "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d"
+    ],
+    "relevant_chunk_ids": [
+      "bcd6e9fd539200229f0e3b2db4c68c70b3a70046cc1828c82d440737c9108c36",
+      "28f50ace05fe02797600a591dc5c07632ca1ff6b1831f41857ec8300acbba0db"
+    ],
+    "reference_answer": "外朝偏重典礼与政务，内廷偏重起居",
+    "evidence_phrase": "外朝偏重典礼与政务，内廷偏重起居",
+    "matched_chunk_indexes": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "eval_056",
+    "query": "哪类传统民居因聚族而居而表现出明显的社区属性？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "fujian_tulou.txt"
+    ],
+    "relevant_document_ids": [
+      "bcb828d5f45f4cd32777f6a2b99d6386ee5312efb5be229abee6898e2bde18e7"
+    ],
+    "relevant_chunk_ids": [
+      "aa17ae8b4596037fdaddae4360435fd5ef385ba93534db478b799857eeef8140",
+      "1904a9272097f29c283a986978fe7287ecb86c179326b965185ba5afdb60f0b6"
+    ],
+    "reference_answer": "福建土楼",
+    "evidence_phrase": "聚族而居使建筑具有明显社区属性",
+    "matched_chunk_indexes": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "eval_057",
+    "query": "哪一古代交通工程的核心历史功能常用“漕运”来概括？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "grand_canal.txt"
+    ],
+    "relevant_document_ids": [
+      "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9"
+    ],
+    "relevant_chunk_ids": [
+      "7c872f62c395e81e971a85965cf0d59066e4827aff4721576411b84250e36f6c",
+      "dc0df6dec203ad201ba0085797654243a7f460185df01eb2f49b8310c0443088"
+    ],
+    "reference_answer": "中国大运河",
+    "evidence_phrase": "漕运是理解运河功能的重要关键词",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_058",
+    "query": "在古代长城防御体系中，哪类设施主要控制交通要道？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "great_wall.txt"
+    ],
+    "relevant_document_ids": [
+      "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+    ],
+    "relevant_chunk_ids": [
+      "0365a90e66772fca277a0f057398287338d454d53a613814dc9056dc99e29374",
+      "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+      "99cf3e405ed4c1ad04d2784fd8833d3deacb494b48219bc20d916e75a26af464"
+    ],
+    "reference_answer": "关隘",
+    "evidence_phrase": "关隘负责控制交通要道",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_059",
+    "query": "古琴演奏中常用哪三类发声方式形成不同音色层次？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "guqin.txt"
+    ],
+    "relevant_document_ids": [
+      "a9c2009220960bbac0c68c5e15e1b7ac81fed9a8fd541e51e21e8b6643aec8ae"
+    ],
+    "relevant_chunk_ids": [
+      "5d2d5b0cda2c8758981a8beed4b14aecac375a864aefa4b1a04c72f74099f7ac",
+      "30faffd2ee41d77a7842ae160f246cb9bf8beea5e1dbc7b368fe7b3697415fcb"
+    ],
+    "reference_answer": "散音、按音和泛音",
+    "evidence_phrase": "散音、按音和泛音构成重要音色层次",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_060",
+    "query": "哪类近代乡村建筑大量使用钢筋混凝土等材料，并明显受到海外建筑因素影响？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "kaiping_diaolou.txt"
+    ],
+    "relevant_document_ids": [
+      "c8d1edd34321e29c79e6bbd07b8c164b85f24bf44d51a399085ca502b1a26a11"
+    ],
+    "relevant_chunk_ids": [
+      "9379bdbb53b2746e939424498f2e7c333f6b60e64acb3049f81dc70b27a66388",
+      "f0ba005b42fb82aef141920703664e059de353eea7c51b15ca20340cdeed3ff7",
+      "b86008821873cb04a53115f700b765d689d2a08fbaa8b5c34fca371d973893fb"
+    ],
+    "reference_answer": "开平碉楼",
+    "evidence_phrase": "钢筋混凝土等近代材料得到使用",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_061",
+    "query": "哪处大型石刻佛像把宗教形象直接与山体和江河交汇环境结合起来？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "leshan_giant_buddha.txt"
+    ],
+    "relevant_document_ids": [
+      "c5653cdc3c6af0d3a7783b85c7dac01083b7f1540c2ab5b0a59ad50812bbc77a"
+    ],
+    "relevant_chunk_ids": [
+      "19f0c6b5ddc6b6bb6283d81eae5ce98c808a59ab6d38ef5d1190e642a168db6f",
+      "283be6c27f38a7b81044e1cd8e4b857fa106e49635536eab5cf69aa616bdaed7"
+    ],
+    "reference_answer": "乐山大佛",
+    "evidence_phrase": "佛像依山开凿",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_062",
+    "query": "良渚文化中哪些玉器具有鲜明的礼仪意义？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "liangzhu.txt"
+    ],
+    "relevant_document_ids": [
+      "e017ae80c6de2f506c93459ba26605423d5db2c7c324c43b04c8e9f38a2029ee"
+    ],
+    "relevant_chunk_ids": [
+      "ae3eef91eab554a8db825341ff404be5f0ef96dda85edbbb3dd3ca9941aa87f0",
+      "bbeea5b55dfcdf721ba251438cef59718b31de245f1f7cb6684c96d5b55bbc63"
+    ],
+    "reference_answer": "玉琮和玉璧",
+    "evidence_phrase": "玉琮与玉璧具有礼仪意义",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_063",
+    "query": "哪处石窟的造像能明显比较北魏与唐代两个时期的风格差异？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "longmen_grottoes.txt"
+    ],
+    "relevant_document_ids": [
+      "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e"
+    ],
+    "relevant_chunk_ids": [
+      "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+      "cd06dea1afba07613eb3bb90a23654ed1d333cbda6f6b0ab3169ac11cc3e5468"
+    ],
+    "reference_answer": "龙门石窟",
+    "evidence_phrase": "北魏与唐代风格差异明显",
+    "matched_chunk_indexes": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_064",
+    "query": "哪处石窟遗产除了壁画和彩塑，还保存敦煌文书，为历史研究提供另一类证据？",
+    "category": "confusable",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "mogao_caves.txt"
+    ],
+    "relevant_document_ids": [
+      "a8e2ce2c8b8ad01c1a32f1325316e2a0b8b5983d4358a911a7cfb0f35540a068"
+    ],
+    "relevant_chunk_ids": [
+      "a4ce78a3111dba7878a10b40b867abae92c487cbc637e356ce2beb6fe0fb5cc4",
+      "4069ef9370cc5240a8c7a7609f62d7a07c312da1e2713c66664b003f481c6bbc",
+      "66bdde49716c2417def5892d1554ba3252cdbfbbf4e4247fe3d8ea1eaebe21e1"
+    ],
+    "reference_answer": "莫高窟",
+    "evidence_phrase": "敦煌文书为历史研究提供另一类证据",
+    "matched_chunk_indexes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "eval_065",
+    "query": "哪座山因云海与天气变化，使同一观景点常呈现不同视觉效果？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "mount_huangshan.txt"
+    ],
+    "relevant_document_ids": [
+      "7e323c5191c6d16ce4fc999ebacdf666c63f247dfc62954c65e99e4597939a5a"
+    ],
+    "relevant_chunk_ids": [
+      "6f4dad41e038ed7b2ac568a34f9d9f7d33cf7ccbfcb6668f74b5fbeab9f30d55",
+      "9ea29f09cc9fa4a4e0f6c4025272e1b3b24387525d19139be086db59cc2cab2a"
+    ],
+    "reference_answer": "黄山",
+    "evidence_phrase": "天气变化使同一观景点呈现不同视觉效果",
+    "matched_chunk_indexes": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "eval_066",
+    "query": "哪座古城的桥梁和院落与生活用水关系密切？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "old_town_lijiang.txt"
+    ],
+    "relevant_document_ids": [
+      "30daaa3f19f0934a0dc32b8cde1af8f003cccdf009852450e546d322c63f8c13"
+    ],
+    "relevant_chunk_ids": [
+      "48ab490991c998929451f29ccb4ab15c273a9356fd3dff65e99af8ffdbb5e1cc",
+      "640dd22598dba1d1d02f40792601619d9d8dadab23e8efae4ab79c37fda16fe1",
+      "83c7017ea70d015e0c939409b1b80249cabf5f80fa148ed9c20eb5c9f4d53079"
+    ],
+    "reference_answer": "丽江古城",
+    "evidence_phrase": "桥梁和院落与生活用水关系密切",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_067",
+    "query": "哪座古城对于研究中国传统商业史和金融史尤其有价值？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "pingyao_ancient_city.txt"
+    ],
+    "relevant_document_ids": [
+      "c5c78d148c9a1eb81c898ac3d74bb0fad2dea76c29778629cb070bb2030839fa"
+    ],
+    "relevant_chunk_ids": [
+      "50cd09f57bf44b93aa74542d631171b092a68fbad6fe59c9ab37f9eef689079e"
+    ],
+    "reference_answer": "平遥古城",
+    "evidence_phrase": "平遥古城对于研究古代城市规划、商业史、金融史和民居建筑具有重要价值",
+    "matched_chunk_indexes": [
+      3
+    ]
+  },
+  {
+    "id": "eval_068",
+    "query": "哪座宋元港口城市的多种宗教遗存反映了人口来源的多元性？",
+    "category": "descriptive",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "quanzhou_maritime_trade.txt"
+    ],
+    "relevant_document_ids": [
+      "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1"
+    ],
+    "relevant_chunk_ids": [
+      "4d40dc26578fcf936ba72fc77fb2f3d60b415d29be2a0638eba41770e89b8873",
+      "b1f5db44a0eab4b8499383bafb447350c4a14a345888c36ce6482f31657ed6dc",
+      "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103"
+    ],
+    "reference_answer": "泉州",
+    "evidence_phrase": "多种宗教遗存反映人口多元",
+    "matched_chunk_indexes": [
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "eval_069",
+    "query": "在曲阜“三孔”中，孔府主要承担什么性质的功能？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "qufu_confucius.txt"
+    ],
+    "relevant_document_ids": [
+      "23bb65220697de61b9bc6931135bc2d8b13af3d75784e0b70a1166b15c201d8a"
+    ],
+    "relevant_chunk_ids": [
+      "f9a892c6a20f0c613da5345e2a0eb0b83ede66eeb3c86f6476388443372e977a",
+      "ff9b3245afdfc5ecc69f851e814b282511f54354f323266db8352c848669846d",
+      "4e5baab98033eb69d45306fa049769a01a7e30960ec872e77409d648c2b36366"
+    ],
+    "reference_answer": "与孔子后裔生活和管理事务相关",
+    "evidence_phrase": "孔府与孔子后裔生活管理相关",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_070",
+    "query": "哪件三星堆代表性器物最能体现复杂的青铜铸造技术？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "sanxingdui.txt"
+    ],
+    "relevant_document_ids": [
+      "b259f00000af617480b5ee66df892fbc5af79a86a08881a368e8e0fb421132c2"
+    ],
+    "relevant_chunk_ids": [
+      "cb7884812650fbe74d3b8b83bcc8bd5ad6ab3351f7203767a24d818b60375fb9",
+      "dfeda6112ef41d0f63a668458256bbc127f8cb7f12ec1d15285b95d94e7d3258",
+      "4f0499b9858c83d64a2dbee96e07c7c1a9e395667ccdb2c95586a4eac1648b0e"
+    ],
+    "reference_answer": "青铜神树",
+    "evidence_phrase": "青铜神树展示复杂铸造技术",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_071",
+    "query": "为什么说长安—天山廊道不是一条单一的道路？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "silk_roads_corridor.txt"
+    ],
+    "relevant_document_ids": [
+      "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3"
+    ],
+    "relevant_chunk_ids": [
+      "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0"
+    ],
+    "reference_answer": "它由多条陆路和多个古城、关隘、驿站等节点构成",
+    "evidence_phrase": "这一交通网络并非单一路线，而是由多条陆路组成",
+    "matched_chunk_indexes": [
+      0
+    ]
+  },
+  {
+    "id": "eval_072",
+    "query": "颐和园中，长廊和佛香阁分别在景观组织中起什么作用？",
+    "category": "fine_grained",
+    "difficulty": "hard",
+    "relevant_sources": [
+      "summer_palace.txt"
+    ],
+    "relevant_document_ids": [
+      "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993"
+    ],
+    "relevant_chunk_ids": [
+      "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be"
+    ],
+    "reference_answer": "长廊串联多个景观节点，佛香阁形成重要视觉中心",
+    "evidence_phrase": "长廊连接多个景观节点，佛香阁形成重要视觉中心",
+    "matched_chunk_indexes": [
+      1
+    ]
+  },
+  {
+    "id": "eval_073",
+    "query": "苏州园林如何利用“借景”改善有限空间的视觉体验？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "suzhou_gardens.txt"
+    ],
+    "relevant_document_ids": [
+      "04f6f25bddca5cfc0251eef51c1b3436e55f35274cdf01130e64c80c77a6c137"
+    ],
+    "relevant_chunk_ids": [
+      "ba37ffa8fde95d7e426f778d852e282166406c958981a702f1d55d9559fe9e29",
+      "c1bed691231df832c7cc150cf84631e23cd9ca2eb54c8241d25587af746d46ee",
+      "c20d3695fb86700934dbbdff049b59e260085135638beb6d57d4d1d7dc6d1109"
+    ],
+    "reference_answer": "通过借景扩大有限空间的视觉范围",
+    "evidence_phrase": "借景扩大有限空间的视觉范围",
+    "matched_chunk_indexes": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eval_074",
+    "query": "天坛中圆形与方形的组合通常被解释为什么？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "temple_of_heaven.txt"
+    ],
+    "relevant_document_ids": [
+      "2e9d2f32ba30dbe74980ae65e1468c23ca76602a756a33531fe99e71a16219c7"
+    ],
+    "relevant_chunk_ids": [
+      "84e3c29ba2f66d2b4bcec24870008b31c83869d47d94b5db9a417c3c1ecd998e",
+      "4902171294d8717b64d4e0d6078ab804da299d46010c6338de927682080e66f1",
+      "c53ed643f79e1769ed80b843396bedbd4e313bf2fb0c3259be2714f267414e69"
+    ],
+    "reference_answer": "传统宇宙观的空间表达",
+    "evidence_phrase": "圆与方的组合常被解释为传统宇宙观的空间表达",
+    "matched_chunk_indexes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "eval_075",
+    "query": "兵马俑的生产方式为何能体现高度组织化？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "terracotta_army.txt"
+    ],
+    "relevant_document_ids": [
+      "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48"
+    ],
+    "relevant_chunk_ids": [
+      "12e9680ee7fe30a35636229724fd078c13002ad73540622a8a1ecb59d820b23a",
+      "5777ebdd9903d8c06128ef54c6ace06e8fd6d267a66d35c4fb2e0cf80a2e5aec",
+      "dc7f86cd06bfacc56b53108ea4dba3494aa2c4173bd65c02efe0246b286e55eb"
+    ],
+    "reference_answer": "制作体现模块化与手工修整结合",
+    "evidence_phrase": "制作体现模块化与手工修整结合",
+    "matched_chunk_indexes": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "eval_076",
+    "query": "为什么不同茶类不能完全采用同一套加工流程？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "traditional_tea_processing.txt"
+    ],
+    "relevant_document_ids": [
+      "2cb27f955210079ec3f118db89d2287e3a362becec0953fced505e0bf81d64bd"
+    ],
+    "relevant_chunk_ids": [
+      "62863445073eaa6ee787e9c8fa395122f74842e1383ec0f488ced713ca70e444",
+      "17c69f02eefce6a8a20e9d87562d85b86b307df32728481f1a65464aec2f913b"
+    ],
+    "reference_answer": "不同茶类对鲜叶处理方式不同，关键工序会随茶类变化",
+    "evidence_phrase": "不同茶类对鲜叶处理方式不同",
+    "matched_chunk_indexes": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "eval_077",
+    "query": "杭州西湖的景观模式对哪些更广泛的审美与园林传统产生了影响？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "west_lake.txt"
+    ],
+    "relevant_document_ids": [
+      "bb3e0721aa6574a8a57d6953b1184df26071c1b45473c8eb41a532df4d0bda95"
+    ],
+    "relevant_chunk_ids": [
+      "d63587de4cee055010b226eac8c99c5e4d628f6405d4fc5c0c6e99f57f4fc7ae"
+    ],
+    "reference_answer": "东亚园林与山水审美",
+    "evidence_phrase": "其景观模式对东亚园林与山水审美产生广泛影响",
+    "matched_chunk_indexes": [
+      3
+    ]
+  },
+  {
+    "id": "eval_078",
+    "query": "武当山古建筑群的空间布局最突出体现了怎样的营造理念？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "wudang_mountains.txt"
+    ],
+    "relevant_document_ids": [
+      "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e"
+    ],
+    "relevant_chunk_ids": [
+      "9203dbc097570a5386b0e748e94f7fce8e056b901738ce6f9bea842854ab3e68"
+    ],
+    "reference_answer": "顺应自然地形",
+    "evidence_phrase": "其空间布局展示了古代建筑顺应自然地形的理念",
+    "matched_chunk_indexes": [
+      3
+    ]
+  },
+  {
+    "id": "eval_079",
+    "query": "宏村水系为什么不仅是景观元素？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "xidi_hongcun.txt"
+    ],
+    "relevant_document_ids": [
+      "d56c407a45e3bb307c039bf675e352e85c8cfbeb3d98906c8f5ffad35f7d14da"
+    ],
+    "relevant_chunk_ids": [
+      "fc30584ddba89c0f6903184e522b9bb06272a62e9f00f6e46ac5f406e145b740",
+      "93a5cc99293d37867b4b2a06bfd4b1b43557c463d9dc18c6f3088d87cebbde48"
+    ],
+    "reference_answer": "它与居民日常生活和传统村落空间组织相结合",
+    "evidence_phrase": "宏村水系与日常生活结合",
+    "matched_chunk_indexes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "eval_080",
+    "query": "为什么甲骨文对安阳殷墟研究特别重要？",
+    "category": "semantic",
+    "difficulty": "medium",
+    "relevant_sources": [
+      "yin_xu.txt"
+    ],
+    "relevant_document_ids": [
+      "7bfd762850881b1b0f41cca4d8e352c0ce226b603160fc24db03e15f520d5400"
+    ],
+    "relevant_chunk_ids": [
+      "da2711d83e6c10170455a3b6306a905173545b690423d5bc74d01536f9dc4637"
+    ],
+    "reference_answer": "它可用于研究早期汉字体系和商代历史",
+    "evidence_phrase": "甲骨文对研究早期汉字体系和商代历史具有不可替代的重要性",
+    "matched_chunk_indexes": [
+      3
+    ]
+  }
+]

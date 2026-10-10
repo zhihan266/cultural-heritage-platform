@@ -14,12 +14,21 @@ class VectorStore(ABC):
     def upsert(self, records: list[VectorRecord]) -> None:
         """Persist records using their stable chunk IDs."""
 
-    @abstractmethod
-    def search(
+
+    def dense_search(
         self, query_vector: list[float], top_k: int = 5,
         document_id: str | None = None,
     ) -> list[VectorSearchHit]:
         """Retrieve dense candidates."""
+
+    @abstractmethod
+    def bm25_search(
+            self,
+            query_text: str,
+            top_k: int = 5,
+            document_id: str | None = None,
+    ) -> list[VectorSearchHit]:
+        """Retrieve BM25 sparse candidates."""
 
     @abstractmethod
     def hybrid_search(

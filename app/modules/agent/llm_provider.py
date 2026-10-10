@@ -1,4 +1,4 @@
-"""调用 OpenAI 兼容的本地 AI 接口，并解析返回的回答。"""
+"""调用 OpenAI 兼容的 AI 接口，并解析返回的回答。"""
 
 import asyncio
 import json
@@ -8,41 +8,47 @@ from urllib.request import Request, urlopen
 from fastapi import HTTPException, status
 from app.core.config import get_settings
 from app.modules.agent.models import AiAgent
+from app.modules.agent.request_config import (
+    build_auth_headers, build_llm_payload, redact_request_error,
+)
 from app.modules.agent.tool_models import LlmToolCall, LlmToolResponse
 
 
 async def request_local_ai_raw(
     ai: AiAgent, user_prompt: str, system_prompt: str, timeout: float | None = None
 ) -> str:
-    """使用 OpenAI Chat Completions 格式调用任意本地 AI。"""
+    """使用同一 OpenAI Chat Completions 格式调用 local 或 Bearer AI。"""
     if not ai.enabled:
         raise HTTPException(status.HTTP_409_CONFLICT, "AI service is disabled")
     if not ai.api_url:
         raise HTTPException(status.HTTP_422_UNPROCESSABLE_ENTITY, "AI api_url is not configured")
-    payload = {
+    headers = build_auth_headers(ai)
+    payload = build_llm_payload(ai, {
         "model": ai.name,
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
         "stream": False,
-    }
+    })
     try:
         response_data = await asyncio.to_thread(
             _post_json,
             ai.api_url,
             payload,
             get_settings().llm_timeout_seconds if timeout is None else timeout,
+            headers,
         )
     except HTTPError as exc:
-        detail = exc.read().decode("utf-8", errors="replace")
+        detail = redact_request_error(exc.read().decode("utf-8", errors="replace"), headers)
         raise HTTPException(
             status.HTTP_502_BAD_GATEWAY, f"Local AI returned HTTP {exc.code}: {detail[:500]}"
-        ) from exc
+        ) from (None if "Authorization" in headers else exc)
     except (URLError, TimeoutError) as exc:
         raise HTTPException(
-            status.HTTP_502_BAD_GATEWAY, f"Cannot connect to local AI: {exc}"
-        ) from exc
+            status.HTTP_502_BAD_GATEWAY,
+            f"Cannot connect to local AI: {redact_request_error(str(exc), headers)}",
+        ) from (None if "Authorization" in headers else exc)
     except json.JSONDecodeError as exc:
         raise HTTPException(
             status.HTTP_502_BAD_GATEWAY, "Local AI response is not valid JSON"
@@ -56,12 +62,14 @@ async def request_local_ai_raw(
     return answer
 
 
-def _post_json(url: str, payload: dict[str, Any], timeout: float) -> dict[str, Any]:
-    """发送不带 Authorization 的 JSON POST 请求，并解析对象响应。"""
+def _post_json(
+    url: str, payload: dict[str, Any], timeout: float, headers: dict[str, str] | None = None,
+) -> dict[str, Any]:
+    """使用已构造的 Header 发送 JSON POST 请求，并解析对象响应。"""
     request = Request(
         url,
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
+        headers=headers if headers is not None else {"Content-Type": "application/json"},
         method="POST",
     )
     with urlopen(request, timeout=timeout) as response:
@@ -72,19 +80,22 @@ def _post_json(url: str, payload: dict[str, Any], timeout: float) -> dict[str, A
 
 
 async def request_local_ai_with_tools(
-    ai, *, messages: list[dict[str, Any]], tools: list[dict[str, Any]]
+    ai: AiAgent, *, messages: list[dict[str, Any]], tools: list[dict[str, Any]]
 ) -> LlmToolResponse:
     if not ai.enabled:
         raise RuntimeError(f"AI is disabled: {ai.id}")
     if not ai.api_url:
         raise RuntimeError(f"AI api_url is empty: {ai.id}")
-    payload: dict[str, Any] = {
+    headers = build_auth_headers(ai)
+    payload = build_llm_payload(ai, {
         "model": ai.name,
         "messages": messages,
         "tools": tools,
         "tool_choice": "auto",
-    }
-    response_payload = await asyncio.to_thread(_request_tool_calling_sync, ai.api_url, payload)
+    })
+    response_payload = await asyncio.to_thread(
+        _request_tool_calling_sync, ai.api_url, payload, headers,
+    )
     return _parse_tool_calling_response(response_payload)
 
 
@@ -105,20 +116,30 @@ def _extract_answer(data: dict[str, Any]) -> str | None:
     return None
 
 
-def _request_tool_calling_sync(api_url: str, payload: dict[str, Any]) -> dict[str, Any]:
+def _request_tool_calling_sync(
+    api_url: str, payload: dict[str, Any], headers: dict[str, str] | None = None,
+) -> dict[str, Any]:
     """同步发送一次 OpenAI-compatible Chat Completions 请求。"""
     body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-    request = Request(
-        api_url, data=body, headers={"Content-Type": "application/json"}, method="POST"
-    )
+    request_headers = headers if headers is not None else {"Content-Type": "application/json"}
+    request = Request(api_url, data=body, headers=request_headers, method="POST")
     try:
         with urlopen(request, timeout=get_settings().llm_tool_timeout_seconds) as response:
             raw_body = response.read().decode("utf-8")
     except HTTPError as exc:
-        error_body = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"Tool-calling LLM HTTP error {exc.code}: {error_body}") from exc
-    except URLError as exc:
-        raise RuntimeError(f"Tool-calling LLM connection failed: {exc.reason}") from exc
+        error_body = redact_request_error(
+            exc.read().decode("utf-8", errors="replace"), request_headers,
+        )
+        raise RuntimeError(f"Tool-calling LLM HTTP error {exc.code}: {error_body}") from (
+            None if "Authorization" in request_headers else exc
+        )
+    except (URLError, TimeoutError) as exc:
+        reason = redact_request_error(
+            str(exc.reason) if isinstance(exc, URLError) else str(exc), request_headers,
+        )
+        raise RuntimeError(f"Tool-calling LLM connection failed: {reason}") from (
+            None if "Authorization" in request_headers else exc
+        )
     try:
         data = json.loads(raw_body)
     except json.JSONDecodeError as exc:

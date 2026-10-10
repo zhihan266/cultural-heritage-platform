@@ -23,10 +23,20 @@ class RetrievalEvaluationCase:
 
     question: str
 
-    # 当前的case的难度/类型
+    # 当前的case的类型
     category: str
 
+    difficulty: str
+
+    relevant_sources: list[str]
+
     relevant_document_ids: list[str]
+
+    relevant_chunk_ids: list[str]
+
+    reference_answer: str | None = None
+
+
 
 @dataclass(frozen=True)
 class RetrievalCaseResult:
@@ -40,18 +50,42 @@ class RetrievalCaseResult:
 
     category: str
 
-    # Retriever 实际返回的 document_id，
-    # 顺序就是 Retriever 的排名顺序。
+    difficulty: str
+
+    # =========================
+    # Chunk-level
+    # =========================
+
+    retrieved_chunk_ids: list[str]
+
+    relevant_chunk_ids: list[str]
+
+    chunk_recall_at_k: dict[int, float]
+
+    chunk_hit_at_k: dict[int, float]
+
+    chunk_ndcg_at_k: dict[int, float]
+
+    chunk_reciprocal_rank: float
+
+    # =========================
+    # Document-level
+    # =========================
+
     retrieved_document_ids: list[str]
 
     relevant_document_ids: list[str]
 
-    # 当前问题的 Recall@K。
-    recall_at_k: dict[int, float]
+    document_recall_at_k: dict[int, float]
 
-    # 当前问题的 Reciprocal Rank。RR = 1 / 第一个相关结果的排名
-    reciprocal_rank: float
-    # 延迟
+    document_hit_at_k: dict[int, float]
+
+    document_reciprocal_rank: float
+
+    # =========================
+    # Performance
+    # =========================
+
     latency_ms: float
 
 
@@ -63,10 +97,32 @@ class RetrievalEvaluationSummary:
     experiment_name: str
     # 总测试问题的数量
     total_cases: int
-    # 所有测试问题的Recall@k
-    recall_at_k: dict[int, float]
+    # =========================
+    # Chunk-level 主指标
+    # =========================
 
-    # Mean Reciprocal Rank的平均值。
-    mrr: float
+    chunk_recall_at_k: dict[int, float]
+
+    chunk_hit_at_k: dict[int, float]
+
+    chunk_ndcg_at_k: dict[int, float]
+
+    chunk_mrr: float
+
+    # =========================
+    # Document-level 辅助指标
+    # =========================
+
+    document_recall_at_k: dict[int, float]
+
+    document_hit_at_k: dict[int, float]
+
+    document_mrr: float
+
+    # =========================
+    # Performance
+    # =========================
 
     average_latency_ms: float
+
+    p95_latency_ms: float

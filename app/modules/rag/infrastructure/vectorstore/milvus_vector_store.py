@@ -95,6 +95,23 @@ class MilvusVectorStore(VectorStore):
     def _document_filter(document_id: str | None) -> str:
         return "" if document_id is None else f"document_id == {json.dumps(document_id, ensure_ascii=False)}"
 
+
+
+    def _dense_search_params(self) -> dict:
+        return {
+            "metric_type": self.config.metric_type,
+            "params": {
+                "ef": 64,
+            },
+        }
+
+    @staticmethod
+    def _bm25_search_params() -> dict:
+        return {
+            "metric_type": "BM25",
+            "params": {},
+        }
+
     @staticmethod
     def _map_hits(results, *, score_kind: str) -> list[VectorSearchHit]:
         if not results:
@@ -126,7 +143,7 @@ class MilvusVectorStore(VectorStore):
         self.client.flush(collection_name=self.config.collection_name)
         logger.debug("Indexed %d chunks", len(records))
 
-    def search(
+    def dense_search(
         self, query_vector: list[float], top_k: int = 5,
         document_id: str | None = None,
     ) -> list[VectorSearchHit]:
@@ -136,9 +153,44 @@ class MilvusVectorStore(VectorStore):
             collection_name=self.config.collection_name, anns_field="embedding",
             data=[query_vector], limit=top_k, filter=self._document_filter(document_id),
             output_fields=_OUTPUT_FIELDS,
-            search_params={"metric_type": self.config.metric_type, "params": {"ef": 64}},
+            search_params=self._dense_search_params(),
         )
         return self._map_hits(results, score_kind=self.config.metric_type.lower())
+
+    def bm25_search(
+            self,
+            query_text: str,
+            top_k: int = 5,
+            document_id: str | None = None,
+    ) -> list[VectorSearchHit]:
+        if not isinstance(query_text, str):
+            raise TypeError(
+                "query_text must be a string"
+            )
+        query_text = query_text.strip()
+        if not query_text:
+            raise ValueError(
+                "query_text must not be empty"
+            )
+        if top_k <= 0:
+            raise ValueError(
+                "top_k must be greater than 0"
+            )
+
+        self._check_hybrid_schema()
+        results = self.client.search(
+            collection_name=self.config.collection_name,
+            anns_field="sparse",
+            data=[query_text],
+            limit=top_k,
+            filter=self._document_filter(document_id),
+            output_fields=_OUTPUT_FIELDS,
+            search_params=self._bm25_search_params(),
+        )
+        return self._map_hits(
+            results,
+            score_kind="bm25",
+        )
 
     def hybrid_search(
         self, *, query_vector: list[float], query_text: str, top_k: int = 5,
@@ -152,14 +204,15 @@ class MilvusVectorStore(VectorStore):
         candidates = max(candidate_top_k, top_k)
         expression = self._document_filter(document_id) or None
         requests = [
-            AnnSearchRequest(
-                data=[query_vector], anns_field="embedding", limit=candidates,
-                param={"metric_type": self.config.metric_type, "params": {"ef": 64}},
-                expr=expression,
+            self._build_dense_request(
+                query_vector=query_vector,
+                limit=candidates,
+                expression=expression,
             ),
-            AnnSearchRequest(
-                data=[query_text], anns_field="sparse", limit=candidates,
-                param={"metric_type": "BM25", "params": {}}, expr=expression,
+            self._build_bm25_request(
+                query_text=query_text,
+                limit=candidates,
+                expression=expression,
             ),
         ]
         # RRF operates on ranks; its score is not cosine similarity or reranker relevance.
@@ -168,6 +221,36 @@ class MilvusVectorStore(VectorStore):
             ranker=RRFRanker(60), limit=top_k, output_fields=_OUTPUT_FIELDS,
         )
         return self._map_hits(results, score_kind="rrf")
+
+    def _build_dense_request(
+            self,
+            *,
+            query_vector: list[float],
+            limit: int,
+            expression: str | None,
+    ) -> AnnSearchRequest:
+        return AnnSearchRequest(
+            data=[query_vector],
+            anns_field="embedding",
+            limit=limit,
+            param=self._dense_search_params(),
+            expr=expression,
+        )
+
+    def _build_bm25_request(
+            self,
+            *,
+            query_text: str,
+            limit: int,
+            expression: str | None,
+    ) -> AnnSearchRequest:
+        return AnnSearchRequest(
+            data=[query_text],
+            anns_field="sparse",
+            limit=limit,
+            param=self._bm25_search_params(),
+            expr=expression,
+        )
 
     def delete_by_document(self, document_id: str) -> None:
         if not document_id.strip():

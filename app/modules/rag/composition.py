@@ -27,6 +27,9 @@ from app.modules.rag.infrastructure.ingestion.parser_factory import ParserFactor
 from app.modules.rag.infrastructure.reranking.vllm_reranker import VllmReranker
 from app.modules.rag.infrastructure.vectorstore.config import MilvusConfig
 from app.modules.rag.infrastructure.vectorstore.milvus_vector_store import MilvusVectorStore
+from app.modules.rag.application.bm25_retriever import (
+    BM25Retriever,
+)
 
 
 def build_preprocessing_service() -> PreprocessingService:
@@ -154,4 +157,20 @@ def build_rag_context_service(
             http_client, public_retriever=retriever,
         ),
         public_top_k=get_settings().rag_task_retrieval_top_k,
+    )
+
+def build_bm25_retriever(
+    *,
+    vector_store: VectorStore | None = None,
+) -> BM25Retriever:
+
+    return BM25Retriever(
+        vector_store=(
+            build_vector_store()
+            if vector_store is None
+            else vector_store
+        ),
+        default_top_k=(
+            get_settings().rag_retrieval_top_k
+        ),
     )

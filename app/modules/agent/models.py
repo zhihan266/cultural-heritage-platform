@@ -31,6 +31,11 @@ class AiAgent(BaseModel):
     last_checked_at: datetime | None = None
     last_error: str | None = None
     metadata: dict[str, Any] = Field(default_factory=dict)
+    provider: str | None = Field(default=None, max_length=50)
+    model_name: str | None = Field(default=None, max_length=255)
+    auth_type: str = Field(default="none", max_length=30)
+    credential_ref: str | None = Field(default=None, max_length=100)
+    generation_config: dict[str, Any] | None = None
 
 
 class AiAgentTable(Base):
@@ -56,3 +61,12 @@ class AiAgentTable(Base):
     )
     last_error: Mapped[str | None] = mapped_column(Text, nullable=True)
     metadata_json: Mapped[dict] = mapped_column(JSON, default=dict, nullable=False)
+    provider: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    model_name: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    auth_type: Mapped[str] = mapped_column(
+        String(30), default="none", server_default="none", nullable=False,
+    )
+    credential_ref: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    generation_config_json: Mapped[dict[str, Any] | None] = mapped_column(
+        JSON(none_as_null=True), nullable=True,
+    )

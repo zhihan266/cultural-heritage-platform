@@ -30,14 +30,21 @@ async def lifespan(application: FastAPI):
         logger.info("Redis backend ready: %s", redis_client.backend_name)
     except Exception:
         logger.exception("Redis connection failed")
-    health_task = asyncio.create_task(check_enabled_ai_agents())
-    application.state.ai_health_task = health_task
+    health_task = None
+    if settings.ai_health_check_on_startup and not getattr(
+        application.state, "ai_health_check_started", False,
+    ):
+        # 标记在创建任务前设置；任务结束或取消后都不自动重试。
+        application.state.ai_health_check_started = True
+        health_task = asyncio.create_task(check_enabled_ai_agents())
+        application.state.ai_health_task = health_task
     try:
         yield
     finally:
-        health_task.cancel()
-        with suppress(asyncio.CancelledError):
-            await health_task
+        if health_task is not None:
+            health_task.cancel()
+            with suppress(asyncio.CancelledError):
+                await health_task
         await asyncio.to_thread(engine.dispose)
 
 

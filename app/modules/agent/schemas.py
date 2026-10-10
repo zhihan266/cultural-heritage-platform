@@ -1,6 +1,7 @@
 """AI 注册和健康检查的接口模型。"""
 
 from datetime import datetime
+from typing import Any
 
 from pydantic import BaseModel, Field, HttpUrl
 
@@ -14,6 +15,11 @@ class AiRegisterRequest(BaseModel):
     api_url: HttpUrl | None = None
     type: AiType = AiType.BUSINESS
     initial_score: float = Field(default=1.0, ge=0.1, le=10)
+    provider: str | None = Field(default=None, max_length=50)
+    model_name: str | None = Field(default=None, max_length=255)
+    auth_type: str = Field(default="none", max_length=30)
+    credential_ref: str | None = Field(default=None, max_length=100)
+    generation_config: dict[str, Any] | None = None
 
 
 class AiRegisterResponse(BaseModel):

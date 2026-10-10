@@ -95,7 +95,7 @@ class DenseRetriever(Retrieval):
 
         # 调用Vectorstore执行ANN搜索
         hits = await asyncio.to_thread(
-            self.vector_store.search,
+            self.vector_store.dense_search,
             query_vector = query_vector,
             top_k = actual_top_k,
             document_id = document_id,

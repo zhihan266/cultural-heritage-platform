@@ -82,6 +82,20 @@ class Settings(BaseSettings):
     llm_health_timeout_seconds: float = Field(
         default=30.0, alias="LLM_HEALTH_TIMEOUT_SECONDS", gt=0, allow_inf_nan=False,
     )
+    ai_health_check_on_startup: bool = Field(
+        default=True, alias="AI_HEALTH_CHECK_ON_STARTUP",
+    )
+
+    deepseek_api_key: SecretStr = Field(
+        default=SecretStr(""),
+        alias="DEEPSEEK_API_KEY",
+    )
+
+    deepseek_base_url: str = Field(
+        default="https://api.deepseek.com",
+        alias="DEEPSEEK_BASE_URL",
+        min_length=1,
+    )
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8",

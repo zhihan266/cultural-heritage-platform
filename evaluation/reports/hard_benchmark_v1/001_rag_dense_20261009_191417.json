@@ -1,0 +1,2248 @@
+{
+  "report_meta": {
+    "category": "rag",
+    "variant": "dense",
+    "generated_at": "2026-10-09T11:14:17.844807+00:00",
+    "schema_version": "1.0",
+    "report_file": "001_rag_dense_20261009_191417.json"
+  },
+  "summary": {
+    "experiment_name": "dense",
+    "total_cases": 30,
+    "chunk_recall_at_k": {
+      "1": 0.3194444444444444,
+      "3": 0.6027777777777777,
+      "5": 0.8500000000000001,
+      "10": 0.9222222222222223
+    },
+    "chunk_hit_at_k": {
+      "1": 0.7,
+      "3": 0.8666666666666667,
+      "5": 0.9333333333333333,
+      "10": 0.9666666666666667
+    },
+    "chunk_ndcg_at_k": {
+      "1": 0.7,
+      "3": 0.6066522069202832,
+      "5": 0.7277517540149164,
+      "10": 0.7615391468898722
+    },
+    "chunk_mrr": 0.7927777777777778,
+    "document_recall_at_k": {
+      "1": 0.8333333333333334,
+      "3": 0.9666666666666667,
+      "5": 1.0,
+      "10": 1.0
+    },
+    "document_hit_at_k": {
+      "1": 0.8333333333333334,
+      "3": 0.9666666666666667,
+      "5": 1.0,
+      "10": 1.0
+    },
+    "document_mrr": 0.9066666666666666,
+    "average_latency_ms": 70.5995866660184,
+    "p95_latency_ms": 107.03679499929416
+  },
+  "category_summary": {
+    "paraphrase_semantic": {
+      "total_cases": 6,
+      "chunk_recall_at_k": {
+        "1": 0.4166666666666667,
+        "3": 0.611111111111111,
+        "5": 0.9444444444444443,
+        "10": 0.9444444444444443
+      },
+      "chunk_hit_at_k": {
+        "1": 0.8333333333333334,
+        "3": 0.8333333333333334,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.8333333333333334,
+        "3": 0.6532867981913645,
+        "5": 0.8226923054600047,
+        "10": 0.8226923054600047
+      },
+      "chunk_mrr": 0.875,
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_mrr": 1.0,
+      "average_latency_ms": 78.67808333200325,
+      "p95_latency_ms": 111.55497499930789
+    },
+    "confusable": {
+      "total_cases": 6,
+      "chunk_recall_at_k": {
+        "1": 0.19444444444444442,
+        "3": 0.4444444444444444,
+        "5": 0.7222222222222222,
+        "10": 0.888888888888889
+      },
+      "chunk_hit_at_k": {
+        "1": 0.5,
+        "3": 0.8333333333333334,
+        "5": 0.8333333333333334,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.5,
+        "3": 0.44751357102280154,
+        "5": 0.5939485907794161,
+        "10": 0.6757397827694146
+      },
+      "chunk_mrr": 0.6666666666666666,
+      "document_recall_at_k": {
+        "1": 0.5,
+        "3": 0.8333333333333334,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 0.5,
+        "3": 0.8333333333333334,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_mrr": 0.7000000000000001,
+      "average_latency_ms": 72.21623333559062,
+      "p95_latency_ms": 110.2675249967433
+    },
+    "indirect_reference": {
+      "total_cases": 6,
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 0.8333333333333334,
+        "10": 0.8333333333333334
+      },
+      "chunk_hit_at_k": {
+        "1": 0.6666666666666666,
+        "3": 0.8333333333333334,
+        "5": 0.8333333333333334,
+        "10": 0.8333333333333334
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.6666666666666666,
+        "3": 0.6294908213750937,
+        "5": 0.7130351272654082,
+        "10": 0.7130351272654082
+      },
+      "chunk_mrr": 0.75,
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_mrr": 1.0,
+      "average_latency_ms": 70.29016666880732,
+      "p95_latency_ms": 79.96835000085412
+    },
+    "fine_grained_hard": {
+      "total_cases": 6,
+      "chunk_recall_at_k": {
+        "1": 0.27777777777777773,
+        "3": 0.5555555555555555,
+        "5": 0.9166666666666666,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.5,
+        "3": 0.8333333333333334,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.5,
+        "3": 0.51687709694759,
+        "5": 0.6927330340822947,
+        "10": 0.7291342735519887
+      },
+      "chunk_mrr": 0.6722222222222222,
+      "document_recall_at_k": {
+        "1": 0.6666666666666666,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 0.6666666666666666,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_mrr": 0.8333333333333334,
+      "average_latency_ms": 65.82896666562495,
+      "p95_latency_ms": 67.56379999933415
+    },
+    "multi_clue": {
+      "total_cases": 6,
+      "chunk_recall_at_k": {
+        "1": 0.375,
+        "3": 0.736111111111111,
+        "5": 0.8333333333333334,
+        "10": 0.9444444444444443
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7860927470645668,
+        "5": 0.816349712487459,
+        "10": 0.8670942454025453
+      },
+      "chunk_mrr": 1.0,
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_mrr": 1.0,
+      "average_latency_ms": 65.98448332806583,
+      "p95_latency_ms": 68.06992498968611
+    }
+  },
+  "difficulty_summary": {
+    "hard": {
+      "total_cases": 30,
+      "chunk_recall_at_k": {
+        "1": 0.3194444444444444,
+        "3": 0.6027777777777777,
+        "5": 0.8500000000000001,
+        "10": 0.9222222222222223
+      },
+      "chunk_hit_at_k": {
+        "1": 0.7,
+        "3": 0.8666666666666667,
+        "5": 0.9333333333333333,
+        "10": 0.9666666666666667
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.7,
+        "3": 0.6066522069202832,
+        "5": 0.7277517540149164,
+        "10": 0.7615391468898722
+      },
+      "chunk_mrr": 0.7927777777777778,
+      "document_recall_at_k": {
+        "1": 0.8333333333333334,
+        "3": 0.9666666666666667,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 0.8333333333333334,
+        "3": 0.9666666666666667,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_mrr": 0.9066666666666666,
+      "average_latency_ms": 70.5995866660184,
+      "p95_latency_ms": 107.03679499929416
+    }
+  },
+  "cases": [
+    {
+      "case_id": "hard_001",
+      "question": "一种圆形或方形大型聚居建筑，其厚实土质围护结构为什么既关系到建筑稳定，又能应对外部安全威胁？",
+      "category": "paraphrase_semantic",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "aa17ae8b4596037fdaddae4360435fd5ef385ba93534db478b799857eeef8140",
+        "9379bdbb53b2746e939424498f2e7c333f6b60e64acb3049f81dc70b27a66388",
+        "af4fc969391d7d21fa187a1f0b7998d18908ca7083cfc88d35010430fc73fdf9",
+        "1904a9272097f29c283a986978fe7287ecb86c179326b965185ba5afdb60f0b6",
+        "6ca8d756c42ccbf3bdf1fd10f01c9dad0a0ce30b02a16386d0ba0540b7516fd0",
+        "f0ba005b42fb82aef141920703664e059de353eea7c51b15ca20340cdeed3ff7",
+        "84e3c29ba2f66d2b4bcec24870008b31c83869d47d94b5db9a417c3c1ecd998e",
+        "dea28bcac5aff42ae481591f37557694ce0d7bc02dcfd4b117b4be18379201d5",
+        "1e554793db6c71eaae79b673497e7c467e9d39668c94342f1cf6c45eddbbfe25",
+        "b86008821873cb04a53115f700b765d689d2a08fbaa8b5c34fca371d973893fb"
+      ],
+      "relevant_chunk_ids": [
+        "aa17ae8b4596037fdaddae4360435fd5ef385ba93534db478b799857eeef8140",
+        "6ca8d756c42ccbf3bdf1fd10f01c9dad0a0ce30b02a16386d0ba0540b7516fd0",
+        "1904a9272097f29c283a986978fe7287ecb86c179326b965185ba5afdb60f0b6"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.3333333333333333,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.46927872602275644,
+        "5": 0.8529278650606567,
+        "10": 0.8529278650606567
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "bcb828d5f45f4cd32777f6a2b99d6386ee5312efb5be229abee6898e2bde18e7",
+        "c8d1edd34321e29c79e6bbd07b8c164b85f24bf44d51a399085ca502b1a26a11",
+        "2e9d2f32ba30dbe74980ae65e1468c23ca76602a756a33531fe99e71a16219c7",
+        "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e"
+      ],
+      "relevant_document_ids": [
+        "bcb828d5f45f4cd32777f6a2b99d6386ee5312efb5be229abee6898e2bde18e7"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 117.20269999932498
+    },
+    {
+      "case_id": "hard_002",
+      "question": "古代欧亚交流网络为什么不能理解为从起点直达终点的一条固定道路，而更适合看作相互连接的交通体系？",
+      "category": "paraphrase_semantic",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "512ee0c76b746c122b9e0fc88636fba892202c435977fea62af53a2fe20d1b39",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103",
+        "d0e27b0ea50b9d1d81759b6f6c26f188b78d655545b85edb432140ce57da01b8",
+        "35da1b854571197db6b6d80125cbec707eac6b3749642c873fcbfa89fbaa6685",
+        "c2dd8f1cd4b3a267d399c5b5f52fac325e2a127935657126b37dd879a340f6fc",
+        "cc817bc9c09a15dfabeca160d6933a1ae21434244734ef417a35293b4923f154",
+        "43d350621cd2f756610fddef93967cf4a985ef91f29c28039afb50458edab270",
+        "be467d66c5b46970bce384458fa3214760d80f7b4a44885df51ef43a2f590042"
+      ],
+      "relevant_chunk_ids": [
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0"
+      ],
+      "chunk_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1",
+        "61ea3f18d106f497242d918b10f1d419f025f4c63960d719c299bb5a76381edf",
+        "7bfd762850881b1b0f41cca4d8e352c0ce226b603160fc24db03e15f520d5400",
+        "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9",
+        "d56c407a45e3bb307c039bf675e352e85c8cfbeb3d98906c8f5ffad35f7d14da"
+      ],
+      "relevant_document_ids": [
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 94.61179999925662
+    },
+    {
+      "case_id": "hard_003",
+      "question": "传统园林在实际占地没有增加的情况下，怎样借助园外或远处景物使游览者产生空间被扩展的感觉？",
+      "category": "paraphrase_semantic",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "c20d3695fb86700934dbbdff049b59e260085135638beb6d57d4d1d7dc6d1109",
+        "c1bed691231df832c7cc150cf84631e23cd9ca2eb54c8241d25587af746d46ee",
+        "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be",
+        "ba37ffa8fde95d7e426f778d852e282166406c958981a702f1d55d9559fe9e29",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d",
+        "e5044c71f6c28e32cf329bdcd5efa29638bdb72e43fa6db46490079832662a51",
+        "2e35bd603f7147ef184441fc67825d0df3745030809c50ff64f44515b38b1d44",
+        "9018bb6404339fa62b6b976e1362cd2d31a0b671f1526853e15b5c8c58015877",
+        "8c9303137af281f1ca8b90a7b002bdd77490de0334aff9d0bee6163ecb55d4e6",
+        "ee7e5e7a91aa2a4d09a31b49fbf0395b0dc36deb1e10dbccd48250f27290689b"
+      ],
+      "relevant_chunk_ids": [
+        "ba37ffa8fde95d7e426f778d852e282166406c958981a702f1d55d9559fe9e29",
+        "c1bed691231df832c7cc150cf84631e23cd9ca2eb54c8241d25587af746d46ee",
+        "c20d3695fb86700934dbbdff049b59e260085135638beb6d57d4d1d7dc6d1109"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7653606369886217,
+        "5": 0.9674679834891693,
+        "10": 0.9674679834891693
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "04f6f25bddca5cfc0251eef51c1b3436e55f35274cdf01130e64c80c77a6c137",
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140",
+        "30c3bd0378978d49e211ec15910d6b3b9e00119b64941199b76413ba584ad65c"
+      ],
+      "relevant_document_ids": [
+        "04f6f25bddca5cfc0251eef51c1b3436e55f35274cdf01130e64c80c77a6c137"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 76.93529999232851
+    },
+    {
+      "case_id": "hard_004",
+      "question": "同一类大型陶制人物为什么能够成批制造，同时不同个体的面貌和细节又不会完全相同？",
+      "category": "paraphrase_semantic",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "12e9680ee7fe30a35636229724fd078c13002ad73540622a8a1ecb59d820b23a",
+        "5777ebdd9903d8c06128ef54c6ace06e8fd6d267a66d35c4fb2e0cf80a2e5aec",
+        "5f6e9c94e8d2927db40ce432ee42c0b4337238d0bc94c03030c224c137c710dd",
+        "32ee4b466d2d0d48c123de85330ab39f89bd5d37d322cf19fe28b837f7749c73",
+        "c749490a44e9b5d968e0f3a3b49580e2620ac9ecb303cbc5579e416290a11dbe",
+        "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+        "cd06dea1afba07613eb3bb90a23654ed1d333cbda6f6b0ab3169ac11cc3e5468",
+        "ac27c5b5414350077646d7c1d843a3d4004d90b7aee266153ef25159c130efca",
+        "cb7884812650fbe74d3b8b83bcc8bd5ad6ab3351f7203767a24d818b60375fb9",
+        "a5b1f7a0d591ed3263e2519b106556a05556659922253ef842bae7823b6e391f"
+      ],
+      "relevant_chunk_ids": [
+        "12e9680ee7fe30a35636229724fd078c13002ad73540622a8a1ecb59d820b23a",
+        "5777ebdd9903d8c06128ef54c6ace06e8fd6d267a66d35c4fb2e0cf80a2e5aec",
+        "dc7f86cd06bfacc56b53108ea4dba3494aa2c4173bd65c02efe0246b286e55eb"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 0.6666666666666666,
+        "10": 0.6666666666666666
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7653606369886217,
+        "5": 0.7653606369886217,
+        "10": 0.7653606369886217
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48",
+        "2cb27f955210079ec3f118db89d2287e3a362becec0953fced505e0bf81d64bd",
+        "61ea3f18d106f497242d918b10f1d419f025f4c63960d719c299bb5a76381edf",
+        "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e",
+        "b259f00000af617480b5ee66df892fbc5af79a86a08881a368e8e0fb421132c2",
+        "789359bbdf223221152c1116c0a4c1cd97009b7ec3138b286844f4c5c73e3fa0"
+      ],
+      "relevant_document_ids": [
+        "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 75.9029000037117
+    },
+    {
+      "case_id": "hard_005",
+      "question": "同样以采摘后的植物嫩叶为原料，为什么最终可以形成风味和性质不同的多种饮品？",
+      "category": "paraphrase_semantic",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "62863445073eaa6ee787e9c8fa395122f74842e1383ec0f488ced713ca70e444",
+        "32ee4b466d2d0d48c123de85330ab39f89bd5d37d322cf19fe28b837f7749c73",
+        "17c69f02eefce6a8a20e9d87562d85b86b307df32728481f1a65464aec2f913b",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d",
+        "7ac7d0f233afb5ef0320dcd03795ee5c29eb1596a04c2b8ecd859a7f3c3601ee",
+        "5f83d721851e4fb0ee41145b23cb426974ad153aa4e3069bd9d622b3830b7c4b",
+        "ac71282d4ea54e9103f2ebebe4a0cb3b012e98c1be03809aa5e503acea6c2ed2",
+        "9018bb6404339fa62b6b976e1362cd2d31a0b671f1526853e15b5c8c58015877",
+        "464b1c71e28c924e8ea0bdddf5f60969e3d05280d184afd9643e4786af73e6ef",
+        "3f4195893f9f91d3a9b28deb090b66422fc62b700d2563d8afdd9599b5d9dba9"
+      ],
+      "relevant_chunk_ids": [
+        "62863445073eaa6ee787e9c8fa395122f74842e1383ec0f488ced713ca70e444",
+        "17c69f02eefce6a8a20e9d87562d85b86b307df32728481f1a65464aec2f913b"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.9197207891481876,
+        "5": 0.9197207891481876,
+        "10": 0.9197207891481876
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "2cb27f955210079ec3f118db89d2287e3a362becec0953fced505e0bf81d64bd",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140",
+        "32d3e9c8fdddb93a4e03f175538c7d174f1d09f6a4d8362b8a2d77db730872b3",
+        "789359bbdf223221152c1116c0a4c1cd97009b7ec3138b286844f4c5c73e3fa0",
+        "31fd6b5db272fb25c6b2ee36f072d9fef84bd4c2dac0bcc1a576011202938782"
+      ],
+      "relevant_document_ids": [
+        "2cb27f955210079ec3f118db89d2287e3a362becec0953fced505e0bf81d64bd"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 73.3477000030689
+    },
+    {
+      "case_id": "hard_006",
+      "question": "有一处道教建筑遗产并没有强行把山地改造成规整平地，其建筑组织方式主要体现了怎样的人与环境关系？",
+      "category": "paraphrase_semantic",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "1e554793db6c71eaae79b673497e7c467e9d39668c94342f1cf6c45eddbbfe25",
+        "fc9c3cd4614d60a3924a66c8bb61cd5e5e67a1d31811fe491cc7b736f28bcf8f",
+        "450aa1d46796ac1c7ae9674e1f406d705d5fd1f3696f0880bcd17a7114c6db8c",
+        "9203dbc097570a5386b0e748e94f7fce8e056b901738ce6f9bea842854ab3e68",
+        "352a52d547b011b6e48f9177799d93dc66a86456859d78ecbd0b86411ec6201d",
+        "e4e258b882cad07ee6f7fc8b3b6852617916fcbc4205ad70f89139a10700c93f",
+        "e5044c71f6c28e32cf329bdcd5efa29638bdb72e43fa6db46490079832662a51",
+        "7ac7d0f233afb5ef0320dcd03795ee5c29eb1596a04c2b8ecd859a7f3c3601ee",
+        "af4fc969391d7d21fa187a1f0b7998d18908ca7083cfc88d35010430fc73fdf9",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d"
+      ],
+      "relevant_chunk_ids": [
+        "9203dbc097570a5386b0e748e94f7fce8e056b901738ce6f9bea842854ab3e68"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.43067655807339306,
+        "10": 0.43067655807339306
+      },
+      "chunk_reciprocal_rank": 0.25,
+      "retrieved_document_ids": [
+        "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e",
+        "30c3bd0378978d49e211ec15910d6b3b9e00119b64941199b76413ba584ad65c",
+        "32d3e9c8fdddb93a4e03f175538c7d174f1d09f6a4d8362b8a2d77db730872b3",
+        "bcb828d5f45f4cd32777f6a2b99d6386ee5312efb5be229abee6898e2bde18e7",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140"
+      ],
+      "relevant_document_ids": [
+        "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 34.068099994328804
+    },
+    {
+      "case_id": "hard_007",
+      "question": "不是福建以夯土形成封闭聚居空间的传统民居，而是吸收海外建筑因素、并常以较高建筑承担防卫和观察功能的近代乡村建筑遗产是什么？",
+      "category": "confusable",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "aa17ae8b4596037fdaddae4360435fd5ef385ba93534db478b799857eeef8140",
+        "9379bdbb53b2746e939424498f2e7c333f6b60e64acb3049f81dc70b27a66388",
+        "1904a9272097f29c283a986978fe7287ecb86c179326b965185ba5afdb60f0b6",
+        "af4fc969391d7d21fa187a1f0b7998d18908ca7083cfc88d35010430fc73fdf9",
+        "6ca8d756c42ccbf3bdf1fd10f01c9dad0a0ce30b02a16386d0ba0540b7516fd0",
+        "f0ba005b42fb82aef141920703664e059de353eea7c51b15ca20340cdeed3ff7",
+        "b86008821873cb04a53115f700b765d689d2a08fbaa8b5c34fca371d973893fb",
+        "dea28bcac5aff42ae481591f37557694ce0d7bc02dcfd4b117b4be18379201d5",
+        "93a5cc99293d37867b4b2a06bfd4b1b43557c463d9dc18c6f3088d87cebbde48",
+        "43d350621cd2f756610fddef93967cf4a985ef91f29c28039afb50458edab270"
+      ],
+      "relevant_chunk_ids": [
+        "9379bdbb53b2746e939424498f2e7c333f6b60e64acb3049f81dc70b27a66388",
+        "f0ba005b42fb82aef141920703664e059de353eea7c51b15ca20340cdeed3ff7",
+        "b86008821873cb04a53115f700b765d689d2a08fbaa8b5c34fca371d973893fb"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 0.3333333333333333,
+        "5": 0.3333333333333333,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.2960819109658652,
+        "5": 0.2960819109658652,
+        "10": 0.619668607939653
+      },
+      "chunk_reciprocal_rank": 0.5,
+      "retrieved_document_ids": [
+        "bcb828d5f45f4cd32777f6a2b99d6386ee5312efb5be229abee6898e2bde18e7",
+        "c8d1edd34321e29c79e6bbd07b8c164b85f24bf44d51a399085ca502b1a26a11",
+        "d56c407a45e3bb307c039bf675e352e85c8cfbeb3d98906c8f5ffad35f7d14da"
+      ],
+      "relevant_document_ids": [
+        "c8d1edd34321e29c79e6bbd07b8c164b85f24bf44d51a399085ca502b1a26a11"
+      ],
+      "document_recall_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 0.5,
+      "latency_ms": 120.52319999202155
+    },
+    {
+      "case_id": "hard_008",
+      "question": "同为大型佛教石窟遗产，如果重点依据北朝到唐代之间造像风格的连续变化来判断，最符合的是哪一处？",
+      "category": "confusable",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "ac27c5b5414350077646d7c1d843a3d4004d90b7aee266153ef25159c130efca",
+        "f15ffc81b3300289d3c0e2b0e002341ff23f3c8483c7fdd3fc1d4bbc457d5e43",
+        "cd06dea1afba07613eb3bb90a23654ed1d333cbda6f6b0ab3169ac11cc3e5468",
+        "c90a6a88ae00d07a68b05530ef5c5ad9d64463ec69a1e10664c19087c7682161",
+        "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+        "c749490a44e9b5d968e0f3a3b49580e2620ac9ecb303cbc5579e416290a11dbe",
+        "35da1b854571197db6b6d80125cbec707eac6b3749642c873fcbfa89fbaa6685",
+        "33d1b9033d8d19836eacc91f8441bd4720382c7e28790a4f064bda4596da7ea9",
+        "0275b57851ab066a1c1f32978974850d686e7b4713c48ae42b2af2b50950ef74",
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0"
+      ],
+      "relevant_chunk_ids": [
+        "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+        "cd06dea1afba07613eb3bb90a23654ed1d333cbda6f6b0ab3169ac11cc3e5468"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.3065735963827292,
+        "5": 0.5437713091520254,
+        "10": 0.5437713091520254
+      },
+      "chunk_reciprocal_rank": 0.3333333333333333,
+      "retrieved_document_ids": [
+        "61ea3f18d106f497242d918b10f1d419f025f4c63960d719c299bb5a76381edf",
+        "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e",
+        "a8e2ce2c8b8ad01c1a32f1325316e2a0b8b5983d4358a911a7cfb0f35540a068",
+        "3ed2bae4f67fbefb72c670d6a9366dbbcd56c365b5052a8498a37d47965ce7a5",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3"
+      ],
+      "relevant_document_ids": [
+        "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e"
+      ],
+      "document_recall_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 0.5,
+      "latency_ms": 27.61030000692699
+    },
+    {
+      "case_id": "hard_009",
+      "question": "同样保存大量佛教造像艺术，但有一处遗产还因为保存了大量古代写本文献，使研究价值不限于雕塑和绘画，它是哪一处？",
+      "category": "confusable",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "a2c910af2689df548ab91ad6605b26d6d0adebe0a7757362f35ad42b348da540",
+        "b62eb7e0a042c2b6ee54723b35b61cdeb968f15678e55f784297f0c23d35d083",
+        "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+        "a8300173f87654d08ac259f38106a3dfdc9b5d3f1fdc57a961233791fb8ff882",
+        "0275b57851ab066a1c1f32978974850d686e7b4713c48ae42b2af2b50950ef74",
+        "66bdde49716c2417def5892d1554ba3252cdbfbbf4e4247fe3d8ea1eaebe21e1",
+        "dc7f86cd06bfacc56b53108ea4dba3494aa2c4173bd65c02efe0246b286e55eb",
+        "790d5151f8704ceb32bf3a5cb67b574385753995012340cf4694eaa2bba2ebe5",
+        "35da1b854571197db6b6d80125cbec707eac6b3749642c873fcbfa89fbaa6685",
+        "e840268fdb8b7ad332e90f6f72a1a6a179c516cba87e5c9421214ca31b6b4a1a"
+      ],
+      "relevant_chunk_ids": [
+        "a4ce78a3111dba7878a10b40b867abae92c487cbc637e356ce2beb6fe0fb5cc4",
+        "4069ef9370cc5240a8c7a7609f62d7a07c312da1e2713c66664b003f481c6bbc",
+        "66bdde49716c2417def5892d1554ba3252cdbfbbf4e4247fe3d8ea1eaebe21e1"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.3333333333333333
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.16716045496620227
+      },
+      "chunk_reciprocal_rank": 0.16666666666666666,
+      "retrieved_document_ids": [
+        "c5653cdc3c6af0d3a7783b85c7dac01083b7f1540c2ab5b0a59ad50812bbc77a",
+        "61ea3f18d106f497242d918b10f1d419f025f4c63960d719c299bb5a76381edf",
+        "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140",
+        "a8e2ce2c8b8ad01c1a32f1325316e2a0b8b5983d4358a911a7cfb0f35540a068",
+        "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48",
+        "23bb65220697de61b9bc6931135bc2d8b13af3d75784e0b70a1166b15c201d8a",
+        "3ed2bae4f67fbefb72c670d6a9366dbbcd56c365b5052a8498a37d47965ce7a5"
+      ],
+      "relevant_document_ids": [
+        "a8e2ce2c8b8ad01c1a32f1325316e2a0b8b5983d4358a911a7cfb0f35540a068"
+      ],
+      "document_recall_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 0.2,
+      "latency_ms": 79.50050001090858
+    },
+    {
+      "case_id": "hard_010",
+      "question": "如果要从中国石刻遗产中寻找一个佛教、道教与儒家题材同时出现的实例，应首先想到哪一处？",
+      "category": "confusable",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "33d1b9033d8d19836eacc91f8441bd4720382c7e28790a4f064bda4596da7ea9",
+        "e840268fdb8b7ad332e90f6f72a1a6a179c516cba87e5c9421214ca31b6b4a1a",
+        "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+        "1325f99883c4825f8a5ccda2282374a472e07be2d18e42845629cc3400982765",
+        "f15ffc81b3300289d3c0e2b0e002341ff23f3c8483c7fdd3fc1d4bbc457d5e43",
+        "0275b57851ab066a1c1f32978974850d686e7b4713c48ae42b2af2b50950ef74",
+        "cd06dea1afba07613eb3bb90a23654ed1d333cbda6f6b0ab3169ac11cc3e5468",
+        "9cc140c76c2418764436417beec7a6e94fdfd91aa0291ff5c959d4a84642143d",
+        "ac27c5b5414350077646d7c1d843a3d4004d90b7aee266153ef25159c130efca",
+        "35da1b854571197db6b6d80125cbec707eac6b3749642c873fcbfa89fbaa6685"
+      ],
+      "relevant_chunk_ids": [
+        "33d1b9033d8d19836eacc91f8441bd4720382c7e28790a4f064bda4596da7ea9",
+        "1325f99883c4825f8a5ccda2282374a472e07be2d18e42845629cc3400982765",
+        "e840268fdb8b7ad332e90f6f72a1a6a179c516cba87e5c9421214ca31b6b4a1a"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7653606369886217,
+        "5": 0.9674679834891693,
+        "10": 0.9674679834891693
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "3ed2bae4f67fbefb72c670d6a9366dbbcd56c365b5052a8498a37d47965ce7a5",
+        "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e",
+        "491da3d7de1d7808c633371da73f79be75aee072c4c2114ee8f823c6e5e676e8",
+        "61ea3f18d106f497242d918b10f1d419f025f4c63960d719c299bb5a76381edf"
+      ],
+      "relevant_document_ids": [
+        "3ed2bae4f67fbefb72c670d6a9366dbbcd56c365b5052a8498a37d47965ce7a5"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 65.30349999957252
+    },
+    {
+      "case_id": "hard_011",
+      "question": "有一处皇家园林遗产周围还分布着一组体现多民族宗教建筑交流的寺庙群，这一描述指向哪里？",
+      "category": "confusable",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "5f83d721851e4fb0ee41145b23cb426974ad153aa4e3069bd9d622b3830b7c4b",
+        "5b9ba02df84074b86242d1514c9e71b9f549063556a0f705bfb5d7676d8dacc3",
+        "b7912218bbfa9687edb383479e34473fdbda6a6b110ea696e08ed850cdd4cdd2",
+        "ee7e5e7a91aa2a4d09a31b49fbf0395b0dc36deb1e10dbccd48250f27290689b",
+        "9018bb6404339fa62b6b976e1362cd2d31a0b671f1526853e15b5c8c58015877",
+        "0702e547110550ecafe7120ea62d0bf4f5e4e9e792f23b6a46bd8b4b6a00e9b9",
+        "450aa1d46796ac1c7ae9674e1f406d705d5fd1f3696f0880bcd17a7114c6db8c",
+        "270675d13bd981c99abdb5b1c6fa33bcc29faa40b1dd281bf2813fa65a09269f",
+        "c20d3695fb86700934dbbdff049b59e260085135638beb6d57d4d1d7dc6d1109",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d"
+      ],
+      "relevant_chunk_ids": [
+        "5f83d721851e4fb0ee41145b23cb426974ad153aa4e3069bd9d622b3830b7c4b",
+        "9018bb6404339fa62b6b976e1362cd2d31a0b671f1526853e15b5c8c58015877"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.6131471927654584,
+        "5": 0.8503449055347546,
+        "10": 0.8503449055347546
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140",
+        "bfaed17c75c5b300111b20115323bbee1222f588c3c731e5007ac017dfc6e175",
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993",
+        "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e",
+        "04f6f25bddca5cfc0251eef51c1b3436e55f35274cdf01130e64c80c77a6c137"
+      ],
+      "relevant_document_ids": [
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 69.8123000038322
+    },
+    {
+      "case_id": "hard_012",
+      "question": "不是以陆路商贸网络著称，而是一座在宋元时期因海上贸易繁荣、并留下多种宗教遗存以反映人口来源复杂性的城市遗产是什么？",
+      "category": "confusable",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "4d40dc26578fcf936ba72fc77fb2f3d60b415d29be2a0638eba41770e89b8873",
+        "be467d66c5b46970bce384458fa3214760d80f7b4a44885df51ef43a2f590042",
+        "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103",
+        "b1f5db44a0eab4b8499383bafb447350c4a14a345888c36ce6482f31657ed6dc",
+        "3696c7fec4f13d912d4b083e9ddbb995b6da764cc9315c16c0d8ae39cb9fc354",
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "512ee0c76b746c122b9e0fc88636fba892202c435977fea62af53a2fe20d1b39",
+        "977de410a47ab04bbda4e947d22bbdc8e398ce5a0ceab70c69fc298c26074848",
+        "586d358719c7c519a37905a65c939e970989d067143d933321eb14ab868a8814"
+      ],
+      "relevant_chunk_ids": [
+        "4d40dc26578fcf936ba72fc77fb2f3d60b415d29be2a0638eba41770e89b8873",
+        "b1f5db44a0eab4b8499383bafb447350c4a14a345888c36ce6482f31657ed6dc",
+        "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7039180890341347,
+        "5": 0.9060254355346823,
+        "10": 0.9060254355346823
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "7b55206e8f912b4cf772d21f578d505530ed3daf5f8fb8f10a15dbb1c3d1e479",
+        "c5c78d148c9a1eb81c898ac3d74bb0fad2dea76c29778629cb070bb2030839fa"
+      ],
+      "relevant_document_ids": [
+        "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 70.54760000028182
+    },
+    {
+      "case_id": "hard_013",
+      "question": "哪项古代工程的核心思路不是筑起一道高坝把河水彻底拦住，而是利用原有水势完成分流、排沙和灌溉？",
+      "category": "indirect_reference",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+        "7c872f62c395e81e971a85965cf0d59066e4827aff4721576411b84250e36f6c",
+        "fbce7ebd1a27a021e654a229566353947ae7a6c9465aca041ed34559a361e4a1",
+        "dc0df6dec203ad201ba0085797654243a7f460185df01eb2f49b8310c0443088",
+        "708f0450764f053084bc9d6cf379f48577ae820c7155835b86f23451b4d84746",
+        "cc817bc9c09a15dfabeca160d6933a1ae21434244734ef417a35293b4923f154",
+        "c04eaa536f6a4e61ca928584b7c41ed136c2558d1ce390daf03170a917f31d70",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "557fe34d1a11b335ff754db7943630cc1147e8476804c6e3091cddb16611dca2",
+        "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3"
+      ],
+      "relevant_chunk_ids": [
+        "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+        "708f0450764f053084bc9d6cf379f48577ae820c7155835b86f23451b4d84746"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.6131471927654584,
+        "5": 0.8503449055347546,
+        "10": 0.8503449055347546
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7",
+        "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+      ],
+      "relevant_document_ids": [
+        "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 70.63669999479316
+    },
+    {
+      "case_id": "hard_014",
+      "question": "哪处佛教遗产不是在独立建筑中塑造巨像，而是直接依托山体开凿，并与两河交汇附近的自然环境形成整体景观？",
+      "category": "indirect_reference",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "283be6c27f38a7b81044e1cd8e4b857fa106e49635536eab5cf69aa616bdaed7",
+        "19f0c6b5ddc6b6bb6283d81eae5ce98c808a59ab6d38ef5d1190e642a168db6f",
+        "ac27c5b5414350077646d7c1d843a3d4004d90b7aee266153ef25159c130efca",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d",
+        "c749490a44e9b5d968e0f3a3b49580e2620ac9ecb303cbc5579e416290a11dbe",
+        "bcf741273cc0e20d5cbc59b893cb84c58758a76e3cb750b94989375e904aef75",
+        "a2c910af2689df548ab91ad6605b26d6d0adebe0a7757362f35ad42b348da540",
+        "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be",
+        "cc2496030e6ddcf8124ec6521bd8f5d9f7395db6a69fa964e445332fc1fc3786",
+        "f15ffc81b3300289d3c0e2b0e002341ff23f3c8483c7fdd3fc1d4bbc457d5e43"
+      ],
+      "relevant_chunk_ids": [
+        "19f0c6b5ddc6b6bb6283d81eae5ce98c808a59ab6d38ef5d1190e642a168db6f",
+        "283be6c27f38a7b81044e1cd8e4b857fa106e49635536eab5cf69aa616bdaed7"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "c5653cdc3c6af0d3a7783b85c7dac01083b7f1540c2ab5b0a59ad50812bbc77a",
+        "61ea3f18d106f497242d918b10f1d419f025f4c63960d719c299bb5a76381edf",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140",
+        "64a0486dcfba67f3e925017b5755dabe02a3126c0a31a2bbf49c56ed72f0281e",
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993"
+      ],
+      "relevant_document_ids": [
+        "c5653cdc3c6af0d3a7783b85c7dac01083b7f1540c2ab5b0a59ad50812bbc77a"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 67.07330000062939
+    },
+    {
+      "case_id": "hard_015",
+      "question": "如果研究明清时期中国城市格局，同时又希望观察传统商业和早期金融活动的历史痕迹，哪座保存较完整的古城尤其具有价值？",
+      "category": "indirect_reference",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "586d358719c7c519a37905a65c939e970989d067143d933321eb14ab868a8814",
+        "50cd09f57bf44b93aa74542d631171b092a68fbad6fe59c9ab37f9eef689079e",
+        "ae3eef91eab554a8db825341ff404be5f0ef96dda85edbbb3dd3ca9941aa87f0",
+        "4d40dc26578fcf936ba72fc77fb2f3d60b415d29be2a0638eba41770e89b8873",
+        "270675d13bd981c99abdb5b1c6fa33bcc29faa40b1dd281bf2813fa65a09269f",
+        "d28eb9a26c740b7e91f03d6c1f8602b063814be3a9a80466ac6f947ee3d8d114",
+        "be467d66c5b46970bce384458fa3214760d80f7b4a44885df51ef43a2f590042",
+        "48ab490991c998929451f29ccb4ab15c273a9356fd3dff65e99af8ffdbb5e1cc",
+        "f6afbca8db8cdd5db9d2b06fd6b378278279802b4e9c01667d7559ace08c6984",
+        "3696c7fec4f13d912d4b083e9ddbb995b6da764cc9315c16c0d8ae39cb9fc354"
+      ],
+      "relevant_chunk_ids": [
+        "50cd09f57bf44b93aa74542d631171b092a68fbad6fe59c9ab37f9eef689079e"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.6309297535714575,
+        "5": 0.6309297535714575,
+        "10": 0.6309297535714575
+      },
+      "chunk_reciprocal_rank": 0.5,
+      "retrieved_document_ids": [
+        "c5c78d148c9a1eb81c898ac3d74bb0fad2dea76c29778629cb070bb2030839fa",
+        "e017ae80c6de2f506c93459ba26605423d5db2c7c324c43b04c8e9f38a2029ee",
+        "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1",
+        "bfaed17c75c5b300111b20115323bbee1222f588c3c731e5007ac017dfc6e175",
+        "30daaa3f19f0934a0dc32b8cde1af8f003cccdf009852450e546d322c63f8c13"
+      ],
+      "relevant_document_ids": [
+        "c5c78d148c9a1eb81c898ac3d74bb0fad2dea76c29778629cb070bb2030839fa"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 68.76670000201557
+    },
+    {
+      "case_id": "hard_016",
+      "question": "哪处山岳景观常因气象快速变化，让游客即使站在同一地点，前后看到的山峰与云雾效果也明显不同？",
+      "category": "indirect_reference",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "6f4dad41e038ed7b2ac568a34f9d9f7d33cf7ccbfcb6668f74b5fbeab9f30d55",
+        "352a52d547b011b6e48f9177799d93dc66a86456859d78ecbd0b86411ec6201d",
+        "9ea29f09cc9fa4a4e0f6c4025272e1b3b24387525d19139be086db59cc2cab2a",
+        "f981211bd102b74cd7f03c16b950d1db7641b8d75bf2c8accabc33ce40355790",
+        "e4e258b882cad07ee6f7fc8b3b6852617916fcbc4205ad70f89139a10700c93f",
+        "ac27c5b5414350077646d7c1d843a3d4004d90b7aee266153ef25159c130efca",
+        "a1973ec375274f05d8d9722e80212582f7782f4653b37c7ccc024be76a522f2c",
+        "c90a6a88ae00d07a68b05530ef5c5ad9d64463ec69a1e10664c19087c7682161",
+        "73411b00e17d261a1fee2e4c05bc26860a3560a086e78c655f347fc534a6cfb9",
+        "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3"
+      ],
+      "relevant_chunk_ids": [
+        "6f4dad41e038ed7b2ac568a34f9d9f7d33cf7ccbfcb6668f74b5fbeab9f30d55",
+        "9ea29f09cc9fa4a4e0f6c4025272e1b3b24387525d19139be086db59cc2cab2a"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.9197207891481876,
+        "5": 0.9197207891481876,
+        "10": 0.9197207891481876
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "7e323c5191c6d16ce4fc999ebacdf666c63f247dfc62954c65e99e4597939a5a",
+        "30c3bd0378978d49e211ec15910d6b3b9e00119b64941199b76413ba584ad65c",
+        "6ee140ed9f48df1d830c8dd6ecd83b3627e0c01ad1f748d80a8f317b84c43466",
+        "32d3e9c8fdddb93a4e03f175538c7d174f1d09f6a4d8362b8a2d77db730872b3",
+        "61ea3f18d106f497242d918b10f1d419f025f4c63960d719c299bb5a76381edf",
+        "a8e2ce2c8b8ad01c1a32f1325316e2a0b8b5983d4358a911a7cfb0f35540a068",
+        "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+      ],
+      "relevant_document_ids": [
+        "7e323c5191c6d16ce4fc999ebacdf666c63f247dfc62954c65e99e4597939a5a"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 69.73920000018552
+    },
+    {
+      "case_id": "hard_017",
+      "question": "哪处以湖泊、堤岸和人文景观共同构成的文化景观，其山水审美后来对东亚园林产生了广泛影响？",
+      "category": "indirect_reference",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "698ebc4e87ea7b75b143d387c0eefc819ec2a0b3a29a719b7a786af737097bf6",
+        "a7c42e4e9a424a609194837e7817f7daa3bccb7864815727560c7b8c71a7273e",
+        "c1bed691231df832c7cc150cf84631e23cd9ca2eb54c8241d25587af746d46ee",
+        "ee7e5e7a91aa2a4d09a31b49fbf0395b0dc36deb1e10dbccd48250f27290689b",
+        "352a52d547b011b6e48f9177799d93dc66a86456859d78ecbd0b86411ec6201d",
+        "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be",
+        "3a6877a73f97340f5a320a8414c3fcaae590d057df3535876d7856b0aec7542a",
+        "c20d3695fb86700934dbbdff049b59e260085135638beb6d57d4d1d7dc6d1109",
+        "e5044c71f6c28e32cf329bdcd5efa29638bdb72e43fa6db46490079832662a51",
+        "6f4dad41e038ed7b2ac568a34f9d9f7d33cf7ccbfcb6668f74b5fbeab9f30d55"
+      ],
+      "relevant_chunk_ids": [
+        "d63587de4cee055010b226eac8c99c5e4d628f6405d4fc5c0c6e99f57f4fc7ae"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.0
+      },
+      "chunk_reciprocal_rank": 0.0,
+      "retrieved_document_ids": [
+        "bb3e0721aa6574a8a57d6953b1184df26071c1b45473c8eb41a532df4d0bda95",
+        "04f6f25bddca5cfc0251eef51c1b3436e55f35274cdf01130e64c80c77a6c137",
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993",
+        "30c3bd0378978d49e211ec15910d6b3b9e00119b64941199b76413ba584ad65c",
+        "7e323c5191c6d16ce4fc999ebacdf666c63f247dfc62954c65e99e4597939a5a"
+      ],
+      "relevant_document_ids": [
+        "bb3e0721aa6574a8a57d6953b1184df26071c1b45473c8eb41a532df4d0bda95"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 62.4462000123458
+    },
+    {
+      "case_id": "hard_018",
+      "question": "哪项跨越多个地区的古代水运工程，其历史价值长期与国家粮食运输和区域经济联系紧密相关？",
+      "category": "indirect_reference",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "7c872f62c395e81e971a85965cf0d59066e4827aff4721576411b84250e36f6c",
+        "cc817bc9c09a15dfabeca160d6933a1ae21434244734ef417a35293b4923f154",
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "dc0df6dec203ad201ba0085797654243a7f460185df01eb2f49b8310c0443088",
+        "c04eaa536f6a4e61ca928584b7c41ed136c2558d1ce390daf03170a917f31d70",
+        "512ee0c76b746c122b9e0fc88636fba892202c435977fea62af53a2fe20d1b39",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+        "708f0450764f053084bc9d6cf379f48577ae820c7155835b86f23451b4d84746",
+        "d0e27b0ea50b9d1d81759b6f6c26f188b78d655545b85edb432140ce57da01b8"
+      ],
+      "relevant_chunk_ids": [
+        "7c872f62c395e81e971a85965cf0d59066e4827aff4721576411b84250e36f6c",
+        "dc0df6dec203ad201ba0085797654243a7f460185df01eb2f49b8310c0443088"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.6131471927654584,
+        "5": 0.8772153153380493,
+        "10": 0.8772153153380493
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7"
+      ],
+      "relevant_document_ids": [
+        "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 83.07890000287443
+    },
+    {
+      "case_id": "hard_019",
+      "question": "同一皇家宫殿群内部，负责重大礼仪和政务的空间与皇室日常居住空间，在功能分区上分别偏向什么？",
+      "category": "fine_grained_hard",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "0702e547110550ecafe7120ea62d0bf4f5e4e9e792f23b6a46bd8b4b6a00e9b9",
+        "b1aa18e89890424291f9b05a6e1888facbe9f6678da09ba223ae0047d935eee7",
+        "28f50ace05fe02797600a591dc5c07632ca1ff6b1831f41857ec8300acbba0db",
+        "b7912218bbfa9687edb383479e34473fdbda6a6b110ea696e08ed850cdd4cdd2",
+        "5b9ba02df84074b86242d1514c9e71b9f549063556a0f705bfb5d7676d8dacc3",
+        "bcd6e9fd539200229f0e3b2db4c68c70b3a70046cc1828c82d440737c9108c36",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d",
+        "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be",
+        "e3204e88aeebd6e4a5705f596a1691085c2eb0b7dbb0c6a3cf1e8f2d14dabdcd",
+        "1e554793db6c71eaae79b673497e7c467e9d39668c94342f1cf6c45eddbbfe25"
+      ],
+      "relevant_chunk_ids": [
+        "bcd6e9fd539200229f0e3b2db4c68c70b3a70046cc1828c82d440737c9108c36",
+        "28f50ace05fe02797600a591dc5c07632ca1ff6b1831f41857ec8300acbba0db"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 0.5,
+        "5": 0.5,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.3065735963827292,
+        "5": 0.3065735963827292,
+        "10": 0.5249810332008933
+      },
+      "chunk_reciprocal_rank": 0.3333333333333333,
+      "retrieved_document_ids": [
+        "bfaed17c75c5b300111b20115323bbee1222f588c3c731e5007ac017dfc6e175",
+        "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140",
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993",
+        "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e"
+      ],
+      "relevant_document_ids": [
+        "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d"
+      ],
+      "document_recall_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 0.5,
+      "latency_ms": 66.9760999880964
+    },
+    {
+      "case_id": "hard_020",
+      "question": "在一套由墙体、观察报警设施和军事节点共同组成的防御网络中，真正用于扼守道路和通行位置的主要是哪类设施？",
+      "category": "fine_grained_hard",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "0365a90e66772fca277a0f057398287338d454d53a613814dc9056dc99e29374",
+        "99cf3e405ed4c1ad04d2784fd8833d3deacb494b48219bc20d916e75a26af464",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "f0ba005b42fb82aef141920703664e059de353eea7c51b15ca20340cdeed3ff7",
+        "9379bdbb53b2746e939424498f2e7c333f6b60e64acb3049f81dc70b27a66388",
+        "586d358719c7c519a37905a65c939e970989d067143d933321eb14ab868a8814",
+        "512ee0c76b746c122b9e0fc88636fba892202c435977fea62af53a2fe20d1b39",
+        "12e9680ee7fe30a35636229724fd078c13002ad73540622a8a1ecb59d820b23a"
+      ],
+      "relevant_chunk_ids": [
+        "0365a90e66772fca277a0f057398287338d454d53a613814dc9056dc99e29374",
+        "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+        "99cf3e405ed4c1ad04d2784fd8833d3deacb494b48219bc20d916e75a26af464"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7039180890341347,
+        "5": 0.9060254355346823,
+        "10": 0.9060254355346823
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "c8d1edd34321e29c79e6bbd07b8c164b85f24bf44d51a399085ca502b1a26a11",
+        "c5c78d148c9a1eb81c898ac3d74bb0fad2dea76c29778629cb070bb2030839fa",
+        "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48"
+      ],
+      "relevant_document_ids": [
+        "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 63.853500003460795
+    },
+    {
+      "case_id": "hard_021",
+      "question": "一种传统弦乐器可以通过空弦、按弦以及轻触特定位置产生三类性质不同的声音，这三类声音分别是什么？",
+      "category": "fine_grained_hard",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "3f4195893f9f91d3a9b28deb090b66422fc62b700d2563d8afdd9599b5d9dba9",
+        "5d2d5b0cda2c8758981a8beed4b14aecac375a864aefa4b1a04c72f74099f7ac",
+        "ed8514caa5bb8ec48af9dc1a336cdd76c5e36ef7788e015b237c2e0b32dd7712",
+        "30faffd2ee41d77a7842ae160f246cb9bf8beea5e1dbc7b368fe7b3697415fcb",
+        "0ee14dbe25998f4d794e2178f192c763eb6e4ea7d5f8a25267fe314a46a05155",
+        "857b88f11cfbb6b87050471a0fefb8ff21d857d2fce9bc5211c074f45d848eb5",
+        "d71802c9a0b7dd3e5d099f4acc4115948d9a17d58e91e98919952e3ca88f3f83",
+        "73ee57a510adde156fb6edd2afdd53196cdbc1e347039e36b1da03d3a73ecda3",
+        "08f6fa1be60a040fd720f395f2ec1d31e56080f5d7b5702b5a109c80eacaf604",
+        "ae000d7f23a70673f510e4cf24bac691ea01ca0799b9dc25749e334a220003e7"
+      ],
+      "relevant_chunk_ids": [
+        "5d2d5b0cda2c8758981a8beed4b14aecac375a864aefa4b1a04c72f74099f7ac",
+        "30faffd2ee41d77a7842ae160f246cb9bf8beea5e1dbc7b368fe7b3697415fcb"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.38685280723454163,
+        "5": 0.6509209298071326,
+        "10": 0.6509209298071326
+      },
+      "chunk_reciprocal_rank": 0.5,
+      "retrieved_document_ids": [
+        "31fd6b5db272fb25c6b2ee36f072d9fef84bd4c2dac0bcc1a576011202938782",
+        "a9c2009220960bbac0c68c5e15e1b7ac81fed9a8fd541e51e21e8b6643aec8ae",
+        "6ad45efcfe55c449d1ed5ce0fc7db1aa3040669584ebbdb274bf2a4fc949d9f8",
+        "1e7677f90627bde80aef55c2dea0c56f8ef2c41038f559b6401eac545d449c4b",
+        "1c1028438ee1f27aaa49805644d0a5fa6166b86b3e820c4b806a3d6c222abf35"
+      ],
+      "relevant_document_ids": [
+        "a9c2009220960bbac0c68c5e15e1b7ac81fed9a8fd541e51e21e8b6643aec8ae"
+      ],
+      "document_recall_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 0.5,
+      "latency_ms": 67.75970000308007
+    },
+    {
+      "case_id": "hard_022",
+      "question": "某儒家纪念性建筑群中，哪一部分并非主要承担祭祀活动，而更多与后裔的居住和事务管理有关？",
+      "category": "fine_grained_hard",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "4e5baab98033eb69d45306fa049769a01a7e30960ec872e77409d648c2b36366",
+        "790d5151f8704ceb32bf3a5cb67b574385753995012340cf4694eaa2bba2ebe5",
+        "ff9b3245afdfc5ecc69f851e814b282511f54354f323266db8352c848669846d",
+        "f9a892c6a20f0c613da5345e2a0eb0b83ede66eeb3c86f6476388443372e977a",
+        "5b9ba02df84074b86242d1514c9e71b9f549063556a0f705bfb5d7676d8dacc3",
+        "a1973ec375274f05d8d9722e80212582f7782f4653b37c7ccc024be76a522f2c",
+        "450aa1d46796ac1c7ae9674e1f406d705d5fd1f3696f0880bcd17a7114c6db8c",
+        "73411b00e17d261a1fee2e4c05bc26860a3560a086e78c655f347fc534a6cfb9",
+        "1e554793db6c71eaae79b673497e7c467e9d39668c94342f1cf6c45eddbbfe25",
+        "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103"
+      ],
+      "relevant_chunk_ids": [
+        "f9a892c6a20f0c613da5345e2a0eb0b83ede66eeb3c86f6476388443372e977a",
+        "ff9b3245afdfc5ecc69f851e814b282511f54354f323266db8352c848669846d",
+        "4e5baab98033eb69d45306fa049769a01a7e30960ec872e77409d648c2b36366"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7039180890341347,
+        "5": 0.9060254355346823,
+        "10": 0.9060254355346823
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "23bb65220697de61b9bc6931135bc2d8b13af3d75784e0b70a1166b15c201d8a",
+        "bfaed17c75c5b300111b20115323bbee1222f588c3c731e5007ac017dfc6e175",
+        "6ee140ed9f48df1d830c8dd6ecd83b3627e0c01ad1f748d80a8f317b84c43466",
+        "f18ab935dd54ebd60de1de2f8de3b70c1502b54022530d9627e3112efc6ebd3e",
+        "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1"
+      ],
+      "relevant_document_ids": [
+        "23bb65220697de61b9bc6931135bc2d8b13af3d75784e0b70a1166b15c201d8a"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 65.06019999505952
+    },
+    {
+      "case_id": "hard_023",
+      "question": "一座皇家园林中，一处长距离建筑主要负责连接多个景观节点，另一座高处建筑则形成重要视觉焦点，它们分别承担什么空间作用？",
+      "category": "fine_grained_hard",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be",
+        "2e35bd603f7147ef184441fc67825d0df3745030809c50ff64f44515b38b1d44",
+        "0702e547110550ecafe7120ea62d0bf4f5e4e9e792f23b6a46bd8b4b6a00e9b9",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d",
+        "c1bed691231df832c7cc150cf84631e23cd9ca2eb54c8241d25587af746d46ee",
+        "ee7e5e7a91aa2a4d09a31b49fbf0395b0dc36deb1e10dbccd48250f27290689b",
+        "b1aa18e89890424291f9b05a6e1888facbe9f6678da09ba223ae0047d935eee7",
+        "5b9ba02df84074b86242d1514c9e71b9f549063556a0f705bfb5d7676d8dacc3",
+        "b7912218bbfa9687edb383479e34473fdbda6a6b110ea696e08ed850cdd4cdd2",
+        "e5044c71f6c28e32cf329bdcd5efa29638bdb72e43fa6db46490079832662a51"
+      ],
+      "relevant_chunk_ids": [
+        "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be"
+      ],
+      "chunk_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993",
+        "bfaed17c75c5b300111b20115323bbee1222f588c3c731e5007ac017dfc6e175",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140",
+        "04f6f25bddca5cfc0251eef51c1b3436e55f35274cdf01130e64c80c77a6c137",
+        "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d",
+        "30c3bd0378978d49e211ec15910d6b3b9e00119b64941199b76413ba584ad65c"
+      ],
+      "relevant_document_ids": [
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 66.17440000991337
+    },
+    {
+      "case_id": "hard_024",
+      "question": "欣赏一件传统文字艺术作品时，如果分别讨论单个字内部部件关系和整幅作品中字行之间的安排，对应的是哪两个层次？",
+      "category": "fine_grained_hard",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "dd33fa2900d12bbdb5ec75719d2b0f9f0742da1a18146d473d86b08538bf6231",
+        "a5b1f7a0d591ed3263e2519b106556a05556659922253ef842bae7823b6e391f",
+        "464b1c71e28c924e8ea0bdddf5f60969e3d05280d184afd9643e4786af73e6ef",
+        "32ee4b466d2d0d48c123de85330ab39f89bd5d37d322cf19fe28b837f7749c73",
+        "780a026d0226d03b154b7138d8230f48b68e776df4174fd15f7fce1bcb96be9b",
+        "30faffd2ee41d77a7842ae160f246cb9bf8beea5e1dbc7b368fe7b3697415fcb",
+        "17591b10f5164f89aa506551cb950612d1891537da7216e200bd101a3137d3a2",
+        "9cc140c76c2418764436417beec7a6e94fdfd91aa0291ff5c959d4a84642143d",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d",
+        "f3c85abb202adc290809d63222401e0250cdc798dbc50cc1fa3a36ec2cf05fd7"
+      ],
+      "relevant_chunk_ids": [
+        "780a026d0226d03b154b7138d8230f48b68e776df4174fd15f7fce1bcb96be9b"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.38685280723454163,
+        "10": 0.38685280723454163
+      },
+      "chunk_reciprocal_rank": 0.2,
+      "retrieved_document_ids": [
+        "491da3d7de1d7808c633371da73f79be75aee072c4c2114ee8f823c6e5e676e8",
+        "789359bbdf223221152c1116c0a4c1cd97009b7ec3138b286844f4c5c73e3fa0",
+        "2cb27f955210079ec3f118db89d2287e3a362becec0953fced505e0bf81d64bd",
+        "a9c2009220960bbac0c68c5e15e1b7ac81fed9a8fd541e51e21e8b6643aec8ae",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140",
+        "ac6b12e9d6eb5b70d736409ac704d2d99cb89d7f0e4e471e24b3ed6974621acc"
+      ],
+      "relevant_document_ids": [
+        "491da3d7de1d7808c633371da73f79be75aee072c4c2114ee8f823c6e5e676e8"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 65.14989999413956
+    },
+    {
+      "case_id": "hard_025",
+      "question": "某线性军事防御体系中，一类设施负责快速传递敌情，另一类设施负责把守重要交通通道。这两种功能共同指向哪项遗产？",
+      "category": "multi_clue",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "99cf3e405ed4c1ad04d2784fd8833d3deacb494b48219bc20d916e75a26af464",
+        "847ac9e798614f3bdc8791b07b1ab8948f3da1c8c13126509ea84776ab2f2d96",
+        "512ee0c76b746c122b9e0fc88636fba892202c435977fea62af53a2fe20d1b39",
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "dc7f86cd06bfacc56b53108ea4dba3494aa2c4173bd65c02efe0246b286e55eb",
+        "bbeea5b55dfcdf721ba251438cef59718b31de245f1f7cb6684c96d5b55bbc63",
+        "12e9680ee7fe30a35636229724fd078c13002ad73540622a8a1ecb59d820b23a",
+        "d0e27b0ea50b9d1d81759b6f6c26f188b78d655545b85edb432140ce57da01b8"
+      ],
+      "relevant_chunk_ids": [
+        "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+        "99cf3e405ed4c1ad04d2784fd8833d3deacb494b48219bc20d916e75a26af464",
+        "0365a90e66772fca277a0f057398287338d454d53a613814dc9056dc99e29374"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 0.6666666666666666,
+        "10": 0.6666666666666666
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7039180890341347,
+        "5": 0.7039180890341347,
+        "10": 0.7039180890341347
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48",
+        "e017ae80c6de2f506c93459ba26605423d5db2c7c324c43b04c8e9f38a2029ee"
+      ],
+      "relevant_document_ids": [
+        "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 63.5096999903908
+    },
+    {
+      "case_id": "hard_026",
+      "question": "某皇家宫殿群既存在以三座主要大殿为核心的礼仪政务区域，又把皇室生活区域与其明确分开。这一空间组织描述的是哪项遗产？",
+      "category": "multi_clue",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "b1aa18e89890424291f9b05a6e1888facbe9f6678da09ba223ae0047d935eee7",
+        "0702e547110550ecafe7120ea62d0bf4f5e4e9e792f23b6a46bd8b4b6a00e9b9",
+        "e3204e88aeebd6e4a5705f596a1691085c2eb0b7dbb0c6a3cf1e8f2d14dabdcd",
+        "b7912218bbfa9687edb383479e34473fdbda6a6b110ea696e08ed850cdd4cdd2",
+        "28f50ace05fe02797600a591dc5c07632ca1ff6b1831f41857ec8300acbba0db",
+        "5b9ba02df84074b86242d1514c9e71b9f549063556a0f705bfb5d7676d8dacc3",
+        "bcd6e9fd539200229f0e3b2db4c68c70b3a70046cc1828c82d440737c9108c36",
+        "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be",
+        "6887cb57c844b0c52208a3de9fee24b32d929f7d328843599c01d3346450c09d",
+        "270675d13bd981c99abdb5b1c6fa33bcc29faa40b1dd281bf2813fa65a09269f"
+      ],
+      "relevant_chunk_ids": [
+        "b1aa18e89890424291f9b05a6e1888facbe9f6678da09ba223ae0047d935eee7",
+        "bcd6e9fd539200229f0e3b2db4c68c70b3a70046cc1828c82d440737c9108c36",
+        "28f50ace05fe02797600a591dc5c07632ca1ff6b1831f41857ec8300acbba0db"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.3333333333333333,
+        "5": 0.6666666666666666,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.46927872602275644,
+        "5": 0.6508205185601091,
+        "10": 0.8072467605676945
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d",
+        "bfaed17c75c5b300111b20115323bbee1222f588c3c731e5007ac017dfc6e175",
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993",
+        "a907859f6520f64e941878bda92d044b0b93d1481ec90c2954ea141cfac19140"
+      ],
+      "relevant_document_ids": [
+        "c376b9b2433db04cdef4b2db006931567312ac0ce906b1160042889cd4ec490d"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 66.50919999810867
+    },
+    {
+      "case_id": "hard_027",
+      "question": "某古代水利工程既利用一个关键结构把河流分成不同水路，整体设计又不是依靠高坝彻底截断河流。这项工程是什么？",
+      "category": "multi_clue",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+        "7c872f62c395e81e971a85965cf0d59066e4827aff4721576411b84250e36f6c",
+        "fbce7ebd1a27a021e654a229566353947ae7a6c9465aca041ed34559a361e4a1",
+        "dc0df6dec203ad201ba0085797654243a7f460185df01eb2f49b8310c0443088",
+        "1eeddf6149457ed21f86e7c0b9ce18c1bf4d78b4a06b82e8dbd5e6b80d4d3bd3",
+        "cc817bc9c09a15dfabeca160d6933a1ae21434244734ef417a35293b4923f154",
+        "535a81a626771e136a0fd50b78a210f8012d284aeda3fd9043cd054faf94d1be",
+        "708f0450764f053084bc9d6cf379f48577ae820c7155835b86f23451b4d84746",
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408"
+      ],
+      "relevant_chunk_ids": [
+        "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571",
+        "fbce7ebd1a27a021e654a229566353947ae7a6c9465aca041ed34559a361e4a1",
+        "708f0450764f053084bc9d6cf379f48577ae820c7155835b86f23451b4d84746"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 0.6666666666666666,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.7039180890341347,
+        "5": 0.7039180890341347,
+        "10": 0.8519590445170673
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7",
+        "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9",
+        "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148",
+        "e6366a3a274058412057986a7e9c9747d6022ec9687de7cf1b8298b89b758993",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3"
+      ],
+      "relevant_document_ids": [
+        "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 64.43690000742208
+    },
+    {
+      "case_id": "hard_028",
+      "question": "一座古代港口城市既通过桥梁加强港城与内陆腹地的联系，又留下多种宗教遗存反映外来人口与文化交流。这是哪座城市？",
+      "category": "multi_clue",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "b1f5db44a0eab4b8499383bafb447350c4a14a345888c36ce6482f31657ed6dc",
+        "4d40dc26578fcf936ba72fc77fb2f3d60b415d29be2a0638eba41770e89b8873",
+        "be467d66c5b46970bce384458fa3214760d80f7b4a44885df51ef43a2f590042",
+        "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103",
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "3696c7fec4f13d912d4b083e9ddbb995b6da764cc9315c16c0d8ae39cb9fc354",
+        "83c7017ea70d015e0c939409b1b80249cabf5f80fa148ed9c20eb5c9f4d53079",
+        "512ee0c76b746c122b9e0fc88636fba892202c435977fea62af53a2fe20d1b39",
+        "48ab490991c998929451f29ccb4ab15c273a9356fd3dff65e99af8ffdbb5e1cc"
+      ],
+      "relevant_chunk_ids": [
+        "be467d66c5b46970bce384458fa3214760d80f7b4a44885df51ef43a2f590042",
+        "b1f5db44a0eab4b8499383bafb447350c4a14a345888c36ce6482f31657ed6dc",
+        "4d40dc26578fcf936ba72fc77fb2f3d60b415d29be2a0638eba41770e89b8873",
+        "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.25,
+        "3": 0.75,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "30daaa3f19f0934a0dc32b8cde1af8f003cccdf009852450e546d322c63f8c13"
+      ],
+      "relevant_document_ids": [
+        "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 67.85459999809973
+    },
+    {
+      "case_id": "hard_029",
+      "question": "某史前文明一方面修建了大型水利设施，显示出组织公共工程的能力，另一方面又以具有礼仪性质的玉器体现社会秩序。对应的是哪处遗址？",
+      "category": "multi_clue",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "ae3eef91eab554a8db825341ff404be5f0ef96dda85edbbb3dd3ca9941aa87f0",
+        "cb7884812650fbe74d3b8b83bcc8bd5ad6ab3351f7203767a24d818b60375fb9",
+        "bbeea5b55dfcdf721ba251438cef59718b31de245f1f7cb6684c96d5b55bbc63",
+        "5de6348e47222b50f4a60ca7939d54883f9264df45fce061e1bd9a1b55991913",
+        "dfeda6112ef41d0f63a668458256bbc127f8cb7f12ec1d15285b95d94e7d3258",
+        "4b41c85d133605ce880415cbadbc4dec0b3a0bd64c8da00bc2772eb9c3223bbc",
+        "fbce7ebd1a27a021e654a229566353947ae7a6c9465aca041ed34559a361e4a1",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "5777ebdd9903d8c06128ef54c6ace06e8fd6d267a66d35c4fb2e0cf80a2e5aec",
+        "c1c48ee4272dd26e37b5139277abfb3492de2073c4d9b0c46af6e7745d863571"
+      ],
+      "relevant_chunk_ids": [
+        "ae3eef91eab554a8db825341ff404be5f0ef96dda85edbbb3dd3ca9941aa87f0",
+        "bbeea5b55dfcdf721ba251438cef59718b31de245f1f7cb6684c96d5b55bbc63"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.9197207891481876,
+        "5": 0.9197207891481876,
+        "10": 0.9197207891481876
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "e017ae80c6de2f506c93459ba26605423d5db2c7c324c43b04c8e9f38a2029ee",
+        "b259f00000af617480b5ee66df892fbc5af79a86a08881a368e8e0fb421132c2",
+        "7bfd762850881b1b0f41cca4d8e352c0ce226b603160fc24db03e15f520d5400",
+        "4395774275fa61cff451cb736184633a05c801e0ee6b7930dd05ee683833afc7",
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "2bc19d67a9eb5a5502600c214df4002fa95344df99ace90832cebad52f283d48"
+      ],
+      "relevant_document_ids": [
+        "e017ae80c6de2f506c93459ba26605423d5db2c7c324c43b04c8e9f38a2029ee"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 68.14169998688158
+    },
+    {
+      "case_id": "hard_030",
+      "question": "某古代跨区域交流体系既不是一条单独道路，又依靠古城、驿站等节点组织长距离往来。这一描述对应什么遗产？",
+      "category": "multi_clue",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "512ee0c76b746c122b9e0fc88636fba892202c435977fea62af53a2fe20d1b39",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408",
+        "83c7017ea70d015e0c939409b1b80249cabf5f80fa148ed9c20eb5c9f4d53079",
+        "d0e27b0ea50b9d1d81759b6f6c26f188b78d655545b85edb432140ce57da01b8",
+        "cc817bc9c09a15dfabeca160d6933a1ae21434244734ef417a35293b4923f154",
+        "1b2ea49814004bdcd9327526dd6ab4f9aabff14bcf638bd17d86adf6261afb17",
+        "3297720a80b16fd1747e563de03840150960255d7153f341b01f76255624f103",
+        "d28eb9a26c740b7e91f03d6c1f8602b063814be3a9a80466ac6f947ee3d8d114",
+        "847ac9e798614f3bdc8791b07b1ab8948f3da1c8c13126509ea84776ab2f2d96"
+      ],
+      "relevant_chunk_ids": [
+        "366856900b76dbb72a928f35de760b768029afff2e65cd4f3206063b00d1a1e0",
+        "f688c9b604944711f4e6888c9256dac72ee978368de2b6b539bfc7b3dec28408"
+      ],
+      "chunk_recall_at_k": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_ndcg_at_k": {
+        "1": 1.0,
+        "3": 0.9197207891481876,
+        "5": 0.9197207891481876,
+        "10": 0.9197207891481876
+      },
+      "chunk_reciprocal_rank": 1.0,
+      "retrieved_document_ids": [
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3",
+        "30daaa3f19f0934a0dc32b8cde1af8f003cccdf009852450e546d322c63f8c13",
+        "08829342aa910393a369bf4d5d89d70d5efc44ce13d700967e2c735db6f8baf9",
+        "e017ae80c6de2f506c93459ba26605423d5db2c7c324c43b04c8e9f38a2029ee",
+        "fd291af33344dca31f6c2fad0506ff9187c9fb8c7e2fba31d6b76702fb778bb1",
+        "c5c78d148c9a1eb81c898ac3d74bb0fad2dea76c29778629cb070bb2030839fa",
+        "0a1a6d4a6663359e817cbb3f6a04fd3895dee3c0e4ffeb04eb9c0122abe71148"
+      ],
+      "relevant_document_ids": [
+        "889e114266d8d48f7c5ad302debcab6625d9d4be136c633ed398c5240d4cd4e3"
+      ],
+      "document_recall_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_hit_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "document_reciprocal_rank": 1.0,
+      "latency_ms": 65.45479998749215
+    }
+  ],
+  "configuration": {
+    "dataset_sha256": "9d0b5dfb0a9072ed372282dd4aefd135ebd977a3b37dfd4920241aed9044d836",
+    "evaluation_level": "chunk_primary_document_auxiliary",
+    "top_k_values": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "embedding_model": "qwen3-embedding",
+    "embedding_dimension": 1024,
+    "query_instruction": "Given a cultural heritage question, retrieve relevant passages that help answer the question.",
+    "reranker_model": null,
+    "candidate_top_k": null,
+    "rrf_k": null
+  }
+}

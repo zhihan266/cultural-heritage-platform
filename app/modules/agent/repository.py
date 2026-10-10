@@ -28,6 +28,11 @@ def register_ai_agent(payload: AiRegisterRequest) -> AiAgent:
             last_checked_at=None,
             last_error=None,
             metadata_json={},
+            provider=payload.provider,
+            model_name=payload.model_name,
+            auth_type=payload.auth_type,
+            credential_ref=payload.credential_ref,
+            generation_config_json=payload.generation_config,
         )
         db.add(row)
         db.commit()

@@ -1,0 +1,29 @@
+{
+  "dataset": "rag_eval_v1",
+  "corpus_document_count": 46,
+  "corpus_source_count": 46,
+  "corpus_chunk_count": 167,
+  "query_count": 80,
+  "category_counts": {
+    "keyword": 22,
+    "detail": 15,
+    "semantic": 17,
+    "descriptive": 14,
+    "fine_grained": 9,
+    "confusable": 3
+  },
+  "difficulty_counts": {
+    "easy": 22,
+    "medium": 46,
+    "hard": 12
+  },
+  "covered_sources": 46,
+  "cases_with_multiple_relevant_chunks": 68,
+  "validation": {
+    "unique_ids": true,
+    "unique_queries": true,
+    "all_relevant_chunk_ids_exist_in_corpus": true,
+    "all_cases_have_ground_truth": true,
+    "legacy_rag_test_qa_chunks_found": 0
+  }
+}
