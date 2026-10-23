@@ -1,0 +1,70 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T11:38:19.652582+00:00",
+    "schema_version": "1.0",
+    "report_file": "017_answer_llm_only_20261010_193819.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "rag_004",
+      "variant": "llm_only",
+      "question": "良渚文化中哪些玉器具有鲜明的礼仪意义？",
+      "answer": "良渚文化中，具有鲜明礼仪意义的玉器首先是所谓“三大玉礼器”：\n\n1. **玉琮**  \n   典型器为内圆外方，常刻神人兽面纹。一般认为是祭祀、通神的重要礼器，象征神权，也常出于高等级贵族墓葬。\n\n2. **玉璧**  \n   圆形中间有孔，常与玉琮共存。多用于祭祀、随葬，象征财富、身份和等级，具有强烈礼仪功能。\n\n3. **玉钺**  \n   由斧类工具发展而来，常装柄并配有玉瑁、玉镦等附件，是权杖性器物，象征军事指挥权和王权，多见于高等级男性贵族墓。\n\n此外，良渚文化还有一批与身份等级、冠服礼仪密切相关的玉器：\n\n- **玉冠形器（冠状饰）**：高等级墓葬中常见，可能为冠饰，常饰神人兽面纹，标志神权身份。\n- **三叉形器**：多出于高等级男性贵族墓，可能作冠饰或礼仪用器。\n- **成组锥形器**：常与头饰、冠饰组合，具有身份标志意义。\n- **玉璜**：多作项饰，常见于女性贵族墓，也有礼仪身份含义。\n- **玉牌饰、玉带钩、玉镯等**：部分也具有装饰与身份象征的双重意义，但礼仪性不如琮、璧、钺鲜明。\n\n总体说，良渚文化最核心、礼仪意义最鲜明的是**玉琮、玉璧、玉钺**；而**玉冠形器、三叉形器、成组锥形器、玉璜**等，则共同构成体现贵族身份和等级制度的玉礼器组合。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 15845.179900003131,
+      "input_tokens": 101,
+      "output_tokens": 1884,
+      "total_tokens": 1985,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 101,
+          "completion_tokens": 1884,
+          "total_tokens": 1985,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 101
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 101,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

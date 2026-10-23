@@ -1,0 +1,56 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T10:19:51.272983+00:00",
+    "schema_version": "1.0",
+    "report_file": "001_answer_llm_only_20261010_181951.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "answer_001",
+      "variant": "llm_only",
+      "question": "故宫外朝和内廷在功能上有什么区别？",
+      "answer": "故宫的外朝与内廷大体遵循“前朝后寝”的格局，功能区别主要在于国家政治礼仪与皇家日常生活。\n\n**外朝**\n- 位置：以**太和殿、中和殿、保和殿**为中心，南起午门、太和门一带，北至乾清门。\n- 功能：是皇帝举行**国家大典、朝会、礼仪和重大政务活动**的场所。\n- 典型活动：登基、大婚、册封、颁诏、朝贺、命将出征、献俘、殿试等。太和殿最隆重，中和殿供皇帝典礼前休息或受贺，保和殿也用于宴飨、殿试等。\n- 性质：面向朝廷和国家，体现皇权、礼制和国家的公共政治空间。\n\n**内廷**\n- 位置：以**乾清宫、交泰殿、坤宁宫**及东西六宫等为中心，在乾清门以北。\n- 功能：主要是皇帝、皇后、妃嫔等**居住、生活、寝宿和后宫事务**的区域。\n- 典型活动：皇帝日常起居、批阅奏章、召见大臣、家庭生活，后妃居住，以及一些宫内祭祀等。清代皇帝日常理政常在养心殿，也属于内廷范围。\n- 性质：面向皇帝家庭和皇族生活，相对私密，体现“后寝”的生活与日常政务功能。\n\n简单说：**外朝是“国”的礼仪政治空间，内廷是“家”的起居生活空间；外朝重典礼朝会，内廷重居住和日常政务。** 两者并非完全隔绝，内廷也会有日常理政活动，但总体分工明确。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "tool_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_calls": [],
+      "latency_ms": 11254.85729999491,
+      "input_tokens": null,
+      "output_tokens": null,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

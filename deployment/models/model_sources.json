@@ -1,0 +1,16 @@
+{
+  "embedding": {
+    "repo_id": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "served_model_name": "qwen3-embedding",
+    "directory": "Qwen3-Embedding-0.6B",
+    "license": "Apache-2.0"
+  },
+  "reranker": {
+    "repo_id": "Qwen/Qwen3-Reranker-0.6B",
+    "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+    "served_model_name": "qwen3-reranker",
+    "directory": "Qwen3-Reranker-0.6B",
+    "license": "Apache-2.0"
+  }
+}

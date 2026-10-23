@@ -1,0 +1,79 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_tool",
+    "generated_at": "2026-10-10T10:34:03.530541+00:00",
+    "schema_version": "1.0",
+    "report_file": "003_answer_llm_tool_20261010_183403.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_tool"
+    ]
+  },
+  "variant_configuration": {
+    "llm_tool": {
+      "use_rag": false,
+      "use_tool": true
+    }
+  },
+  "results": [
+    {
+      "case_id": "tool_001",
+      "variant": "llm_tool",
+      "question": "请查询系统数据库中登记的故宫详细信息，并告诉我它所在的城市、朝代、始建年份和遗产类别。不要只凭已有知识回答。",
+      "answer": "根据系统数据库中登记的信息，故宫的详细情况如下：\n\n- **名称**：故宫（别名：紫禁城）\n- **所在城市**：北京（北京市）\n- **朝代**：明清\n- **始建年份**：1406年\n- **遗产类别**：皇家宫殿\n\n以上信息均来自系统数据库登记记录（记录编号：heritage-forbidden-city）。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "tool_enabled": true,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_calls": [
+        {
+          "tool_name": "get_heritage_detail",
+          "arguments": {
+            "name": "故宫"
+          },
+          "success": true,
+          "result": {
+            "found": true,
+            "id": "heritage-forbidden-city",
+            "name": "故宫",
+            "aliases": [
+              "紫禁城"
+            ],
+            "city": "北京",
+            "province": "北京市",
+            "category": "皇家宫殿",
+            "dynasty": "明清",
+            "built_year": 1406,
+            "description": "故宫又称紫禁城，是明清两代的皇家宫殿。"
+          },
+          "error": null
+        }
+      ],
+      "latency_ms": 10610.715799994068,
+      "input_tokens": null,
+      "output_tokens": null,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

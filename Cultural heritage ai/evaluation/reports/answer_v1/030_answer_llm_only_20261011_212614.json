@@ -1,0 +1,74 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-11T13:26:14.659342+00:00",
+    "schema_version": "1.0",
+    "report_file": "030_answer_llm_only_20261011_212614.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "successful_run_count": 1,
+  "failed_run_count": 0,
+  "expected_run_count": 1,
+  "results": [
+    {
+      "case_id": "control_001",
+      "variant": "llm_only",
+      "question": "中国传统建筑中，中轴对称布局通常体现怎样的空间组织特点？",
+      "answer": "中国传统建筑中的中轴对称布局，通常体现以下空间组织特点：\n\n1. **中轴统摄，主体居中**  \n   以一条中轴线作为整个建筑群的骨架，重要建筑布置在中轴线上，形成视觉、功能和礼仪上的核心。\n\n2. **左右对称，均衡稳定**  \n   中轴两侧的厢房、廊庑、配殿、庭院等大体对称布置，营造出均衡、稳重、庄重的空间秩序。\n\n3. **纵向序列，层层递进**  \n   沿中轴由外向内、由前到后展开，通过门、庭、院、殿、堂等空间单元形成递进式序列，逐步进入核心区域。\n\n4. **主从分明，等级有序**  \n   中轴线上的建筑通常等级最高、体量最大，两侧建筑次之，体现“尊者居中”“主次有别”的礼制与等级观念。\n\n5. **院落组合，内外有别**  \n   常以院落为基本单元，通过墙、门、廊等围合与连接，形成封闭与开敞交替、内外有别的空间层次。\n\n6. **仪式感与秩序感强**  \n   这种布局不仅是一种几何形式，也是儒家礼制、宗法伦理和皇权秩序的物化表达，常用于宫殿、坛庙、陵寝、衙署、寺院和传统四合院等建筑群中。\n\n概括来说，中轴对称布局体现的是：**以中为尊、左右均衡、纵向递进、主从有序、院落层叠**的空间组织特点，强调秩序、等级和礼仪。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 11745.848199992906,
+      "input_tokens": 103,
+      "output_tokens": 1075,
+      "total_tokens": 1178,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 103,
+          "completion_tokens": 1075,
+          "total_tokens": 1178,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 103
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 103,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ],
+  "run_errors": []
+}

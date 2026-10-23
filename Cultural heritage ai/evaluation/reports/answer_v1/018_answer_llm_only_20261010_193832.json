@@ -1,0 +1,70 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T11:38:32.880449+00:00",
+    "schema_version": "1.0",
+    "report_file": "018_answer_llm_only_20261010_193832.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "rag_005",
+      "variant": "llm_only",
+      "question": "哪处石窟的造像能明显比较北魏与唐代两个时期的风格差异？",
+      "answer": "**河南洛阳的龙门石窟**最能明显比较北魏与唐代两个时期的造像风格差异。\n\n- **北魏时期**：代表洞窟如古阳洞、宾阳中洞、莲花洞等，造像多呈“秀骨清像”，面容清瘦，褒衣博带，气质飘逸。\n- **唐代时期**：代表如奉先寺卢舍那大佛，造像面容丰满圆润，体态雍容华贵，衣纹流畅，写实性强，显得庄严而亲切。\n\n因此，龙门石窟因同时保存了北魏和唐代的大量造像，是观察和比较这两个时期佛教造像风格差异的典型地点。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 7812.447800009977,
+      "input_tokens": 106,
+      "output_tokens": 370,
+      "total_tokens": 476,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 106,
+          "completion_tokens": 370,
+          "total_tokens": 476,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 106
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 106,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

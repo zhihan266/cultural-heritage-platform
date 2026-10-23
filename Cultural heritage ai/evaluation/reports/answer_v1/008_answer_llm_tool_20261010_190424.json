@@ -1,0 +1,164 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_tool",
+    "generated_at": "2026-10-10T11:04:24.978836+00:00",
+    "schema_version": "1.0",
+    "report_file": "008_answer_llm_tool_20261010_190424.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_tool"
+    ]
+  },
+  "variant_configuration": {
+    "llm_tool": {
+      "use_rag": false,
+      "use_tool": true
+    }
+  },
+  "results": [
+    {
+      "case_id": "tool_003",
+      "variant": "llm_tool",
+      "question": "请先搜索故宫博物院近期的一则官方开放或参观公告，再读取其中一个可靠网页的正文，最后根据网页正文总结公告中的具体安排，并给出信息来源。",
+      "answer": "我已完成搜索并读取了故宫博物院官网的公告正文。以下是总结：\n\n## 公告总结\n\n**公告名称**：《故宫博物院关于2026年7月27日开放的公告》\n**发布日期**：2026年7月23日\n\n**具体安排如下：**\n\n| 项目 | 具体内容 |\n|------|----------|\n| **开放日期** | 2026年7月27日（周一）免费开放一天 |\n| **开放缘由** | 为庆祝北京中轴线申遗成功两周年，满足广大观众文化需求 |\n| **开放时间** | 8:30 开馆；16:00 停止入馆；17:00 闭馆 |\n| **预约方式** | 仅可通过\"故宫博物院\"微信小程序进行实名预约 |\n| **预约时间** | 7月24日 20:00 开始预约大门票及钟表馆、珍宝馆门票，约满即止 |\n| **票务窗口** | 参观当日，端门、珍宝馆、钟表馆票务窗口不提供服务 |\n| **服务热线** | 400-950-1925 |\n\n## 信息来源\n\n- **来源机构**：故宫博物院官方网站（www.dpm.org.cn）\n- **公告页面**：《故宫博物院关于2026年7月27日开放的公告》\n- **链接**：https://www.dpm.org.cn/announce_detail/379398.html\n- **佐证来源**：新华网亦转载报道该公告（http://www.xinhuanet.com/20260724/10194768f22b4df78d5e13a3065ce6f2/c.html），内容与官网一致。\n\n需要说明的是，以上信息均以我实际读取到的故宫博物院官网公告正文为准。公告日期显示为 2026 年，请以官方最新发布为准。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": true,
+      "tool_calls": [
+        {
+          "tool_name": "web_search",
+          "arguments": {
+            "query": "故宫博物院 官方公告 开放 参观 通知",
+            "max_results": 5
+          },
+          "success": true,
+          "result": {
+            "query": "故宫博物院 官方公告 开放 参观 通知",
+            "result_count": 5,
+            "results": [
+              {
+                "title": "故宫博物院关于2026年7月27日开放的公告 - 故宫博物院",
+                "url": "https://www.dpm.org.cn/announce_detail/379398.html",
+                "content": "大\n\n中\n\n小\n\n各位观众：\n\n为庆祝北京中轴线申遗成功两周年，满足广大观众文化需求，故宫博物院将于2026年7月27日（周一）免费开放一天。8:30开馆，16:00停止入馆，17:00闭馆。\n\n本次参观仅可通过“故宫博物院”微信小程序进行实名预约，7月24日20:00开始预约大门票和钟表馆、珍宝馆门票，约满即止。参观当日，端门、珍宝馆、钟表馆票务窗口不提供服务。\n\n如需帮助，可拨打服务热线：400-950-1925。\n\n故宫博物院\n\n2026年7月23日\n\n问题反馈 分享到：\n\n返回列表\n\n 图书馆\n\n 视听馆\n\n 故宫旗舰店\n\n 全景故宫\n\n v故宫\n\n微博\n\n微信\n\n小程序\n\n学习强国号\n\n视频号\n\n抖音号\n\n网站访问量\n\n网站地图 相关链接 影像授权 隐私政策 版权声明  留言板 联系我们 关于我们\n\n联系方式：gugong@dpm.org.cn\n\n京公网安备 11010102004165号\n\n© 2001- 现在 故宫博物院\n\n网站建设：北京分形科技\n\n火狐 谷歌 360浏览器 最佳分辨率（1920 \\ 1080）\n\n全国党政机关事业单位互联网网站标识管理服务平台 [...] 确 定\n\n确 定\n\n无障碍浏览\n\n故宫博物院 故宫博物院\n\n故宫博物院\n\n 首页\n 导览\n 展览\n 教育\n 探索\n 学术\n 文创\n 关于\n\n 开放时间\n 在线订票\n 交通路线\n 参观须知\n 全景故宫\n\n 近期展览\n 专馆\n 原状陈列\n 赴外展览\n\n 教育新闻\n 故宫讲坛\n 书画考级\n 故宫博物院教育中心\n 国际博协培训中心\n 故宫志愿者\n\n 建筑\n 藏品\n 古籍\n 宫廷历史\n 文物医院\n 文化专题\n 名画记\n 数字多宝阁\n 数字文物库\n 藏品总目\n\n 学术资讯\n 专家名录\n 故宫学研究院\n 其他学术机构\n 故宫博物院院刊\n\n 故宫出版\n 文创产品\n 故宫壁纸\n 故宫APP\n 故宫游戏\n\n 总说\n 领导\n 资讯\n 院史编年\n 景仁榜\n 机构设置\n\n 无障碍\n 登录 注册\n 中\n\n  青少 繁体中文 English Español Русский язык 日本語 Français\n\n青少 繁体中文 English Español Русский язык 日本語 Français\n\n# 导览\n\n:   开放时间\n:   在线订票\n:   交通路线\n:   参观须知\n:   全景故宫 [...] # 展览\n\n:   近期展览\n:   专馆\n:   原状陈列\n:   赴外展览\n\n# 教育\n\n:   教育新闻\n:   故宫讲坛\n:   书画考级\n:   故宫博物院教育中心\n:   国际博协培训中心\n:   故宫志愿者\n\n# 探索\n\n:   建筑\n:   藏品\n:   古籍\n:   宫廷历史\n:   文物医院\n:   文化专题\n:   名画记\n:   数字多宝阁\n:   数字文物库\n:   藏品总目\n\n# 学术\n\n:   学术资讯\n:   专家名录\n:   故宫学研究院\n:   其他学术机构\n:   故宫博物院院刊\n\n# 文创\n\n:   故宫出版\n:   文创产品\n:   故宫壁纸\n:   故宫APP\n:   故宫游戏\n\n# 关于\n\n:   总说\n:   领导\n:   资讯\n:   院史编年\n:   景仁榜\n:   机构设置\n\n首页\n\n故宫公告\n\n故宫博物院关于2026年7月27日开放的公告\n\n故宫博物院关于2026年7月27日开放的公告\n\n故宫博物院关于2026年7月27日开放的公告\n\n大\n\n中\n\n小\n\n各位观众：",
+                "score": 0.8682137
+              },
+              {
+                "title": "北京故宫博物院自5月1日起有序开放，实行预约、错峰、限流参观",
+                "url": "https://m.mp.oeeee.com/a/BAAFRD000020200430312945.html",
+                "content": "南都N视频APP · 南都文化\n\n原创2020-04-30 12:49\n\n查看\n\n4月29日，北京故宫博物院在官网发布公告，根据当前北京市疫情防控形势，已关闭了三个多月的紫禁城将于5月1日起有序开放，实行预约、错峰、限流参观。\n\n公告称，疫情期间，北京故宫博物院每日开放时间为8:30—17:00（16:00 停止入院），周一闭馆（法定节假日除外）。\n\n结合当前疫情情况，目前开放前三殿、后三宫、御花园、外西路、寿康宫、慈宁花园区域的室外展区及东西六宫部分院落。珍宝馆、钟表馆等室内展厅和室内服务场所暂不开放。午门城楼、东华门城楼、神武门城楼及相连城墙暂不开放。开放的原状陈列殿宇采取殿外护栏隔离的参观方式。\n\n同时，故宫博物院实行实名制预约参观，观众朋友可通过故宫博物院网络售票网站（），使用第二代身份证或护照信息预约购票，当日24时前可预约10日内门票。目前旺季票价60元，每日限额5000人（8:30-13:00，3000人；13:00-16:00，2000人），额满为止。故宫博物院会根据疫情防控形势变化，及时调整每日限额人数。 [...] 根据北京市《天安门地区2020年“五一”节日服务保障工作方案》要求，观众需从东华门外经东筒子河前往故宫午门。在入馆前，需出示有效身份证原件，提前准备好本人实时“健康码”（通过“北京健康宝”小程序申领），显示“未见异常”方可入院。观众需全程佩戴口罩，与其他观众保持1米以上距离，不聚集不扎堆，积极配合做好防控工作。当院内某区域观众密度较大时，现场工作人员将采取相关措施，并暂停人工讲解服务，提供讲解器租用和轮椅、童车免费借用服务。\n\n编辑：黄茜\n\n北京故宫博物馆时政\n\n阅读\n\n南都N视频，未经授权不得转载、授权联系方式  \n banquan@nandu.cc. 020-87006626\n\n本文作者\n\n \n\n  黄茜\n\n  南方都市报记者\n\n说点什么\n\n喜欢\n\n评论\n\n分享\n\n分享成功\n\n关注南方都市报公众号  \n获取最值得一读的好新闻\n\n查看更多独家报道",
+                "score": 0.8455478
+              },
+              {
+                "title": "故宫公告：下周一免费开放！（预约时间公布）-新华网",
+                "url": "http://www.xinhuanet.com/20260724/10194768f22b4df78d5e13a3065ce6f2/c.html",
+                "content": "故宫公告：下周一免费开放！（预约时间公布）-新华网 \n\n新华网 >  > 正文\n\n2026 07/24 10:33:10\n\n来源：新华社微信公众号\n\n# 故宫公告：下周一免费开放！（预约时间公布）\n\n字体： 小 中 大\n\n分享到：\n\n# 故宫公告：下周一免费开放！（预约时间公布）\n\n2026-07-24 10:33:10  来源：新华社微信公众号\n\n7月23日，故宫博物院官网发布《关于2026年7月27日开放的公告》：\n\n  为庆祝北京中轴线申遗成功两周年，满足广大观众文化需求，故宫博物院将于2026年7月27日（周一）免费开放一天。8：30开馆，16：00停止入馆，17：00闭馆。\n\n  本次参观仅可通过“故宫博物院”微信小程序进行实名预约，7月24日20：00开始预约大门票和钟表馆、珍宝馆门票，约满即止。参观当日，端门、珍宝馆、钟表馆票务窗口不提供服务。\n\n  来源：新华社微信公众号综合故宫博物院网站\n\n【纠错】;)  【责任编辑:吴京泽】\n\n阅读下一篇：\n\n深度观察\n\n [](\n\n  新华全媒头条丨“义乌发展经验”的深刻启示 [...] 新华社文化随笔丨在算法的浪潮里坚守艺术创作本心\n 新华每日电讯丨三亚推出暑期文旅“消夏三部曲”\n 记者手记丨邂逅伏尔加河——俄罗斯采访系列之四\n 新闻分析丨美AI测试失控 中国模型如何“救场”\n 国际观察丨日元汇率缘何跌至近40年来新低\n 列国鉴丨前往“地球之极” 俄大力推动北极游\n\n [](\n [](\n\n  趣看文物丨《目瑙纵歌》刀舞 “真人+文物”版来啦",
+                "score": 0.81418616
+              },
+              {
+                "title": "故宫公告 - 故宫博物院",
+                "url": "https://www.dpm.org.cn/announce/p/8.html",
+                "content": "确 定\n\n确 定\n\n无障碍浏览\n\n故宫博物院 故宫博物院\n\n故宫博物院\n\n 首页\n 导览\n 展览\n 教育\n 探索\n 学术\n 文创\n 关于\n\n 开放时间\n 在线订票\n 交通路线\n 参观须知\n 全景故宫\n\n 近期展览\n 专馆\n 原状陈列\n 赴外展览\n\n 教育新闻\n 故宫讲坛\n 书画考级\n 故宫博物院教育中心\n 国际博协培训中心\n 故宫志愿者\n\n 建筑\n 藏品\n 古籍\n 宫廷历史\n 文物医院\n 文化专题\n 名画记\n 数字多宝阁\n 数字文物库\n 藏品总目\n\n 学术资讯\n 专家名录\n 故宫学研究院\n 其他学术机构\n 故宫博物院院刊\n\n 故宫出版\n 文创产品\n 故宫壁纸\n 故宫APP\n 故宫游戏\n\n 总说\n 领导\n 资讯\n 院史编年\n 景仁榜\n 机构设置\n\n 无障碍\n 登录 注册\n 青少 繁体中文 English Español Русский язык 日本語 Français\n\n青少 繁体中文 English Español Русский язык 日本語 Français\n\n# 导览\n\n:   开放时间\n:   在线订票\n:   交通路线\n:   参观须知\n:   全景故宫\n\n# 展览 [...] # 展览\n\n:   近期展览\n:   专馆\n:   原状陈列\n:   赴外展览\n\n# 教育\n\n:   教育新闻\n:   故宫讲坛\n:   书画考级\n:   故宫博物院教育中心\n:   国际博协培训中心\n:   故宫志愿者\n\n# 探索\n\n:   建筑\n:   藏品\n:   古籍\n:   宫廷历史\n:   文物医院\n:   文化专题\n:   名画记\n:   数字多宝阁\n:   数字文物库\n:   藏品总目\n\n# 学术\n\n:   学术资讯\n:   专家名录\n:   故宫学研究院\n:   其他学术机构\n:   故宫博物院院刊\n\n# 文创\n\n:   故宫出版\n:   文创产品\n:   故宫壁纸\n:   故宫APP\n:   故宫游戏\n\n# 关于\n\n:   总说\n:   领导\n:   资讯\n:   院史编年\n:   景仁榜\n:   机构设置\n\n首页\n\n故宫公告\n\n故宫公告\n\n开放公告\n\n故宫博物院9月30日参观须知\n\n2021 / 09 / 29\n\n因2021年9月30日上午天安门广场举行大型活动，早7时至活动结束，故宫博物院周边道路受到交通管...\n\n关于南大库家具馆暂停开放的公告 [...] 关于南大库家具馆暂停开放的公告\n\n2021 / 07 / 21\n\n因展品维护调整，南大库家具馆自2021年7月22日起暂停开放,再次开放时间另行通知。给您参观带...\n\n关于故宫博物院6月26日至7月1日闭馆的公告\n\n2021 / 06 / 14\n\n故宫博物院为配合周边地区活动需要，自2021年6月26日至7月1日闭馆，7月2日恢复正常开放。...\n\n故宫博物院关于6月12日提前止票的公告\n\n2021 / 06 / 10\n\n为配合故宫博物院周边地区活动安排，2021年6月12日，故宫博物院15时10分停止检票，东华门...\n\n关于承乾宫青铜器馆暂停开放的公告\n\n2021 / 04 / 27\n\n为做好文物健康保护，提升参观体验效果，故宫博物院承乾宫区域青铜器馆将于2021年4月28日（周...\n\n关于故宫博物院典藏如意展恢复开放的公告\n\n2021 / 03 / 10\n\n根据故宫博物院展厅调整工作进展，神武门展厅“吉祥如意——故宫博物...\n\n关于故宫博物院典藏如意展暂停开放的公告\n\n2021 / 03 / 03",
+                "score": 0.8091708
+              },
+              {
+                "title": "导览 - 故宫博物院",
+                "url": "https://www.dpm.org.cn/Visit.html",
+                "content": "为确保文物安全，现决定从2026年8月11日起至9月14日止，对雕版馆（东南崇楼及昭德门迤东南朝房）临时闭馆，进行例行维护。   故宫博物院 2026年8月8日\n\n根据古建修缮工作计划，太和门将于8月3日起封闭施工，特此公告。   感谢您对故宫文化遗产保护工作的理解与支持！     扫码可云游太和门   故宫博物院    2026年7月31日\n\n更多公告\n\n开放时间\n\n故宫博物院全年开放，开放时间按照淡、旺季会有所改变，遇到法定假期也会延长或缩短开放时间，请随时注意本网站的公告！如果遇到重大活动或特殊情况，开放时间如有改变，故宫网站将特别发布公告。除法定节假日外，故宫博物院全年实行周一全天闭馆的措施。\n\n旺季4.1-10.31\n\n每年4月1日至10月31日采用旺季开放时间\n\n开放入馆时间：8:30\n\n停止入馆时间：16:00\n\n珍宝馆、钟表馆停止入馆时间：16:10\n\n闭馆时间：17:00\n\n11.1-3.31淡季\n\n每年11月1日至来年3月31日采用淡季开放时间\n\n开放入馆时间：8:30\n\n停止入馆时间：15:30\n\n珍宝馆、钟表馆停止入馆时间：15:40\n\n闭馆时间：16:30 [...] 确 定\n\n确 定\n\n无障碍浏览\n\n故宫博物院 故宫博物院\n\n故宫博物院\n\n 首页\n 导览\n 展览\n 教育\n 探索\n 学术\n 文创\n 关于\n\n 开放时间\n 在线订票\n 交通路线\n 参观须知\n 全景故宫\n\n 近期展览\n 专馆\n 原状陈列\n 赴外展览\n\n 教育新闻\n 故宫讲坛\n 书画考级\n 故宫博物院教育中心\n 国际博协培训中心\n 故宫志愿者\n\n 建筑\n 藏品\n 古籍\n 宫廷历史\n 文物医院\n 文化专题\n 名画记\n 数字多宝阁\n 数字文物库\n 藏品总目\n\n 学术资讯\n 专家名录\n 故宫学研究院\n 其他学术机构\n 故宫博物院院刊\n\n 故宫出版\n 文创产品\n 故宫壁纸\n 故宫APP\n 故宫游戏\n\n 总说\n 领导\n 资讯\n 院史编年\n 景仁榜\n 机构设置\n\n 无障碍\n 登录 注册\n 青少 繁体中文 English Español Русский язык 日本語 Français\n\n青少 繁体中文 English Español Русский язык 日本語 Français\n\n# 导览\n\n:   开放时间\n:   在线订票\n:   交通路线\n:   参观须知\n:   全景故宫\n\n# 展览 [...] # 展览\n\n:   近期展览\n:   专馆\n:   原状陈列\n:   赴外展览\n\n# 教育\n\n:   教育新闻\n:   故宫讲坛\n:   书画考级\n:   故宫博物院教育中心\n:   国际博协培训中心\n:   故宫志愿者\n\n# 探索\n\n:   建筑\n:   藏品\n:   古籍\n:   宫廷历史\n:   文物医院\n:   文化专题\n:   名画记\n:   数字多宝阁\n:   数字文物库\n:   藏品总目\n\n# 学术\n\n:   学术资讯\n:   专家名录\n:   故宫学研究院\n:   其他学术机构\n:   故宫博物院院刊\n\n# 文创\n\n:   故宫出版\n:   文创产品\n:   故宫壁纸\n:   故宫APP\n:   故宫游戏\n\n# 关于\n\n:   总说\n:   领导\n:   资讯\n:   院史编年\n:   景仁榜\n:   机构设置\n\n\n\n\n\n\n\n\n\n根据古建保护工作计划，我院将于2026年9月1日至10月31日对延禧宫进行保护性勘察，11月1日重新开放。给您参观带来不便，敬请谅解！   故宫博物院 2026年8月27日",
+                "score": 0.8051581
+              }
+            ]
+          },
+          "error": null
+        },
+        {
+          "tool_name": "web_search",
+          "arguments": {
+            "query": "故宫博物院 参观公告 预约 开放时间 2024",
+            "max_results": 5
+          },
+          "success": true,
+          "result": {
+            "query": "故宫博物院 参观公告 预约 开放时间 2024",
+            "result_count": 5,
+            "results": [
+              {
+                "title": "故宫博物院2024年“五一”假期 未成年人团队快速预约、检票措施 - 故宫博物院",
+                "url": "https://www.dpm.org.cn/announce_detail/262723.html",
+                "content": "确 定\n\n确 定\n\n无障碍浏览\n\n故宫博物院 故宫博物院\n\n故宫博物院\n\n 首页\n 导览\n 展览\n 教育\n 探索\n 学术\n 文创\n 关于\n\n 开放时间\n 在线订票\n 交通路线\n 参观须知\n 全景故宫\n\n 近期展览\n 专馆\n 原状陈列\n 赴外展览\n\n 教育新闻\n 故宫讲坛\n 书画考级\n 故宫博物院教育中心\n 国际博协培训中心\n 故宫志愿者\n\n 建筑\n 藏品\n 古籍\n 宫廷历史\n 文物医院\n 文化专题\n 名画记\n 数字多宝阁\n 数字文物库\n 藏品总目\n\n 学术资讯\n 专家名录\n 故宫学研究院\n 其他学术机构\n 故宫博物院院刊\n\n 故宫出版\n 文创产品\n 故宫壁纸\n 故宫APP\n 故宫游戏\n\n 总说\n 领导\n 资讯\n 院史编年\n 景仁榜\n 机构设置\n\n 无障碍\n 登录 注册\n 中\n\n  青少 繁体中文 English Español Русский язык 日本語 Français\n\n青少 繁体中文 English Español Русский язык 日本語 Français\n\n# 导览\n\n:   开放时间\n:   在线订票\n:   交通路线\n:   参观须知\n:   全景故宫 [...] 7.如发现未成年人团队实际入院人员与预约邮件中的《参观人员名单》不一致，故宫有权拒绝该团队入院参观，并取消该单位2024年“五一”假期未成年人团队预约资格。\n\n8.未成年人团队须遵守《故宫博物院参观须知》《故宫博物院禁止携带物品目录》等规定，服从现场工作人员管理，不妨碍其他观众正常参观。如违反上述规定，故宫有权拒绝该团队入院参观，并取消该单位2024年“五一”假期未成年人团队预约资格。\n\n9.本措施于2024年5月1日-5月5日实施。自2024年4月24日起，开始受理未成年人团队预约参观申请。\n\n附表1：故宫博物院2024年“五一”假期未成年团队预约参观申请表\n\n附表2：参观人员名单（模板）\n\n附表3：承诺书（模板）\n\n问题反馈 分享到：\n\n返回列表\n\n 图书馆\n\n 视听馆\n\n 故宫旗舰店\n\n 全景故宫\n\n v故宫\n\n微博\n\n微信\n\n小程序\n\n学习强国号\n\n视频号\n\n抖音号\n\n网站访问量\n\n网站地图 相关链接 影像授权 隐私政策 版权声明  留言板 联系我们 关于我们\n\n联系方式：gugong@dpm.org.cn\n\n京公网安备 11010102004165号 [...] # 展览\n\n:   近期展览\n:   专馆\n:   原状陈列\n:   赴外展览\n\n# 教育\n\n:   教育新闻\n:   故宫讲坛\n:   书画考级\n:   故宫博物院教育中心\n:   国际博协培训中心\n:   故宫志愿者\n\n# 探索\n\n:   建筑\n:   藏品\n:   古籍\n:   宫廷历史\n:   文物医院\n:   文化专题\n:   名画记\n:   数字多宝阁\n:   数字文物库\n:   藏品总目\n\n# 学术\n\n:   学术资讯\n:   专家名录\n:   故宫学研究院\n:   其他学术机构\n:   故宫博物院院刊\n\n# 文创\n\n:   故宫出版\n:   文创产品\n:   故宫壁纸\n:   故宫APP\n:   故宫游戏\n\n# 关于\n\n:   总说\n:   领导\n:   资讯\n:   院史编年\n:   景仁榜\n:   机构设置\n\n首页\n\n故宫公告\n\n故宫博物院2024年“五一”假期 未成年人团队快速预约、检票措施\n\n故宫博物院2024年“五一”假期  \n 未成年人团队快速预约、检票措施\n\n故宫博物院2024年“五一”假期  \n 未成年人团队快速预约、检票措施\n\n大\n\n中\n\n小",
+                "score": 0.8364614
+              },
+              {
+                "title": "关于2024年故宫博物院年票发售的公告 - 故宫博物院",
+                "url": "https://www.dpm.org.cn/announce_detail/261973.html",
+                "content": "大\n\n中\n\n小\n\n2024年故宫博物院年票将于2023年12月1日-12月31日发售，开售时间为12月1日晚8:00，请通过“故宫博物院”微信小程序购买。故宫博物院未授权任何第三方机构或个人代理年票销售业务。  \n  \n　　1.每位观众限购1张。年票限购票者本人使用，不可变更使用人。  \n　　2.中国内地观众须用身份证购买，非中国内地观众请使用港澳居民来往内地通行证、台湾居民来往大陆通行证、港澳台居民居住证、外国人永久居留身份证或护照购买。  \n　　3.2024年年票有效期：2024.1.1-12.31，有效期内可入院参观10次。  \n　　4.年票价格300元/张，不包含钟表馆、珍宝馆。  \n　　5.为提供更好的参观服务，持2024年年票参观须至少提前一日通过“故宫博物院”微信小程序登记。  \n　　6.年票观众登记上午时段最迟检票时间为当日12:00，登记下午时段最早检票时间为当日11:00。  \n　　7.参观当日须携带登记时使用的有效证件原件，由午门检票入院。请按照您的登记时间来院，以免无法检票入院，影响参观。  \n　　8.年票一经售出，不予退票。 [...] 确 定\n\n确 定\n\n无障碍浏览\n\n故宫博物院 故宫博物院\n\n故宫博物院\n\n 首页\n 导览\n 展览\n 教育\n 探索\n 学术\n 文创\n 关于\n\n 开放时间\n 在线订票\n 交通路线\n 参观须知\n 全景故宫\n\n 近期展览\n 专馆\n 原状陈列\n 赴外展览\n\n 教育新闻\n 故宫讲坛\n 书画考级\n 故宫博物院教育中心\n 国际博协培训中心\n 故宫志愿者\n\n 建筑\n 藏品\n 古籍\n 宫廷历史\n 文物医院\n 文化专题\n 名画记\n 数字多宝阁\n 数字文物库\n 藏品总目\n\n 学术资讯\n 专家名录\n 故宫学研究院\n 其他学术机构\n 故宫博物院院刊\n\n 故宫出版\n 文创产品\n 故宫壁纸\n 故宫APP\n 故宫游戏\n\n 总说\n 领导\n 资讯\n 院史编年\n 景仁榜\n 机构设置\n\n 无障碍\n 留言板\n 登录 注册\n 中\n\n  青少 繁体中文 English Español Русский язык 日本語 Français\n\n青少 繁体中文 English Español Русский язык 日本語 Français\n\n# 导览 [...] # 导览\n\n:   开放时间\n:   在线订票\n:   交通路线\n:   参观须知\n:   全景故宫\n\n# 展览\n\n:   近期展览\n:   专馆\n:   原状陈列\n:   赴外展览\n\n# 教育\n\n:   教育新闻\n:   故宫讲坛\n:   书画考级\n:   故宫博物院教育中心\n:   国际博协培训中心\n:   故宫志愿者\n\n# 探索\n\n:   建筑\n:   藏品\n:   古籍\n:   宫廷历史\n:   文物医院\n:   文化专题\n:   名画记\n:   数字多宝阁\n:   数字文物库\n:   藏品总目\n\n# 学术\n\n:   学术资讯\n:   专家名录\n:   故宫学研究院\n:   其他学术机构\n:   故宫博物院院刊\n\n# 文创\n\n:   故宫出版\n:   文创产品\n:   故宫壁纸\n:   故宫APP\n:   故宫游戏\n\n# 关于\n\n:   总说\n:   领导\n:   资讯\n:   院史编年\n:   景仁榜\n:   机构设置\n\n首页\n\n故宫公告\n\n关于2024年故宫博物院年票发售的公告\n\n关于2024年故宫博物院年票发售的公告\n\n关于2024年故宫博物院年票发售的公告\n\n大",
+                "score": 0.8215175
+              },
+              {
+                "title": "故宫公告 - 故宫博物院",
+                "url": "https://www.dpm.org.cn/announce/p/6.html",
+                "content": "# 展览\n\n:   近期展览\n:   专馆\n:   原状陈列\n:   赴外展览\n\n# 教育\n\n:   教育新闻\n:   故宫讲坛\n:   书画考级\n:   故宫博物院教育中心\n:   国际博协培训中心\n:   故宫志愿者\n\n# 探索\n\n:   建筑\n:   藏品\n:   古籍\n:   宫廷历史\n:   文物医院\n:   文化专题\n:   名画记\n:   数字多宝阁\n:   数字文物库\n:   藏品总目\n\n# 学术\n\n:   学术资讯\n:   专家名录\n:   故宫学研究院\n:   其他学术机构\n:   故宫博物院院刊\n\n# 文创\n\n:   故宫出版\n:   文创产品\n:   故宫壁纸\n:   故宫APP\n:   故宫游戏\n\n# 关于\n\n:   总说\n:   领导\n:   资讯\n:   院史编年\n:   景仁榜\n:   机构设置\n\n首页\n\n故宫公告\n\n故宫公告\n\n开放公告\n\n关于2024年故宫博物院年票发售的公告\n\n2023 / 11 / 27\n\n2024年故宫博物院年票将于2023年12月1日-12月31日发售，开售时间为12月1日晚8:0... [...] 确 定\n\n确 定\n\n无障碍浏览\n\n故宫博物院 故宫博物院\n\n故宫博物院\n\n 首页\n 导览\n 展览\n 教育\n 探索\n 学术\n 文创\n 关于\n\n 开放时间\n 在线订票\n 交通路线\n 参观须知\n 全景故宫\n\n 近期展览\n 专馆\n 原状陈列\n 赴外展览\n\n 教育新闻\n 故宫讲坛\n 书画考级\n 故宫博物院教育中心\n 国际博协培训中心\n 故宫志愿者\n\n 建筑\n 藏品\n 古籍\n 宫廷历史\n 文物医院\n 文化专题\n 名画记\n 数字多宝阁\n 数字文物库\n 藏品总目\n\n 学术资讯\n 专家名录\n 故宫学研究院\n 其他学术机构\n 故宫博物院院刊\n\n 故宫出版\n 文创产品\n 故宫壁纸\n 故宫APP\n 故宫游戏\n\n 总说\n 领导\n 资讯\n 院史编年\n 景仁榜\n 机构设置\n\n 无障碍\n 登录 注册\n 青少 繁体中文 English Español Русский язык 日本語 Français\n\n青少 繁体中文 English Español Русский язык 日本語 Français\n\n# 导览\n\n:   开放时间\n:   在线订票\n:   交通路线\n:   参观须知\n:   全景故宫\n\n# 展览 [...] 关于2023年医务人员和志愿者主题免费开放日的公告\n\n2023 / 10 / 27\n\n2023年11月1日（周三），故宫博物院对医务人员和志愿者免费开放，免费范围包括大门票、钟表馆、...\n\n故宫博物院关于优化分时段预约参观的公告\n\n2023 / 10 / 24\n\n为确保故宫文物的真实完整保护，同时营造观众检票入院和参观过程的良好秩序，故宫博物院将于2023...\n\n故宫博物院关于陶瓷馆恢复开放的公告\n\n2023 / 10 / 16\n\n故宫博物院陶瓷馆已完成展厅维护，自2023年10月17日起恢复开放。 ...\n\n故宫博物院2023年中秋、国庆期间 未成年人团队快速预约、检票措施\n\n2023 / 09 / 23\n\n1.由独立法人机构组织的、未成年人占比85%以上的团队，可提前1-6日通过邮箱yycg@dpm...\n\n关于调整入馆时间的公告\n\n2023 / 08 / 28\n\n根据我院工作安排，自9月1日（周五）起，我院开放入馆时间恢复至早上8:30，特此公告。 ...\n\n关于故宫博物院继续临时闭馆的公告\n\n2023 / 07 / 31",
+                "score": 0.8091708
+              },
+              {
+                "title": "故宫博物院关于优化分时段预约参观的公告 - 故宫博物院",
+                "url": "https://www.dpm.org.cn/announce_detail/261778.html",
+                "content": "确 定\n\n确 定\n\n无障碍浏览\n\n故宫博物院 故宫博物院\n\n故宫博物院\n\n 首页\n 导览\n 展览\n 教育\n 探索\n 学术\n 文创\n 关于\n\n 开放时间\n 在线订票\n 交通路线\n 参观须知\n 全景故宫\n\n 近期展览\n 专馆\n 原状陈列\n 赴外展览\n\n 教育新闻\n 故宫讲坛\n 书画考级\n 故宫博物院教育中心\n 国际博协培训中心\n 故宫志愿者\n\n 建筑\n 藏品\n 古籍\n 宫廷历史\n 文物医院\n 文化专题\n 名画记\n 数字多宝阁\n 数字文物库\n 藏品总目\n\n 学术资讯\n 专家名录\n 故宫学研究院\n 其他学术机构\n 故宫博物院院刊\n\n 故宫出版\n 文创产品\n 故宫壁纸\n 故宫APP\n 故宫游戏\n\n 总说\n 领导\n 资讯\n 院史编年\n 景仁榜\n 机构设置\n\n 无障碍\n 登录 注册\n 中\n\n  青少 繁体中文 English Español Русский язык 日本語 Français\n\n青少 繁体中文 English Español Русский язык 日本語 Français\n\n# 导览\n\n:   开放时间\n:   在线订票\n:   交通路线\n:   参观须知\n:   全景故宫 [...] # 展览\n\n:   近期展览\n:   专馆\n:   原状陈列\n:   赴外展览\n\n# 教育\n\n:   教育新闻\n:   故宫讲坛\n:   书画考级\n:   故宫博物院教育中心\n:   国际博协培训中心\n:   故宫志愿者\n\n# 探索\n\n:   建筑\n:   藏品\n:   古籍\n:   宫廷历史\n:   文物医院\n:   文化专题\n:   名画记\n:   数字多宝阁\n:   数字文物库\n:   藏品总目\n\n# 学术\n\n:   学术资讯\n:   专家名录\n:   故宫学研究院\n:   其他学术机构\n:   故宫博物院院刊\n\n# 文创\n\n:   故宫出版\n:   文创产品\n:   故宫壁纸\n:   故宫APP\n:   故宫游戏\n\n# 关于\n\n:   总说\n:   领导\n:   资讯\n:   院史编年\n:   景仁榜\n:   机构设置\n\n首页\n\n故宫公告\n\n故宫博物院关于优化分时段预约参观的公告\n\n故宫博物院关于优化分时段预约参观的公告\n\n故宫博物院  \n 关于优化分时段预约参观的公告\n\n大\n\n中\n\n小 [...] © 2001- 现在 故宫博物院\n\n网站建设：北京分形科技\n\n火狐 谷歌 360浏览器 最佳分辨率（1920 \\ 1080）\n\n全国党政机关事业单位互联网网站标识管理服务平台\n\n您当前使用的浏览器版本过低，  \n建议尽快升级您的浏览器，以获得更好的浏览体验！",
+                "score": 0.7570233
+              },
+              {
+                "title": "故宫公告：下周一免费开放！（预约时间公布）-新华网",
+                "url": "http://www.xinhuanet.com/20260724/10194768f22b4df78d5e13a3065ce6f2/c.html",
+                "content": "故宫公告：下周一免费开放！（预约时间公布）-新华网 \n\n新华网 >  > 正文\n\n2026 07/24 10:33:10\n\n来源：新华社微信公众号\n\n# 故宫公告：下周一免费开放！（预约时间公布）\n\n字体： 小 中 大\n\n分享到：\n\n# 故宫公告：下周一免费开放！（预约时间公布）\n\n2026-07-24 10:33:10  来源：新华社微信公众号\n\n7月23日，故宫博物院官网发布《关于2026年7月27日开放的公告》：\n\n  为庆祝北京中轴线申遗成功两周年，满足广大观众文化需求，故宫博物院将于2026年7月27日（周一）免费开放一天。8：30开馆，16：00停止入馆，17：00闭馆。\n\n  本次参观仅可通过“故宫博物院”微信小程序进行实名预约，7月24日20：00开始预约大门票和钟表馆、珍宝馆门票，约满即止。参观当日，端门、珍宝馆、钟表馆票务窗口不提供服务。\n\n  来源：新华社微信公众号综合故宫博物院网站\n\n【纠错】;)  【责任编辑:吴京泽】\n\n阅读下一篇：\n\n深度观察\n\n [](\n\n  新华全媒头条丨“义乌发展经验”的深刻启示 [...] 新华社文化随笔丨在算法的浪潮里坚守艺术创作本心\n 新华每日电讯丨三亚推出暑期文旅“消夏三部曲”\n 记者手记丨邂逅伏尔加河——俄罗斯采访系列之四\n 新闻分析丨美AI测试失控 中国模型如何“救场”\n 国际观察丨日元汇率缘何跌至近40年来新低\n 列国鉴丨前往“地球之极” 俄大力推动北极游\n\n [](\n [](\n\n  趣看文物丨《目瑙纵歌》刀舞 “真人+文物”版来啦",
+                "score": 0.7009158
+              }
+            ]
+          },
+          "error": null
+        },
+        {
+          "tool_name": "fetch_webpage",
+          "arguments": {
+            "url": "https://www.dpm.org.cn/announce_detail/379398.html"
+          },
+          "success": true,
+          "result": {
+            "found": true,
+            "url": "https://www.dpm.org.cn/announce_detail/379398.html",
+            "content": "确 定\n\n[确 定](javascript:;)\n\n![](https://img.dpm.org.cn/static/themes/image/icon_mess2.png)\n\n无障碍浏览\n\n[![故宫博物院](https://img.dpm.org.cn/Uploads/image/2024/04/30/1714450493JdsBlxksO1.png) ![故宫博物院](https://img.dpm.org.cn/Uploads/image/2024/04/30/1714450493mKvocjUTZ1.png)](/)\n\n[![故宫博物院](https://img.dpm.org.cn/Uploads/image/2024/04/30/1714450493oMLPHAkOn1.png)](/)\n\n* [首页](/Home.html \"首页\")\n* [导览](/Visit.html \"导览\")\n* [展览](/shows.html \"展览\")\n* [教育](/Events.html \"教育\")\n* [探索](/Explore.html \"探索\")\n* [学术](/Research.html \"学术\")\n* [文创](/Creative.html \"文创\")\n* [关于](/About.html \"关于\")\n\n* [开放时间](/Visit.html#block3 \"开放时间\")\n* [在线订票](https://ticket.dpm.org.cn/ \"在线订票\")\n* [交通路线](/Visit.html#block5 \"交通路线\")\n* [参观须知](/Visit.html#block6 \"参观须知\")\n* [全景故宫](https://pano.dpm.org.cn/ \"全景故宫\")\n\n* [近期展览](/shows.html#temporary2 \"近期展览\")\n* [专馆](/shows.html#temporary4 \"专馆\")\n* [原状陈列](/shows.html#temporary_5 \"原状陈列\")\n* [赴外展览](/shows.html#temporary_6 \"赴外展览\")\n\n* [教育新闻](/Events.html#hd1-2 \"教育新闻\")\n* [故宫讲坛](/gugongforum.html \"故宫讲坛\")\n* [书画考级](/calligraphy_paint/index.html \"书画考级\")\n* [故宫博物院教育中心](/Events.html#hd1-3 \"故宫博物院教育中心\")\n* [国际博协培训中心](/Events.html#hd1-6 \"国际博协培训中心\")\n* [故宫志愿者](/Events.html#hd1-7 \"故宫志愿者\")\n\n* [建筑](/explore/buildings.html \"建筑\")\n* [藏品](/explore/collections.html \"藏品\")\n* [古籍](/explore/ancients.html \"古籍\")\n* [宫廷历史](/explores/courts.html \"宫廷历史\")\n* [文物医院](/explore/protects.html \"文物医院\")\n* [文化专题](/explore/cultures.html \"文化专题\")\n* [名画记](http://minghuaji.dpm.org.cn \"名画记\")\n* [数字多宝阁](/shuziduobaoge.html \"数字多宝阁\")\n* [数字文物库](https://digicol.dpm.org.cn/ \"数字文物库\")\n* [藏品总目](https://zm-digicol.dpm.org.cn/ \"藏品总目\")\n\n* [学术资讯](/learning/dynamic.html \"学术资讯\")\n* [专家名录](/expert.html \"专家名录\")\n* [故宫学研究院](/achaime/institute.html \"故宫学研究院\")\n* [其他学术机构](/Research.html#other_institution1 \"其他学术机构\")\n* [故宫博物院院刊](/journals.html \"故宫博物院院刊\")\n\n* [故宫出版](/publishes.html \"故宫出版\")\n* [文创产品](/Creative.html#protects \"文创产品\")\n* [故宫壁纸](/lights/royal.html \"故宫壁纸\")\n* [故宫APP](/Creative.html#app \"故宫APP\")\n* [故宫游戏](http://young.dpm.org.cn/damaoxian#gamezone \"故宫游戏\")\n\n* [总说](/about/about_view.html \"总说\")\n* [领导](/about/leader_list.html \"领导\")\n* [资讯](/about/information.html \"资讯\")\n* [院史编年](/about/about_chron.html \"院史编年\")\n* [景仁榜](/about/patrons+benefactors.html \"景仁榜\")\n* [机构设置](/about/organization.html \"机构设置\")\n\n* [无障碍](javascript:;)\n* [登录](/passport/login.html) [注册](/passport/login.html?type=register)\n* [中](/)\n\n  [青少](https://young.dpm.org.cn) [繁体中文](https://intl.dpm.org.cn/index.html?l=tc) [English](https://intl.dpm.org.cn/index.html?l=en) [Español](https://intl.dpm.org.cn/index.html?l=es) [Русский язык](https://intl.dpm.org.cn/index.html?l=ru) [日本語](https://intl.dpm.org.cn/index.html?l=jp) [Français](https://intl.dpm.org.cn/index.html?l=fr)\n\n[青少](https://young.dpm.org.cn) [繁体中文](https://intl.dpm.org.cn/index.html?l=tc) [English](https://intl.dpm.org.cn/index.html?l=en) [Español](https://intl.dpm.org.cn/index.html?l=es) [Русский язык](https://intl.dpm.org.cn/index.html?l=ru) [日本語](https://intl.dpm.org.cn/index.html?l=jp) [Français](https://intl.dpm.org.cn/index.html?l=fr)\n\n# [导览](/Visit.html)\n\n:   [开放时间](/Visit.html#block3)\n:   [在线订票](https://ticket.dpm.org.cn/)\n:   [交通路线](/Visit.html#block5)\n:   [参观须知](/Visit.html#block6)\n:   [全景故宫](https://pano.dpm.org.cn/)\n\n# [展览](/shows.html)\n\n:   [近期展览](/shows.html#temporary2)\n:   [专馆](/shows.html#temporary4)\n:   [原状陈列](/shows.html#temporary_5)\n:   [赴外展览](/shows.html#temporary_6)\n\n# [教育](/Events.html)\n\n:   [教育新闻](/Events.html#hd1-2)\n:   [故宫讲坛](/gugongforum.html)\n:   [书画考级](/calligraphy_paint/index.html)\n:   [故宫博物院教育中心](/Events.html#hd1-3)\n:   [国际博协培训中心](/Events.html#hd1-6)\n:   [故宫志愿者](/Events.html#hd1-7)\n\n# [探索](/Explore.html)\n\n:   [建筑](/explore/buildings.html)\n:   [藏品](/explore/collections.html)\n:   [古籍](/explore/ancients.html)\n:   [宫廷历史](/explores/courts.html)\n:   [文物医院](/explore/protects.html)\n:   [文化专题](/explore/cultures.html)\n:   [名画记](http://minghuaji.dpm.org.cn)\n:   [数字多宝阁](/shuziduobaoge.html)\n:   [数字文物库](https://digicol.dpm.org.cn/)\n:   [藏品总目](https://zm-digicol.dpm.org.cn/)\n\n# [学术](/Research.html)\n\n:   [学术资讯](/learning/dynamic.html)\n:   [专家名录](/expert.html)\n:   [故宫学研究院](/achaime/institute.html)\n:   [其他学术机构](/Research.html#other_institution1)\n:   [故宫博物院院刊](/journals.html)\n\n# [文创](/Creative.html)\n\n:   [故宫出版](/publishes.html)\n:   [文创产品](/Creative.html#protects)\n:   [故宫壁纸](/lights/royal.html)\n:   [故宫APP](/Creative.html#app)\n:   [故宫游戏](http://young.dpm.org.cn/damaoxian#gamezone)\n\n# [关于](/About.html)\n\n:   [总说](/about/about_view.html)\n:   [领导](/about/leader_list.html)\n:   [资讯](/about/information.html)\n:   [院史编年](/about/about_chron.html)\n:   [景仁榜](/about/patrons+benefactors.html)\n:   [机构设置](/about/organization.html)\n\n[首页](/)\n\n[故宫公告](/announce.html)\n\n故宫博物院关于2026年7月27日开放的公告\n\n故宫博物院关于2026年7月27日开放的公告\n\n故宫博物院关于2026年7月27日开放的公告\n\n大\n\n中\n\n小\n\n各位观众：\n\n为庆祝北京中轴线申遗成功两周年，满足广大观众文化需求，故宫博物院将于2026年7月27日（周一）免费开放一天。8:30开馆，16:00停止入馆，17:00闭馆。\n\n本次参观仅可通过“故宫博物院”微信小程序进行实名预约，7月24日20:00开始预约大门票和钟表馆、珍宝馆门票，约满即止。参观当日，端门、珍宝馆、钟表馆票务窗口不提供服务。\n\n如需帮助，可拨打服务热线：400-950-1925。\n\n故宫博物院\n\n2026年7月23日\n\n[问题反馈](/bottom/ask.html) 分享到：\n\n[返回列表](/announce.html)\n\n[![](https://img.dpm.org.cn/Uploads/image/2024/04/25/1714029280dmPpOkLmH1.png) **图书馆**](/librarys.html)\n\n[![](https://img.dpm.org.cn/Uploads/image/2024/04/22/1713768119JAqRCAJnp1.png) **视听馆**](/auditions.html)\n\n[![](https://img.dpm.org.cn/Uploads/image/2024/04/22/1713768119XGVBblwoE1.png) **故宫旗舰店**](https://palacemuseum.tmall.com/shop/view_shop.htm?spm=a220m.1000862.1000730.2.IS2lQC&user_number_id=2893966855&rn=68d7e1a1bf5ba21acef0322cb010ecf7)\n\n[![](https://img.dpm.org.cn/Uploads/image/2024/04/22/1713768287dCydcmLpg1.png) **全景故宫**](https://pano.dpm.org.cn)\n\n[![](https://img.dpm.org.cn/Uploads/image/2024/04/22/1713768119wRBqJBOsC1.png) **v故宫**](/vr/index.html)\n\n![](https://img.dpm.org.cn/Uploads/image/2024/06/19/1718777318GXykGfXVu1.png)\n\n微博\n\n![](https://img.dpm.org.cn/Uploads/image/2024/10/30/微博-rAnSDAriV260.jpg)\n\n![](https://img.dpm.org.cn/Uploads/image/2024/06/13/1718252091PCWUaAJGl1.png)\n\n微信\n\n![](https://img.dpm.org.cn/Uploads/image/2024/10/30/微信-PKgMtrmlY260.jpg)\n\n![](https://img.dpm.org.cn/Uploads/image/2024/04/10/1712732694TjffWygwM1.png)\n\n小程序\n\n![](https://img.dpm.org.cn/Uploads/image/2024/10/30/小程序-bsJzckSpJ260.jpg)\n\n![](https://img.dpm.org.cn/Uploads/image/2024/04/10/1712732694TutGSjrcR1.png)\n\n学习强国号\n\n![](https://img.dpm.org.cn/Uploads/image/2024/10/30/学习强国号-XMhbQaYmz260.jpg)\n\n![](https://img.dpm.org.cn/Uploads/image/2024/04/10/1712732694guXTmRlCJ1.png)\n\n视频号\n\n![](https://img.dpm.org.cn/Uploads/image/2024/10/30/视频号-GLHkqBniy260.jpg)\n\n![](https://img.dpm.org.cn/Uploads/image/2024/06/13/1718252091iedZOgVid1.png)\n\n抖音号\n\n![](https://img.dpm.org.cn/Uploads/image/2024/10/30/抖音号-EdLLogkez260.jpg)\n\n网站访问量\n\n[网站地图](/sitemap.html) [相关链接](/bottom/friend.html) [影像授权](/bottom/apply_image.html) [隐私政策](/bottom/privacy/252.html) [版权声明](/bottom/privacy/236341.html)  [留言板](/bottom/ask.html) [联系我们](/singles_detail/252829.html) [关于我们](/bottom/aboutus.html)\n\n联系方式：[gugong@dpm.org.cn](mailto:gugong@dpm.org.cn)\n\n[![](https://img.dpm.org.cn/static/themes/image/ico.png)京公网安备 11010102004165号](http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102004165)\n\n© 2001- 现在 故宫博物院\n\n[网站建设](javascript:;)：[北京分形科技](javascript:;)\n\n火狐 谷歌 360浏览器 最佳分辨率（1920 \\* 1080）\n\n[![全国党政机关事业单位互联网网站标识管理服务平台](https://dcs.conac.cn/image/blue.png \"全国党政机关事业单位互联网网站标识管理服务平台\")](https://bszs.conac.cn/sitename?method=show&id=A259806FC2A45840E05310291AAC4BBA)\n\n您当前使用的浏览器版本过低，  \n建议尽快升级您的浏览器，以获得更好的浏览体验！"
+          },
+          "error": null
+        }
+      ],
+      "latency_ms": 29766.8718000059,
+      "input_tokens": 22474,
+      "output_tokens": 716,
+      "total_tokens": 23190,
+      "llm_request_count": 3,
+      "prompt_cache_hit_tokens": 10368,
+      "prompt_cache_miss_tokens": 12106,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

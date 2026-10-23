@@ -1,0 +1,70 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T13:20:30.597978+00:00",
+    "schema_version": "1.0",
+    "report_file": "022_answer_llm_only_20261010_212030.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "rag_006",
+      "variant": "llm_only",
+      "question": "在本系统内部数字化评测资料中，故宫对应的项目编号和数字化采集批次分别是什么？重点采集哪三个对象？",
+      "answer": "我无法访问“本系统内部数字化评测资料”，因此不能确认故宫对应的**项目编号**和**数字化采集批次**。\n\n仅从公开常识看，故宫数字化采集常重点涉及中轴线三大殿：**太和殿、中和殿、保和殿**；但项目编号与采集批次必须以该内部评测资料为准。请提供相关表格或条目，我可以帮你准确提取。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 15696.362700022291,
+      "input_tokens": 114,
+      "output_tokens": 2013,
+      "total_tokens": 2127,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 114,
+          "completion_tokens": 2013,
+          "total_tokens": 2127,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 114
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 114,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

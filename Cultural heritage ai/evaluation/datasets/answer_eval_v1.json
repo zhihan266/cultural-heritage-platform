@@ -1,0 +1,569 @@
+[
+  {
+    "id": "control_001",
+    "question": "中国传统建筑中，中轴对称布局通常体现怎样的空间组织特点？",
+    "reference_answer": "主要建筑沿中轴线组织，两侧空间大体对称，形成明确的主次和秩序。",
+    "category": "control",
+    "difficulty": "easy",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_002",
+    "question": "文化遗产保护中，为什么通常强调保存真实性和完整性？",
+    "reference_answer": "真实性和完整性有助于保留遗产真实的历史信息、物质特征及其整体价值。",
+    "category": "control",
+    "difficulty": "easy",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_003",
+    "question": "传统木构建筑中的斗拱通常位于什么位置，主要起什么作用？",
+    "reference_answer": "斗拱通常位于柱与屋顶构架之间，用于传递和分散荷载，同时具有装饰和等级象征作用。",
+    "category": "control",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_004",
+    "question": "为什么博物馆展览中的文物通常需要控制温度和湿度？",
+    "reference_answer": "为了减少温湿度波动导致的材料老化、变形、霉变、腐蚀等损害。",
+    "category": "control",
+    "difficulty": "easy",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_005",
+    "question": "中国传统园林中的“借景”大致是什么意思？",
+    "reference_answer": "借景是把园林外部或远处的自然、建筑等景观纳入园内视线，从而丰富和扩展空间体验。",
+    "category": "control",
+    "difficulty": "easy",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_006",
+    "question": "考古学中为什么要重视遗迹和遗物的出土层位？",
+    "reference_answer": "层位关系能够帮助判断遗迹遗物的先后关系和年代，是恢复历史过程的重要依据。",
+    "category": "control",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_007",
+    "question": "非物质文化遗产与一般文物相比，一个重要区别是什么？",
+    "reference_answer": "非物质文化遗产更强调由社区和传承人持续实践、传承的知识、技艺、表演和习俗，而不仅是固定的物质实体。",
+    "category": "control",
+    "difficulty": "easy",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_008",
+    "question": "古建筑修缮中为什么通常不建议无依据地恢复到某个想象中的历史状态？",
+    "reference_answer": "因为缺乏依据的恢复可能制造虚假的历史信息，损害遗产真实性，应尽量依据可靠证据并减少不必要干预。",
+    "category": "control",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_009",
+    "question": "为什么历史建筑的功能改变可能影响其保护方案？",
+    "reference_answer": "不同使用功能会带来不同的空间、设备、安全和承载需求，因此保护方案需要平衡遗产价值与现实使用。",
+    "category": "control",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+  {
+    "id": "control_010",
+    "question": "文化遗产数字化记录为什么不能完全替代实体保护？",
+    "reference_answer": "数字记录可以保存和传播信息，但无法替代遗产实体本身包含的材料、工艺、历史痕迹和真实空间关系。",
+    "category": "control",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": false,
+    "expected_tools": [],
+    "metadata": {
+      "benchmark_group": "control"
+    }
+  },
+
+  {
+  "id": "rag_001",
+  "question": "根据知识库，莫高窟中的供养人像和敦煌文书分别能够为研究者提供哪一类历史证据？请分别说明。",
+  "reference_answer": "供养人像能够保存和反映社会生活信息；敦煌文书则为历史研究提供文字文献等另一类证据。",
+  "category": "rag_needed",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "source_doc": "mogao_caves.txt"
+  }
+},
+{
+  "id": "rag_002",
+  "question": "根据知识库，颐和园中的长廊、佛香阁以及昆明湖与万寿山之间的高差，分别怎样参与景观空间的组织？",
+  "reference_answer": "长廊连接或串联多个景观节点，佛香阁形成重要视觉中心并具有统领作用，昆明湖水面与万寿山高差共同形成开阔与层叠相结合的空间体验。",
+  "category": "rag_needed",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "source_doc": "summer_palace.txt"
+  }
+},
+{
+  "id": "rag_003",
+  "question": "根据知识库，开平碉楼如何同时体现本地生活需求和海外交流影响？请从形成背景、建筑材料或结构功能、装饰三个方面回答。",
+  "reference_answer": "形成背景与近代侨乡经济和海外交流有关；返乡华侨把海外建筑经验与本地生活需求结合。建筑采用钢筋混凝土、砖石等近代材料，高层结构有利于防洪、防匪和观察周围环境；装饰则吸收不同地区或海外建筑因素。",
+  "category": "rag_needed",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "source_doc": "kaiping_diaolou.txt"
+  }
+},
+{
+  "id": "rag_004",
+  "question": "根据知识库，皖南古村落宏村的水系与传统民居中的天井分别承担什么实际作用？为什么它们不能只被理解为装饰性景观？",
+  "reference_answer": "宏村水系与居民日常生活相结合；天井用于改善采光并组织院落空间。因此两者都与实际生活和空间组织直接相关，而不仅具有观赏或装饰作用。",
+  "category": "rag_needed",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "source_doc": "xidi_hongcun.txt"
+  }
+},
+{
+  "id": "rag_005",
+  "question": "根据知识库说明长城为什么不能简单理解成一堵连续的墙。山地和平原地段分别采用了怎样的防御策略，并使用了哪些不同工程要素？",
+  "reference_answer": "长城是一套包括城墙、敌台、关隘、烽火台等在内的综合防御体系。山地地段常利用险要地形，平原地区则利用壕沟、堡寨和城墙加强防守；不同地区还会使用夯土或砖石等不同材料，体现因地制宜的工程策略。",
+  "category": "rag_needed",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "source_doc": "great_wall.txt"
+  }
+},
+{
+  "id": "rag_006",
+  "question": "在本系统内部数字化评测资料中，故宫对应的项目编号和数字化采集批次分别是什么？重点采集哪三个对象？",
+  "reference_answer": "故宫的内部项目编号为 CH-EVAL-017，数字化采集批次为 BATCH-2026-A3，重点采集对象为宫殿建筑彩画、台基和斗拱节点。",
+  "category": "private_rag",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+{
+  "id": "rag_007",
+  "question": "根据本系统内部数字化评测资料，哪个文化遗产项目的内部编号是 CH-EVAL-031？它的巡检优先级、负责小组和重点采集对象分别是什么？",
+  "reference_answer": "CH-EVAL-031 对应莫高窟，巡检优先级为 P1，内部负责小组为 CAVE-DIGITAL-01，重点采集壁画色彩、彩塑表面状态和洞窟内部空间关系。",
+  "category": "private_rag",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+{
+  "id": "rag_008",
+  "question": "根据本系统内部资料，比较莫高窟和颐和园的数字化巡检优先级，并分别说明它们的数字化采集批次和重点采集对象。",
+  "reference_answer": "莫高窟巡检优先级为 P1，采集批次为 BATCH-2026-C1，重点采集壁画色彩、彩塑表面状态和洞窟内部空间关系；颐和园巡检优先级为 P3，采集批次为 BATCH-2026-B7，重点采集长廊彩画、佛香阁和昆明湖岸线。",
+  "category": "private_rag",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+{
+  "id": "rag_009",
+  "question": "本系统内部有哪些数字化评测项目的巡检优先级为 P1？请给出对应文化遗产名称、内部项目编号和负责小组。",
+  "reference_answer": "P1 项目共有两个：莫高窟，项目编号 CH-EVAL-031，负责小组 CAVE-DIGITAL-01；秦始皇陵兵马俑，项目编号 CH-EVAL-073，负责小组 ARCHAEOLOGY-3D-02。",
+  "category": "private_rag",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+{
+  "id": "rag_010",
+  "question": "根据本系统内部数字化评测资料，比较故宫和龙门石窟：它们的巡检优先级是否相同？分别由哪个小组负责，并重点采集哪些对象？",
+  "reference_answer": "二者巡检优先级相同，均为 P2。故宫由 ARCH-VISION-02 负责，重点采集宫殿建筑彩画、台基和斗拱节点；龙门石窟由 STONE-SCAN-04 负责，重点采集佛龛边界、造像面部和石刻表面风化区域。",
+  "category": "private_rag",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": false,
+  "expected_tools": [],
+  "metadata": {
+    "benchmark_group": "rag",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+
+  {
+    "id": "tool_001",
+    "question": "请查询系统数据库中登记的故宫详细信息，告诉我它的城市、朝代、始建年份和遗产类别。不要只凭已有知识回答。",
+    "reference_answer": "故宫位于北京，朝代为明清，始建年份为1406年，遗产类别为皇家宫殿。",
+    "category": "tool_needed",
+    "difficulty": "easy",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "structured_database"
+    }
+  },
+  {
+    "id": "tool_002",
+    "question": "请查询系统数据库中登记的颐和园信息，告诉我它的城市、朝代、始建年份和遗产类别。",
+    "reference_answer": "颐和园位于北京，朝代为清，始建年份为1750年，遗产类别为皇家园林。",
+    "category": "tool_needed",
+    "difficulty": "easy",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "structured_database"
+    }
+  },
+  {
+    "id": "tool_003",
+    "question": "请查询系统数据库中登记的莫高窟信息，告诉我它所在城市、朝代、始建年份和遗产类别。",
+    "reference_answer": "莫高窟位于敦煌，朝代登记为十六国至元，始建年份为366年，遗产类别为石窟寺。",
+    "category": "tool_needed",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "structured_database"
+    }
+  },
+  {
+    "id": "tool_004",
+    "question": "请查询系统数据库中的龙门石窟，告诉我它所在城市、朝代、始建年份和遗产类别。",
+    "reference_answer": "龙门石窟位于洛阳，朝代登记为北魏至唐，始建年份为493年，遗产类别为石窟寺。",
+    "category": "tool_needed",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "structured_database"
+    }
+  },
+  {
+    "id": "tool_005",
+    "question": "请查询系统数据库中的殷墟，告诉我它所在城市、朝代和遗产类别。",
+    "reference_answer": "殷墟位于安阳，朝代为商，遗产类别为考古遗址。",
+    "category": "tool_needed",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "structured_database"
+    }
+  },
+  {
+    "id": "tool_006",
+    "question": "请查询系统数据库中的三星堆遗址，告诉我它所在城市、朝代和遗产类别。",
+    "reference_answer": "三星堆遗址位于广汉，朝代登记为古蜀，遗产类别为考古遗址。",
+    "category": "tool_needed",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "structured_database"
+    }
+  },
+  {
+    "id": "tool_007",
+    "question": "请搜索互联网，查询故宫博物院目前最新的开放或参观公告，概括主要内容并给出信息来源。不要凭已有知识回答。",
+    "reference_answer": "",
+    "category": "tool_needed",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["web_search"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "dynamic_web",
+      "dynamic_reference": true
+    }
+  },
+  {
+    "id": "tool_008",
+    "question": "请搜索互联网，查询故宫博物院当前的常规开放时间和预约要求，并给出可靠来源。",
+    "reference_answer": "",
+    "category": "tool_needed",
+    "difficulty": "medium",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["web_search"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "dynamic_web",
+      "dynamic_reference": true
+    }
+  },
+  {
+    "id": "tool_009",
+    "question": "请先搜索故宫博物院近期的一则官方开放或参观公告，再读取其中一个可靠网页正文，最后根据正文总结具体安排并给出来源。",
+    "reference_answer": "",
+    "category": "tool_needed",
+    "difficulty": "hard",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["web_search", "fetch_webpage"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "multi_step_web",
+      "dynamic_reference": true
+    }
+  },
+  {
+    "id": "tool_010",
+    "question": "请搜索互联网确认故宫博物院近期是否存在临时闭馆、施工或区域暂停开放的官方公告；如果存在，请读取可靠网页并总结影响范围和时间。",
+    "reference_answer": "",
+    "category": "tool_needed",
+    "difficulty": "hard",
+    "requires_rag": false,
+    "requires_tool": true,
+    "expected_tools": ["web_search", "fetch_webpage"],
+    "metadata": {
+      "benchmark_group": "tool",
+      "tool_type": "multi_step_web",
+      "dynamic_reference": true
+    }
+  },
+
+  {
+    "id": "both_001",
+    "question": "请说明故宫外朝和内廷的主要功能区别，同时查询系统数据库中登记的故宫始建年份和遗产类别。功能区别优先依据知识库，数据库字段请通过工具查询。",
+    "reference_answer": "外朝偏重典礼与政务，内廷偏重起居；数据库登记的始建年份为1406年，遗产类别为皇家宫殿。",
+    "category": "rag_and_tool",
+    "difficulty": "medium",
+    "requires_rag": true,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "rag_tool",
+      "source_eval_id": "eval_055"
+    }
+  },
+  {
+    "id": "both_002",
+    "question": "请根据知识库说明颐和园中长廊和佛香阁分别在景观组织中起什么作用，同时查询系统数据库中颐和园的始建年份和遗产类别。",
+    "reference_answer": "长廊串联多个景观节点，佛香阁形成重要视觉中心；数据库登记始建年份为1750年，遗产类别为皇家园林。",
+    "category": "rag_and_tool",
+    "difficulty": "hard",
+    "requires_rag": true,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "rag_tool",
+      "source_eval_id": "eval_072"
+    }
+  },
+  {
+    "id": "both_003",
+    "question": "请依据知识库说明哪处石窟保存敦煌文书及其研究意义，同时查询系统数据库中该遗产的城市、始建年份和遗产类别。",
+    "reference_answer": "莫高窟保存敦煌文书，为历史研究提供重要文字资料；数据库登记其城市为敦煌，始建年份为366年，遗产类别为石窟寺。",
+    "category": "rag_and_tool",
+    "difficulty": "hard",
+    "requires_rag": true,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "rag_tool",
+      "source_eval_id": "eval_064"
+    }
+  },
+  {
+    "id": "both_004",
+    "question": "请依据知识库判断哪处石窟能够明显比较北魏和唐代造像风格，并查询系统数据库中该遗产的城市、始建年份和遗产类别。",
+    "reference_answer": "龙门石窟能够明显比较北魏和唐代造像风格；数据库登记其位于洛阳，始建年份为493年，遗产类别为石窟寺。",
+    "category": "rag_and_tool",
+    "difficulty": "hard",
+    "requires_rag": true,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "rag_tool",
+      "source_eval_id": "eval_063"
+    }
+  },
+  {
+    "id": "both_005",
+    "question": "请依据知识库解释为什么甲骨文对安阳殷墟研究特别重要，同时查询系统数据库中殷墟所在城市、朝代和遗产类别。",
+    "reference_answer": "甲骨文可用于研究早期汉字体系和商代历史；数据库登记殷墟位于安阳，朝代为商，遗产类别为考古遗址。",
+    "category": "rag_and_tool",
+    "difficulty": "medium",
+    "requires_rag": true,
+    "requires_tool": true,
+    "expected_tools": ["get_heritage_detail"],
+    "metadata": {
+      "benchmark_group": "rag_tool",
+      "source_eval_id": "eval_080"
+    }
+  },
+ {
+  "id": "both_006",
+  "question": "请根据本系统内部数字化评测资料给出故宫的内部项目编号、数字化采集批次和重点采集对象；同时通过系统数据库查询故宫的城市、始建年份和遗产类别。",
+  "reference_answer": "故宫内部项目编号为 CH-EVAL-017，采集批次为 BATCH-2026-A3，重点采集宫殿建筑彩画、台基和斗拱节点；系统数据库登记其城市为北京，始建年份为1406年，遗产类别为皇家宫殿。",
+  "category": "rag_and_tool",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": true,
+  "expected_tools": ["get_heritage_detail"],
+  "metadata": {
+    "benchmark_group": "rag_tool",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+{
+  "id": "both_007",
+  "question": "请根据本系统内部资料说明莫高窟的内部项目编号、巡检优先级和负责小组；同时通过系统数据库查询莫高窟所在城市、始建年份和遗产类别。",
+  "reference_answer": "莫高窟内部项目编号为 CH-EVAL-031，巡检优先级为 P1，负责小组为 CAVE-DIGITAL-01；系统数据库登记其城市为敦煌，始建年份为366年，遗产类别为石窟寺。",
+  "category": "rag_and_tool",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": true,
+  "expected_tools": ["get_heritage_detail"],
+  "metadata": {
+    "benchmark_group": "rag_tool",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+{
+  "id": "both_008",
+  "question": "请根据本系统内部数字化评测资料说明颐和园的采集批次、巡检优先级和三个重点采集对象；同时通过系统数据库查询颐和园的城市、朝代和始建年份。",
+  "reference_answer": "颐和园采集批次为 BATCH-2026-B7，巡检优先级为 P3，重点采集长廊彩画、佛香阁和昆明湖岸线；系统数据库登记其城市为北京，朝代为清，始建年份为1750年。",
+  "category": "rag_and_tool",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": true,
+  "expected_tools": ["get_heritage_detail"],
+  "metadata": {
+    "benchmark_group": "rag_tool",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+{
+  "id": "both_009",
+  "question": "请根据本系统内部资料说明龙门石窟的负责小组、巡检优先级和重点采集对象；同时通过系统数据库查询龙门石窟所在城市、朝代、始建年份和遗产类别。",
+  "reference_answer": "龙门石窟由 STONE-SCAN-04 负责，巡检优先级为 P2，重点采集佛龛边界、造像面部和石刻表面风化区域；系统数据库登记其位于洛阳，朝代为北魏至唐，始建年份为493年，遗产类别为石窟寺。",
+  "category": "rag_and_tool",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": true,
+  "expected_tools": ["get_heritage_detail"],
+  "metadata": {
+    "benchmark_group": "rag_tool",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+},
+{
+  "id": "both_010",
+  "question": "请根据本系统内部资料给出秦始皇陵兵马俑的项目编号、巡检优先级、负责小组和重点采集对象；同时通过系统数据库查询它所在城市、朝代和遗产类别。",
+  "reference_answer": "秦始皇陵兵马俑项目编号为 CH-EVAL-073，巡检优先级为 P1，负责小组为 ARCHAEOLOGY-3D-02，重点采集陶俑面部差异、铠甲结构和军阵空间排列；系统数据库登记其位于西安，朝代为秦，遗产类别为陵墓与考古遗址。",
+  "category": "rag_and_tool",
+  "difficulty": "hard",
+  "requires_rag": true,
+  "requires_tool": true,
+  "expected_tools": ["get_heritage_detail"],
+  "metadata": {
+    "benchmark_group": "rag_tool",
+    "rag_subtype": "private_knowledge",
+    "source_doc": "evaluation_private_heritage_notes.txt"
+  }
+}
+]

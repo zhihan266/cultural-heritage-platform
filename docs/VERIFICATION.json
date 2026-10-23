@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-23",
+  "backend_baseline": {
+    "passed": 1160,
+    "failed": 3,
+    "failure_reason": "Two historical migration SQL files are missing",
+    "ruff": "passed",
+    "mypy_errors": 6
+  },
+  "frontend": {
+    "node_tests_passed": 31,
+    "type_check": "passed",
+    "eslint": "passed",
+    "oxlint": "passed",
+    "build": "passed",
+    "browser": "passed; isolated SQLite, real HTTP and Chrome",
+    "audit": {
+      "critical": 1,
+      "high": 15,
+      "moderate": 2,
+      "low": 1
+    }
+  },
+  "live": {
+    "mysql_orm_bootstrap": {
+      "tables": 19,
+      "differences": 0
+    },
+    "user_export": {
+      "tables": 19,
+      "missing_fk": "answers.execution_id",
+      "equivalent_index": "heritage_sites.name uses a differently named UNIQUE index"
+    },
+    "redis_original": "timeout",
+    "redis_isolated": "7.4.2 PING passed",
+    "business": "real isolated MySQL/Redis/API registration/login/publish/discover/accept/one-answer passed",
+    "embedding_query_dimension": 1024,
+    "embedding_document_dimension": 1024,
+    "reranker_top_document": "Temple of Heaven",
+    "reranker_top_score_rounded": 0.9949,
+    "milvus_new_collection": "HNSW + BM25; public corpus indexed; Hybrid+Rerank returned one hit",
+    "retrieval_evaluation": {
+      "strategy": "dense",
+      "cases": 80,
+      "completed": 80,
+      "historical_reports_overwritten": false
+    }
+  },
+  "delivery_tests": {
+    "passed": 16,
+    "original_git_rewritten": false,
+    "history": "sanitized HEAD ancestry, eight commits, rewritten hashes disclosed"
+  },
+  "not_verified": [
+    "Paid external LLM full HCP/crowd aggregation and final UI",
+    "Fresh five-service Compose startup",
+    "Fresh GPU driver installation/model download",
+    "Long-context/concurrent GPU load",
+    "Complete Python dependency CVE audit"
+  ],
+  "configured_secrets_or_user_rows_included": false,
+  "clean_extraction": {
+    "python_install": "passed",
+    "pip_check": "passed",
+    "backend_passed": 1160,
+    "backend_failed": 3,
+    "duration_seconds": 316.92,
+    "npm_install": "npm ci --ignore-scripts passed",
+    "frontend_checks_build": "passed",
+    "node_tests_passed": 31,
+    "chrome_two_user": "passed"
+  },
+  "final_source_note": "Concurrent crowd auto-Judge selection and recovery edits retained; final snapshot is retested separately."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "culture-project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "check:running": "node scripts/dev.mjs --check"
+  }
+}

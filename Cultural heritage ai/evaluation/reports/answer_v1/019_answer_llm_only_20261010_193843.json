@@ -1,0 +1,70 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T11:38:43.878505+00:00",
+    "schema_version": "1.0",
+    "report_file": "019_answer_llm_only_20261010_193843.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "rag_006",
+      "variant": "llm_only",
+      "question": "哪处石窟遗产除了壁画和彩塑，还保存敦煌文书，为历史研究提供另一类证据？",
+      "answer": "敦煌莫高窟（又称千佛洞）。其第17窟“藏经洞”保存了大量敦煌文书，与壁画、彩塑并列为研究敦煌及中古历史的重要资料。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 5766.108799987705,
+      "input_tokens": 112,
+      "output_tokens": 158,
+      "total_tokens": 270,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 112,
+          "completion_tokens": 158,
+          "total_tokens": 270,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 112
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 112,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

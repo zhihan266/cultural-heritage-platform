@@ -1,0 +1,70 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T11:37:14.242598+00:00",
+    "schema_version": "1.0",
+    "report_file": "014_answer_llm_only_20261010_193714.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "rag_001",
+      "variant": "llm_only",
+      "question": "书法中“结体”和“章法”分别关注什么？",
+      "answer": "在书法中：\n\n- **结体**（也叫结字、间架结构）主要关注**单个字内部**的组织安排。  \n  具体包括：点画的长短、粗细、斜正，偏旁部件的位置、比例、穿插、避让、呼应，以及字的重心、疏密、欹正和整体形态是否协调美观。\n\n- **章法**主要关注**整幅作品**的布局安排。  \n  具体包括：字与字、行与行之间的关系，上下左右的呼应，整篇的疏密、虚实、黑白分布、行气、节奏，以及落款、钤印等如何与正文配合，使全幅作品统一、完整、有气势。\n\n简单说：  \n**结体管“一个字怎么写好看”，章法管“整幅作品怎么安排好看”。**",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 8305.828699987615,
+      "input_tokens": 104,
+      "output_tokens": 459,
+      "total_tokens": 563,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 104,
+          "completion_tokens": 459,
+          "total_tokens": 563,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 104
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 104,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

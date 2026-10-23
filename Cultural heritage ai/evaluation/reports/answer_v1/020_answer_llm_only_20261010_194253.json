@@ -1,0 +1,70 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T11:42:53.462275+00:00",
+    "schema_version": "1.0",
+    "report_file": "020_answer_llm_only_20261010_194253.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "rag_001",
+      "variant": "llm_only",
+      "question": "根据知识库，莫高窟中的供养人像和敦煌文书分别能够为研究者提供哪一类历史证据？请分别说明。",
+      "answer": "根据知识库的分类，二者提供的史料类型可概括为：\n\n1. **莫高窟供养人像——图像史料（视觉史料）**  \n   供养人像通过人物形象、服饰、发式、仪从、排列位置以及供养人题记等，为研究者提供关于当时社会身份、等级关系、家族世系、民族面貌、服饰风尚、宗教信仰和石窟营建赞助等方面的形象化证据。它偏重于反映“当时人如何被描绘”以及社会生活和物质文化的视觉信息。\n\n2. **敦煌文书——文献史料（文字史料/出土文献）**  \n   敦煌文书包括官私文书、籍账、契约、寺院账簿、书信、公文、经卷题记等，为研究者提供关于中古时期敦煌及河西地区政治、经济、军事、法律、宗教、社会生活和语言文字等方面的原始文字记录。它偏重于制度运作、经济关系、社会交往和宗教活动等文字性证据。\n\n简言之：**供养人像主要属于图像史料，敦煌文书主要属于文献史料；二者常需相互印证，才能更全面地重建历史。**",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 13355.932699982077,
+      "input_tokens": 117,
+      "output_tokens": 1518,
+      "total_tokens": 1635,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 117,
+          "completion_tokens": 1518,
+          "total_tokens": 1635,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 117
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 117,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

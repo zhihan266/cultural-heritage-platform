@@ -1,0 +1,70 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T11:37:38.337450+00:00",
+    "schema_version": "1.0",
+    "report_file": "015_answer_llm_only_20261010_193738.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "rag_002",
+      "variant": "llm_only",
+      "question": "在古代长城防御体系中，哪类设施主要控制交通要道？",
+      "answer": "在古代长城防御体系中，主要控制交通要道的是**关隘**（也称**关城、关口**）。\n\n关隘通常设在长城沿线的险要山口、河谷、峡谷或南北往来必经之地，驻兵把守，用于稽查行旅、控制通行、征收税赋，并在战时起防御和阻截作用。因此，它是长城防御体系中专门控制交通要道的核心设施。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 6874.582599994028,
+      "input_tokens": 103,
+      "output_tokens": 229,
+      "total_tokens": 332,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 103,
+          "completion_tokens": 229,
+          "total_tokens": 332,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 103
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 103,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

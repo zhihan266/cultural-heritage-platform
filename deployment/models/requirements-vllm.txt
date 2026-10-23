@@ -1,0 +1,4 @@
+# Isolated WSL2/Linux environment. Matches the installed baseline, not backend deps.
+vllm==0.29.0
+transformers==5.17.0
+huggingface_hub==1.32.0

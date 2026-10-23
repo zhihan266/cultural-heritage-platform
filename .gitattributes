@@ -1,0 +1,6 @@
+# Keep portable scripts usable after Windows checkouts.
+* text=auto
+*.sh text eol=lf
+*.jinja text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf

@@ -1,0 +1,92 @@
+{
+  "database": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "name": "aijiu_dev"
+  },
+  "consumer_enabled": false,
+  "aggregator_configured": false,
+  "cors_origins": [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:8080",
+    "http://127.0.0.1:8080"
+  ],
+  "embedding_model": "qwen3-embedding",
+  "embedding_dimension": 1024,
+  "missing_tables": [],
+  "missing_columns": {
+    "rag_task_agent_executions": [],
+    "rag_task_answers": [],
+    "rag_task_context_items": [],
+    "rag_task_contexts": [],
+    "rag_task_knowledge_ingestions": [],
+    "rag_task_participants": [],
+    "rag_task_processing_jobs": [],
+    "rag_task_results": [],
+    "rag_tasks": []
+  },
+  "table_engines": {
+    "rag_task_agent_executions": "InnoDB",
+    "rag_task_answers": "InnoDB",
+    "rag_task_context_items": "InnoDB",
+    "rag_task_contexts": "InnoDB",
+    "rag_task_knowledge_ingestions": "InnoDB",
+    "rag_task_participants": "InnoDB",
+    "rag_task_processing_jobs": "InnoDB",
+    "rag_task_results": "InnoDB",
+    "rag_tasks": "InnoDB"
+  },
+  "aggregator": null,
+  "mysql_public_query": {
+    "ok": true,
+    "total": 0
+  },
+  "embedding_http_status": 200,
+  "embedding_model_found": true,
+  "milvus_collection_exists": true,
+  "milvus_fields": [
+    {
+      "name": "chunk_id",
+      "params": {
+        "max_length": 128
+      }
+    },
+    {
+      "name": "document_id",
+      "params": {
+        "max_length": 128
+      }
+    },
+    {
+      "name": "content",
+      "params": {
+        "max_length": 65535,
+        "enable_analyzer": "true",
+        "analyzer_params": "{\"tokenizer\":\"jieba\"}"
+      }
+    },
+    {
+      "name": "source",
+      "params": {
+        "max_length": 1024
+      }
+    },
+    {
+      "name": "chunk_index",
+      "params": {}
+    },
+    {
+      "name": "embedding",
+      "params": {
+        "dim": 1024
+      }
+    },
+    {
+      "name": "sparse",
+      "params": {}
+    }
+  ]
+}

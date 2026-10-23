@@ -1,0 +1,70 @@
+{
+  "report_meta": {
+    "category": "answer",
+    "variant": "llm_only",
+    "generated_at": "2026-10-10T11:37:50.827891+00:00",
+    "schema_version": "1.0",
+    "report_file": "016_answer_llm_only_20261010_193750.json"
+  },
+  "experiment": {
+    "type": "answer_evaluation",
+    "ai_id": "ai-0c502a15",
+    "ai_name": "deepseek_fast",
+    "model_name": "deepseek-flash",
+    "provider": "deepseek",
+    "credential_ref": "DEEPSEEK_API_KEY",
+    "generation_config": {
+      "max_tokens": 2048,
+      "temperature": 0.2
+    },
+    "dataset": "evaluation\\datasets\\answer_eval_v1.json",
+    "case_count": 1,
+    "variants": [
+      "llm_only"
+    ]
+  },
+  "variant_configuration": {
+    "llm_only": {
+      "use_rag": false,
+      "use_tool": false
+    }
+  },
+  "results": [
+    {
+      "case_id": "rag_003",
+      "variant": "llm_only",
+      "question": "古琴演奏中常用哪三类发声方式形成不同音色层次？",
+      "answer": "古琴演奏中常用形成不同音色层次的三类发声方式是：\n\n1. **散音**：不按弦，直接弹奏空弦，音色浑厚、宽宏，常喻为“地”。  \n2. **按音**：左手按弦于琴面，右手弹奏，音色婉转、细腻，常喻为“人”。  \n3. **泛音**：左手轻触徽位，右手弹弦后立即离弦，音色清亮、空灵，常喻为“天”。\n\n因此，古琴常以**散音、按音、泛音**三类发声方式构成丰富的音色层次，并有“天地人”三籁之说。",
+      "model_name": "deepseek-flash",
+      "rag_enabled": false,
+      "retrieved_chunk_ids": [],
+      "retrieved_contexts": [],
+      "tool_enabled": false,
+      "tool_calls": [],
+      "latency_ms": 6464.505900017684,
+      "input_tokens": 104,
+      "output_tokens": 302,
+      "total_tokens": 406,
+      "llm_request_count": 1,
+      "llm_usage_trace": [
+        {
+          "request_index": 1,
+          "prompt_tokens": 104,
+          "completion_tokens": 302,
+          "total_tokens": 406,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 104
+        }
+      ],
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 104,
+      "estimated_cost": null,
+      "correctness": null,
+      "completeness": null,
+      "relevance": null,
+      "faithfulness": null,
+      "hallucination": null,
+      "judge_reason": null
+    }
+  ]
+}

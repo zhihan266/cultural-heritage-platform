@@ -1,46 +1,114 @@
-# Local secrets; only the template belongs in Git.
+# Local configuration and credentials; keep shareable templates.
 .env
 .env.*
 !.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
 
-# Python environments and generated files
+# Python environments, bytecode and generated checks.
 .venv/
 venv/
+env/
 __pycache__/
 *.py[cod]
+*$py.class
 .pytest_cache/
+.pytest_tmp/
 .mypy_cache/
 .ruff_cache/
+.tox/
+.nox/
 .coverage
 .coverage.*
 htmlcov/
 *.egg-info/
-build/
-dist/
 
-# Editors and operating systems
+# Node/Vue and generic build output.
+node_modules/
+dist/
+dist-ssr/
+build/
+coverage/
+*.tsbuildinfo
+.eslintcache
+*.timestamp-*-*.mjs
+.vite/
+.nuxt/
+.output/
+
+# Java/Maven/Gradle build output (keep wrappers and project manifests).
+target/
+.gradle/
+*.class
+*.war
+*.ear
+hs_err_pid*
+
+# Local IDE, OS and assistant state.
 .idea/
 .vscode/
+.vs/
+.agents/
+.codex/
 .DS_Store
 Thumbs.db
+Desktop.ini
+*.iml
+*.suo
+*.user
+*.swp
+*.swo
+*~
 
-# Runtime state (keep small fixtures and evaluation datasets)
+# Runtime logs, temporary files, browser evidence and local release archives.
 logs/
 *.log
+*.tmp
+*.temp
 tmp/
 temp/
-data/temporary_rag/
-data/runtime/
-data/uploads/
-*.sql.gz
-*.dump
+.run/
+.verification/
+/release/
+/releases/
+*.bundle
+*.zip
+**/tests/artifacts/
+**/cypress/videos/
+**/cypress/screenshots/
+__screenshots__/
+
+# Database state and dumps; retain SQL schemas, migrations and public fixtures.
 *.db
 *.sqlite
 *.sqlite3
-models/
-model_weights/
-*.safetensors
-*.gguf
+*.sqlite3-*
+*.dump
+*.sql.gz
 volumes/
 milvus_data/
 minio_data/
+etcd_data/
+**/data/temporary_rag/
+**/data/runtime/
+**/data/uploads/
+**/checkpoints/
+
+# Large model weights and caches; deployment/models is source and stays tracked.
+/models/
+model_weights/
+.cache/
+.huggingface/
+hub/
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+pytorch_model*.bin
+model-*.bin
